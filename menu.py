@@ -2289,6 +2289,38 @@ while True :
     total_num_5_4 += num_5_4
     total_num_5_5 += num_5_5
 
+#daramde hasel az har mahsool
+
+    total_sell_1_1 += p_1_1 * num_1_1 
+    total_sell_1_2 += p_1_2 * num_1_2 
+    total_sell_1_3 += p_1_3 * num_1_3 
+    total_sell_1_4 += p_1_4 * num_1_4 
+    total_sell_1_5 += p_1_5 * num_1_5 
+
+    total_sell_2_1 += p_2_1 * num_2_1 
+    total_sell_2_2 += p_2_2 * num_2_2 
+    total_sell_2_3 += p_2_3 * num_2_3 
+    total_sell_2_4 += p_2_4 * num_2_4 
+    total_sell_2_5 += p_2_5 * num_2_5 
+
+    total_sell_3_1 += p_3_1 * num_3_1 
+    total_sell_3_2 += p_3_2 * num_3_2 
+    total_sell_3_3 += p_3_3 * num_3_3 
+    total_sell_3_4 += p_3_4 * num_3_4 
+    total_sell_3_5 += p_3_5 * num_3_5 
+
+    total_sell_4_1 += p_4_1 * num_4_1 
+    total_sell_4_2 += p_4_2 * num_4_2 
+    total_sell_4_3 += p_4_3 * num_4_3 
+    total_sell_4_4 += p_4_4 * num_4_4 
+    total_sell_4_5 += p_4_5 * num_4_5 
+
+    total_sell_5_1 += p_5_1 * num_5_1 
+    total_sell_5_2 += p_5_2 * num_5_2 
+    total_sell_5_3 += p_5_3 * num_5_3 
+    total_sell_5_4 += p_5_4 * num_5_4 
+    total_sell_5_5 += p_5_5 * num_5_5
+
 
     #por tarafdar tarin mahsol
 
@@ -2401,11 +2433,6 @@ while True :
     if por_forosh_5 > total_por_forosh :
         total_por_forosh = por_forosh_5
         total_por_forosh_name = por_forosh_name_5
-
-
-    
-
-
 
 
         #kam tarafdar tarin mahsool
@@ -2524,37 +2551,7 @@ while True :
             total_kam_forosh = kam_forosh_5
             total_kam_forosh_name = kam_forosh_name_5
 
-        #daramde hasel az har 
-
-        total_sell_1_1 = p_1_1 * total_num_1_1 
-        total_sell_1_2 = p_1_2 * total_num_1_2 
-        total_sell_1_3 = p_1_3 * total_num_1_3 
-        total_sell_1_4 = p_1_4 * total_num_1_4 
-        total_sell_1_5 = p_1_5 * total_num_1_5 
-
-        total_sell_2_1 = p_2_1 * total_num_2_1 
-        total_sell_2_2 = p_2_2 * total_num_2_2 
-        total_sell_2_3 = p_2_3 * total_num_2_3 
-        total_sell_2_4 = p_2_4 * total_num_2_4 
-        total_sell_2_5 = p_2_5 * total_num_2_5 
-
-        total_sell_3_1 = p_3_1 * total_num_3_1 
-        total_sell_3_2 = p_3_2 * total_num_3_2 
-        total_sell_3_3 = p_3_3 * total_num_3_3 
-        total_sell_3_4 = p_3_4 * total_num_3_4 
-        total_sell_3_5 = p_3_5 * total_num_3_5 
-
-        total_sell_4_1 = p_4_1 * total_num_4_1 
-        total_sell_4_2 = p_4_2 * total_num_4_2 
-        total_sell_4_3 = p_4_3 * total_num_4_3 
-        total_sell_4_4 = p_4_4 * total_num_4_4 
-        total_sell_4_5 = p_4_5 * total_num_4_5 
-
-        total_sell_5_1 = p_5_1 * total_num_5_1 
-        total_sell_5_2 = p_5_2 * total_num_5_2 
-        total_sell_5_3 = p_5_3 * total_num_5_3 
-        total_sell_5_4 = p_5_4 * total_num_5_4 
-        total_sell_5_5 = p_5_5 * total_num_5_5 
+         
 
     
  

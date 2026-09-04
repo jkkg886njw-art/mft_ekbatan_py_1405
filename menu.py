@@ -205,659 +205,685 @@ num_peyk = 0
 main_username = "admin"
 main_password = "admin"
 backup_password = "12345"
+bazyabi_password = "54321"
 j = 0
 k = 0
+p = 0
 
 while True :
 
     while True :
-        
-        start = input("1.administrator \n2.moshtari\n")
-        match start :
-            case "1" :
 
-                if k < 3 :
+        if k < 3 :
 
-                    for l in range(3):
+            while True :
+                
+                start = input("1.administrator \n2.moshtari\n")
+                match start :
+                    case "1" :
 
-                        username = input("please enter username :")
-                        password = input("please enter password :")
+                        if k < 3 :
 
-                        
+                            for l in range(3):
 
-                        if username == main_username and password == main_password :
-
-                        
-                            while True :
-
-                                print("\n" , "\n1.edit" , sarfas_1 ,"\n2.edit",sarfas_2,"\n3.edit", sarfas_3, "\n4.edit",sarfas_4,"\n5.edit", sarfas_5, "\n6.edit service/tax/peyk \n7.gozareshat \n8.change username and password \n9.exit\n")
-                                menu = input()
-                                
-                                if menu == "9" :
-                                    break
-
-                                while True :
-
-                                    match menu :
-                                        case "1" :
-                                            if j < 3 :
-                                                print("\n\n" , "1.",name_1_1 ,"..." ,p_1_1, "\n", "2.", name_1_2 ,"..." ,p_1_2, "\n", "3.", name_1_3 ,"..." ,p_1_3, "\n", "4.", name_1_4 ,"..." ,p_1_4, "\n", "5.", name_1_5 ,"..." ,p_1_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
-                                                m_cafe = input()
-                            
-                                                match m_cafe :
-                                                    case "1" :
-
-                                                        cafe_1 = input ("1.edit name \n2.edit price \n3.edit name and price\n")
-                                                        match cafe_1 :
-                                                            case "1" :
-                                                                name_1_1 = input("please enter new name :\n")
-                                                                print("new name is :" , name_1_1)
-                                                            case "2" :
-                                                                p_1_1 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_1_1)
-                                                            case "3" :
-                                                                name_1_1 = input("please enter new name :\n")
-                                                                p_1_1 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_1_1, "and" ,"new price is :" , p_1_1 )
-                                                                    
-                                                            case _ :
-                                                                break
-                                                        
-                                                        
-                                                    case "2" :
-                                                        cafe_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match cafe_2 :
-                                                            case "1" :
-                                                                name_1_2 = input("please enter new name :\n")
-                                                                print("new name is :" , name_1_2)
-                                                            case "2" :
-                                                                p_1_2 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_1_2)
-                                                            case "3" :
-                                                                name_1_2 = input("please enter new name :\n")
-                                                                p_1_2 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_1_2, "and" ,"new price is :" , p_1_2 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "3" :
-                                                        cafe_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match cafe_3 :
-                                                            case "1" :
-                                                                name_1_3 = input("please enter new name :\n")
-                                                                print("new name is :" , name_1_3)
-                                                            case "2" :
-                                                                p_1_3 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_1_3)
-                                                            case "3" :
-                                                                name_1_3 = input("please enter new name :\n")
-                                                                p_1_3 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_1_3, "and" ,"new price is :" , p_1_3 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "4" :
-                                                        cafe_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match cafe_4 :
-                                                            case "1" :
-                                                                name_1_4 = input("please enter new name :\n")
-                                                                print("new name is :" , name_1_4)
-                                                            case "2" :
-                                                                p_1_4 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_1_4)
-                                                            case "3" :
-                                                                name_1_4 = input("please enter new name :\n")
-                                                                p_1_4 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_1_4, "and" ,"new price is :" , p_1_4 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "5" :
-                                                        cafe_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match cafe_5 :
-                                                            case "1" :
-                                                                name_1_5 = input("please enter new name :\n")
-                                                                print("new name is :" , name_1_5)
-                                                            case "2" :
-                                                                p_1_5 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_1_5)
-                                                            case "3" :
-                                                                name_1_5 = input("please enter new name :\n")
-                                                                p_1_5 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_1_5, "and" ,"new price is :" , p_1_5 )
-
-                                                            case _ :
-                                                                break
-                                                    case "6" :
-                                                        sarfas_1 = input("please enter new name for sarfasl_1 :\n")
-                                
-                                                    case _ :
-                                                        break
-                                            else :
-                                                print("you are block")
-                                                break
-
+                                username = input("please enter username :")
+                                password = input("please enter password :")
 
                                 
-                                        case "2" :
-                                            if j < 3 :
-                                                print("\n\n" , "1.",name_2_1 ,"..." ,p_2_1, "\n", "2.", name_2_2 ,"..." ,p_2_2, "\n", "3.", name_2_3 ,"..." ,p_2_3, "\n", "4.", name_2_4 ,"..." ,p_2_4, "\n", "5.", name_2_5 ,"..." ,p_2_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
-                                                m_fast = input()
-                            
-                                                match m_fast :
-                                                    case "1" :
 
-                                                        fast_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match fast_1 :
-                                                            case "1" :
-                                                                name_2_1 = input("please enter new name :\n")
-                                                                print("new name is :" , name_2_1)
-                                                            case "2" :
-                                                                p_2_1 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_2_1)
-                                                            case "3" :
-                                                                name_2_1 = input("please enter new name :\n")
-                                                                p_2_1 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_2_1, "and" ,"new price is :" , p_2_1 )
-                                                            case _ :
-                                                                break
-                                                        
-                                                        
-                                                    case "2" :
-                                                        fast_2 = input ("1.edit name \n2.edit price \n3.edit name and price\n")
-                                                        match fast_2 :
-                                                            case "1" :
-                                                                name_2_2 = input("please enter new name :\n")
-                                                                print("new name is :" , name_2_2)
-                                                            case "2" :
-                                                                p_2_2 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_2_2)
-                                                            case "3" :
-                                                                name_2_2 = input("please enter new name :\n")
-                                                                p_2_2 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_2_2, "and" ,"new price is :" , p_2_2 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "3" :
-                                                        fast_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match fast_3 :
-                                                            case "1" :
-                                                                name_2_3 = input("please enter new name :\n")
-                                                                print("new name is :" , name_2_3)
-                                                            case "2" :
-                                                                p_2_3 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_2_3)
-                                                            case "3" :
-                                                                name_2_3 = input("please enter new name :\n")
-                                                                p_2_3 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_2_3, "and" ,"new price is :" , p_2_3 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "4" :
-                                                        fast_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match fast_4 :
-                                                            case "1" :
-                                                                name_2_4 = input("please enter new name :\n")
-                                                                print("new name is :" , name_2_4)
-                                                            case "2" :
-                                                                p_2_4 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_2_4)
-                                                            case "3" :
-                                                                name_2_4 = input("please enter new name :\n")
-                                                                p_2_4 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_2_4, "and" ,"new price is :" , p_2_4 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "5" :
-                                                        fast_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match fast_5 :
-                                                            case "1" :
-                                                                name_2_5 = input("please enter new name :\n")
-                                                                print("new name is :" , name_2_5)
-                                                            case "2" :
-                                                                p_2_5 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_2_5)
-                                                            case "3" :
-                                                                name_2_5 = input("please enter new name :\n")
-                                                                p_2_5 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_2_5, "and" ,"new price is :" , p_2_5 )
-                                                            case _ :
-                                                                break
-                                                    case "6" :
-                                                        sarfas_2 = input("please enter new name for sarfasl_2 :\n")
-                                
-                                                    case _ :
-                                                        break     
-                                            else :
-                                                print("you are block")
-                                                break
-                                            
-                        
-                                        case "3" :
-                                            if j < 3 :
-                                                print("\n\n" , "1.",name_3_1 ,"..." ,p_3_1, "\n", "2.", name_3_2 ,"..." ,p_3_2, "\n", "3.", name_3_3 ,"..." ,p_3_3, "\n", "4.", name_3_4 ,"..." ,p_3_4, "\n", "5.", name_3_5 ,"..." ,p_3_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
-                                                m_irani = input()
-                            
-                                                match m_irani :
-                                                    case "1" :
+                                if username == main_username and password == main_password :
 
-                                                        irani_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match irani_1 :
+                                    K = 0
+
+                                    while True :
+
+                                        print("\n" , "\n1.edit" , sarfas_1 ,"\n2.edit",sarfas_2,"\n3.edit", sarfas_3, "\n4.edit",sarfas_4,"\n5.edit", sarfas_5, "\n6.edit service/tax/peyk \n7.gozareshat \n8.change username and password \n9.exit\n")
+                                        menu = input()
+                                        
+                                        if menu == "9" :
+                                            break
+
+                                        while True :
+
+                                            match menu :
+                                                case "1" :
+                                                    if j < 3 :
+                                                        print("\n\n" , "1.",name_1_1 ,"..." ,p_1_1, "\n", "2.", name_1_2 ,"..." ,p_1_2, "\n", "3.", name_1_3 ,"..." ,p_1_3, "\n", "4.", name_1_4 ,"..." ,p_1_4, "\n", "5.", name_1_5 ,"..." ,p_1_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
+                                                        m_cafe = input()
+                                    
+                                                        match m_cafe :
                                                             case "1" :
-                                                                name_3_1 = input("please enter new name :\n")
-                                                                print("new name is :" , name_3_1)
+
+                                                                cafe_1 = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                                match cafe_1 :
+                                                                    case "1" :
+                                                                        name_1_1 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_1_1)
+                                                                    case "2" :
+                                                                        p_1_1 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_1_1)
+                                                                    case "3" :
+                                                                        name_1_1 = input("please enter new name :\n")
+                                                                        p_1_1 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_1_1, "and" ,"new price is :" , p_1_1 )
+                                                                            
+                                                                    case _ :
+                                                                        break
+                                                                
+                                                                
                                                             case "2" :
-                                                                p_3_1 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_3_1)
+                                                                cafe_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match cafe_2 :
+                                                                    case "1" :
+                                                                        name_1_2 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_1_2)
+                                                                    case "2" :
+                                                                        p_1_2 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_1_2)
+                                                                    case "3" :
+                                                                        name_1_2 = input("please enter new name :\n")
+                                                                        p_1_2 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_1_2, "and" ,"new price is :" , p_1_2 )
+                                                                    case _ :
+                                                                        break
+                                    
                                                             case "3" :
-                                                                name_3_1 = input("please enter new name :\n")
-                                                                p_3_1 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_3_1, "and" ,"new price is :" , p_3_1 )
-                                                            case _ :
-                                                                break
-                                                        
-                                                        
-                                                    case "2" :
-                                                        irani_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match irani_2 :
-                                                            case "1" :
-                                                                name_3_2 = input("please enter new name :\n")
-                                                                print("new name is :" , name_3_2)
-                                                            case "2" :
-                                                                p_3_2 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_3_2)
-                                                            case "3" :
-                                                                name_3_2 = input("please enter new name :\n")
-                                                                p_3_2 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_3_2, "and" ,"new price is :" , p_3_2 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "3" :
-                                                        irani_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match irani_3 :
-                                                            case "1" :
-                                                                name_3_3 = input("please enter new name :\n")
-                                                                print("new name is :" , name_3_3)
-                                                            case "2" :
-                                                                p_3_3 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_3_3)
-                                                            case "3" :
-                                                                name_3_3 = input("please enter new name :\n")
-                                                                p_3_3 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_3_3, "and" ,"new price is :" , p_3_3 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "4" :
-                                                        irani_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match irani_4 :
-                                                            case "1" :
-                                                                name_3_4 = input("please enter new name :\n")
-                                                                print("new name is :" , name_3_4)
-                                                            case "2" :
-                                                                p_3_4 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_3_4)
-                                                            case "3" :
-                                                                name_3_4 = input("please enter new name :\n")
-                                                                p_3_4 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_3_4, "and" ,"new price is :" , p_3_4 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "5" :
-                                                        irani_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match irani_5 :
-                                                            case "1" :
-                                                                name_3_5 = input("please enter new name :\n")
-                                                                print("new name is :" , name_3_5)
-                                                            case "2" :
-                                                                p_3_5 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_3_5)
-                                                            case "3" :
-                                                                name_3_5 = input("please enter new name :\n")
-                                                                p_3_5 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_3_5, "and" ,"new price is :" , p_3_5 )
-                                                            case _ :
-                                                                break
-                                                    case "6" :
-                                                        sarfas_3 = input("please enter new name for sarfasl_3 :\n")
-                                
-                                                    case _ :
-                                                        break
-                                            else :
-                                                print("you are block")
-                                                break
-                                                
-                                        case "4" :
-                                            if j < 3 :
-                                                print("\n\n" , "1.",name_4_1 ,"..." ,p_4_1, "\n", "2.", name_4_2 ,"..." ,p_4_2, "\n", "3.", name_4_3 ,"..." ,p_4_3, "\n", "4.", name_4_4 ,"..." ,p_4_4, "\n", "5.", name_4_5 ,"..." ,p_4_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
-                                                m_bar = input()
-                            
-                                                match m_bar :
-                                                    case "1" :
-
-                                                        bar_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match bar_1 :
-                                                            case "1" :
-                                                                name_4_1 = input("please enter new name :\n")
-                                                                print("new name is :" , name_4_1)
-                                                            case "2" :
-                                                                p_4_1 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_4_1)
-                                                            case "3" :
-                                                                name_4_1 = input("please enter new name :\n")
-                                                                p_4_1 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_4_1, "and" ,"new price is :" , p_4_1 )
-                                                            case _ :
-                                                                break
-                                                        
-                                                        
-                                                    case "2" :
-                                                        bar_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match bar_2 :
-                                                            case "1" :
-                                                                name_4_2 = input("please enter new name :\n")
-                                                                print("new name is :" , name_4_2)
-                                                            case "2" :
-                                                                p_4_2 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_4_2)
-                                                            case "3" :
-                                                                name_4_2 = input("please enter new name :\n")
-                                                                p_4_2 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_4_2, "and" ,"new price is :" , p_4_2 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "3" :
-                                                        bar_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match bar_3 :
-                                                            case "1" :
-                                                                name_4_3 = input("please enter new name :\n")
-                                                                print("new name is :" , name_4_3)
-                                                            case "2" :
-                                                                p_4_3 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_4_3)
-                                                            case "3" :
-                                                                name_4_3 = input("please enter new name :\n")
-                                                                p_4_3 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_4_3, "and" ,"new price is :" , p_4_3 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "4" :
-                                                        bar_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match bar_4 :
-                                                            case "1" :
-                                                                name_4_4 = input("please enter new name :\n")
-                                                                print("new name is :" , name_4_4)
-                                                            case "2" :
-                                                                p_4_4 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_4_4)
-                                                            case "3" :
-                                                                name_4_4 = input("please enter new name :\n")
-                                                                p_4_4 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_4_4, "and" ,"new price is :" , p_4_4 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "5" :
-                                                        bar_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match bar_5 :
-                                                            case "1" :
-                                                                name_4_5 = input("please enter new name :\n")
-                                                                print("new name is :" , name_4_5)
-                                                            case "2" :
-                                                                p_4_5 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_4_5)
-                                                            case "3" :
-                                                                name_4_5 = input("please enter new name :\n")
-                                                                p_4_5 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_4_5, "and" ,"new price is :" , p_4_5 )
-                                                            
-                                                            case _ :
-                                                                break
-                                                    case "6" :
-                                                        sarfas_4 = input("please enter new name for sarfasl_4 :\n")
-                                
-                                                    case _ :
-                                                        break
-                                            else :
-                                                print("you are block")
-                                                break
-
-                                                
-                                        case "5" :
-                                            if j < 3 :
-                                                print("\n\n" , "1.",name_5_1 ,"..." ,p_5_1, "\n", "2.", name_5_2 ,"..." ,p_5_2, "\n", "3.", name_5_3 ,"..." ,p_5_3, "\n", "4.", name_5_4 ,"..." ,p_5_4, "\n", "5.", name_5_5 ,"..." ,p_5_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
-                                                m_boardgame = input()
-                            
-                                                match m_boardgame :
-                                                    case "1" :
-
-                                                        boardgame_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match boardgame_1 :
-                                                            case "1" :
-                                                                name_5_1 = input("please enter new name :\n")
-                                                                print("new name is :" , name_5_1)
-                                                            case "2" :
-                                                                p_5_1 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_5_1)
-                                                            case "3" :
-                                                                name_5_1 = input("please enter new name :\n")
-                                                                p_5_1 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_5_1, "and" ,"new price is :" , p_5_1 )
-                                                            case _ :
-                                                                break
-                                                        
-                                                        
-                                                    case "2" :
-                                                        boardgame_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match boardgame_2 :
-                                                            case "1" :
-                                                                name_5_2 = input("please enter new name :\n")
-                                                                print("new name is :" , name_5_2)
-                                                            case "2" :
-                                                                p_5_2 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_5_2)
-                                                            case "3" :
-                                                                name_5_2 = input("please enter new name :\n")
-                                                                p_5_2 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_5_2, "and" ,"new price is :" , p_5_2 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "3" :
-                                                        boardgame_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match boardgame_3 :
-                                                            case "1" :
-                                                                name_5_3 = input("please enter new name :\n")
-                                                                print("new name is :" , name_5_3)
-                                                            case "2" :
-                                                                p_5_3 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_5_3)
-                                                            case "3" :
-                                                                name_5_3 = input("please enter new name :\n")
-                                                                p_5_3 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_5_3, "and" ,"new price is :" , p_5_3 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "4" :
-                                                        boardgame_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match boardgame_4 :
-                                                            case "1" :
-                                                                name_5_4 = input("please enter new name :\n")
-                                                                print("new name is :" , name_5_4)
-                                                            case "2" :
-                                                                p_5_4 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_5_4)
-                                                            case "3" :
-                                                                name_5_4 = input("please enter new name :\n")
-                                                                p_5_4 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_5_4, "and" ,"new price is :" , p_5_4 )
-                                                            case _ :
-                                                                break
-                            
-                                                    case "5" :
-                                                        boardgame_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                        match boardgame_5 :
-                                                            case "1" :
-                                                                name_5_5 = input("please enter new name :\n")
-                                                                print("new name is :" , name_5_5)
-                                                            case "2" :
-                                                                p_5_5 = int(input("please enter new price :\n"))
-                                                                print("new price is :" , p_5_5)
-                                                            case "3" :
-                                                                name_5_5 = input("please enter new name :\n")
-                                                                p_5_5 = int(input("please enter new price :\n"))
-                                                                print("new name is :" , name_5_5, "and" ,"new price is :" , p_5_5 )
-                                                            case _ :
-                                                                break
-                                                    case "6" :
-                                                        sarfas_5 = input("please enter new name for sarfasl_5 :\n")
-                                
-                                                    case _ :
-                                                        break
-                                            else :
-                                                print("you are block")
-                                                break
-
-                                        case "6" :
-                                            if j < 3 :
-                                                d_servis = float(input("please enter service percent :\n"))
-                                                d_servis = d_servis /100
-                                                tax = float(input("please enter tax percent :\n"))
-                                                tax = tax /100
-                                                s_peyk = int(input("please enter peyk price :\n"))
-                                                break
-                                            else :
-                                                print("you are block")
-                                                break
-
-                                        case "7" :
-                                            if j < 3 :
-                                                gozaresh = input("\n1.amare foroshe mahsoolat \n2.por forosh tarin mahsoolat \n3.kam forosh tarin mahsoolat \n4.amare kole forosh \n5.back to main menu \n")
-                                                match gozaresh :
-                                                    case "1" :
-
-                                                        print("\n", sarfas_1 , "...." , total_num_1_1+total_num_1_2+total_num_1_3+total_num_1_4+total_num_1_5 , "adad" , "..." , total_sell_1_1+total_sell_1_2+total_sell_1_3+total_sell_1_4+total_sell_1_5)
-                                                        print("\n", sarfas_2 , "...." , total_num_2_1+total_num_2_2+total_num_2_3+total_num_2_4+total_num_2_5 , "adad" , "..." , total_sell_2_1+total_sell_2_2+total_sell_2_3+total_sell_2_4+total_sell_2_5)
-                                                        print("\n", sarfas_3 , "...." , total_num_3_1+total_num_3_2+total_num_3_3+total_num_3_4+total_num_3_5 , "adad" , "..." , total_sell_3_1+total_sell_3_2+total_sell_3_3+total_sell_3_4+total_sell_3_5)
-                                                        print("\n", sarfas_4 , "...." , total_num_4_1+total_num_4_2+total_num_4_3+total_num_4_4+total_num_4_5 , "adad" , "..." , total_sell_4_1+total_sell_4_2+total_sell_4_3+total_sell_4_4+total_sell_4_5)
-                                                        print("\n", sarfas_5 , "...." , total_num_5_1+total_num_5_2+total_num_5_3+total_num_5_4+total_num_5_5 , "adad" , "..." , total_sell_5_1+total_sell_5_2+total_sell_5_3+total_sell_5_4+total_sell_5_5)
-
-                                                        print("\n1.", name_1_1 , "...." , total_num_1_1 , "adad" , "..." , total_sell_1_1)
-                                                        print("\n2.", name_1_2 , "...." , total_num_1_2 , "adad" , "..." , total_sell_1_2)
-                                                        print("\n3.", name_1_3 , "...." , total_num_1_3 , "adad" , "..." , total_sell_1_3)
-                                                        print("\n4.", name_1_4 , "...." , total_num_1_4 , "adad" , "..." , total_sell_1_4)
-                                                        print("\n5.", name_1_5 , "...." , total_num_1_5 , "adad" , "..." , total_sell_1_5)
-
-                                                        print("\n6.", name_2_1 , "...." , total_num_2_1 , "adad" , "..." , total_sell_2_1)
-                                                        print("\n7.", name_2_2 , "...." , total_num_2_2 , "adad" , "..." , total_sell_2_2)
-                                                        print("\n8.", name_2_3 , "...." , total_num_2_3 , "adad" , "..." , total_sell_2_3)
-                                                        print("\n9.", name_2_4 , "...." , total_num_2_4 , "adad" , "..." , total_sell_2_4)
-                                                        print("\n10.", name_2_5 , "...." , total_num_2_5 , "adad" , "..." , total_sell_2_5)
-
-                                                        print("\n11.", name_3_1 , "...." , total_num_3_1 , "adad" , "..." , total_sell_3_1)
-                                                        print("\n12.", name_3_2 , "...." , total_num_3_2 , "adad" , "..." , total_sell_3_2)
-                                                        print("\n13.", name_3_3 , "...." , total_num_3_3 , "adad" , "..." , total_sell_3_3)
-                                                        print("\n14.", name_3_4 , "...." , total_num_3_4 , "adad" , "..." , total_sell_3_4)
-                                                        print("\n15.", name_3_5 , "...." , total_num_3_5 , "adad" , "..." , total_sell_3_5)
-
-                                                        print("\n16.", name_4_1 , "...." , total_num_4_1 , "adad" , "..." , total_sell_4_1)
-                                                        print("\n17.", name_4_2 , "...." , total_num_4_2 , "adad" , "..." , total_sell_4_2)
-                                                        print("\n18.", name_4_3 , "...." , total_num_4_3 , "adad" , "..." , total_sell_4_3)
-                                                        print("\n19.", name_4_4 , "...." , total_num_4_4 , "adad" , "..." , total_sell_4_4)
-                                                        print("\n20.", name_4_5 , "...." , total_num_4_5 , "adad" , "..." , total_sell_4_5)
-
-                                                        print("\n21.", name_5_1 , "...." , total_num_5_1 , "adad" , "..." , total_sell_5_1)
-                                                        print("\n22.", name_5_2 , "...." , total_num_5_2 , "adad" , "..." , total_sell_5_2)
-                                                        print("\n23.", name_5_3 , "...." , total_num_5_3 , "adad" , "..." , total_sell_5_3)
-                                                        print("\n24.", name_5_4 , "...." , total_num_5_4 , "adad" , "..." , total_sell_5_4)
-                                                        print("\n25.", name_5_5 , "...." , total_num_5_5 , "adad" , "..." , total_sell_5_5)
-
-
-                                                        
-                                                    case "2" :
-                                                        print("por forosh tarin mahsool " ,total_por_forosh_name , "...." , total_por_forosh , "adad")
-                                                        print("por forosh tarin mahsoole ",sarfas_1 ,por_forosh_name_1 , "...." , por_forosh_1 , "adad")
-                                                        print("por forosh tarin mahsoole ",sarfas_2 ,por_forosh_name_2 , "...." , por_forosh_2 , "adad")
-                                                        print("por forosh tarin mahsoole ",sarfas_3 ,por_forosh_name_3 , "...." , por_forosh_3 , "adad")
-                                                        print("por forosh tarin mahsoole ",sarfas_4 ,por_forosh_name_4 , "...." , por_forosh_4 , "adad")
-                                                        print("por forosh tarin mahsoole ",sarfas_5 ,por_forosh_name_5 , "...." , por_forosh_5 , "adad")
-
-
-
-                                                    case "3" :
-                                                        print("kam forosh tarin mahsool " ,total_kam_forosh_name , "...." , total_kam_forosh , "adad")
-                                                        print("kam forosh tarin mahsoole ",sarfas_1 ,kam_forosh_name_1 , "...." , kam_forosh_1 , "adad")
-                                                        print("kam forosh tarin mahsoole ",sarfas_2 ,kam_forosh_name_2 , "...." , kam_forosh_2 , "adad")
-                                                        print("kam forosh tarin mahsoole ",sarfas_3 ,kam_forosh_name_3 , "...." , kam_forosh_3 , "adad")
-                                                        print("kam forosh tarin mahsoole ",sarfas_4 ,kam_forosh_name_4 , "...." , kam_forosh_4 , "adad")
-                                                        print("kam forosh tarin mahsoole ",sarfas_5 ,kam_forosh_name_5 , "...." , kam_forosh_5 , "adad")
-                                                    case "4" :
-                                                        print("\ntedade factor haye sader shode :", tedad_factor ,"\ntedade mahsoolate sefaresh dade shode :" , total_num , "\nmajmooe kole daramd :" , int(total_forosh) , "\ntedade biron bar :", num_peyk , "\ntedade salon :" , num_salon)
-                                                
-                                                    case _ :
-                                                        break
-
-                                            else :
-                                                print("you are block")
-                                                break
-
-
-                                        case "8" :
-                                            if j < 3 :
-                                                for i in range(3):
-                                                    change_password = input("please enter backup password :\n")
-                                                    if change_password == backup_password :
-                                                        change = input ("1.change username \n2.change password\n3.change username and password\n4.change backup password \n")
-                                                        match change :
-                                                            case "1" :
-                                                                main_username = input("please enter new username :\n")
-                                                                print("new username is :" , main_username)
-                                                            case "2" :
-                                                                main_password = input("please enter new password :\n")
-                                                                print("new password is :" , main_password)
-                                                            case "3" :
-                                                                main_username = input("please enter new username :\n")
-                                                                main_password = input("please enter new password :\n")
-                                                                print("new username is :" , main_username, "and" ,"new password is :" , main_password )
+                                                                cafe_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match cafe_3 :
+                                                                    case "1" :
+                                                                        name_1_3 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_1_3)
+                                                                    case "2" :
+                                                                        p_1_3 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_1_3)
+                                                                    case "3" :
+                                                                        name_1_3 = input("please enter new name :\n")
+                                                                        p_1_3 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_1_3, "and" ,"new price is :" , p_1_3 )
+                                                                    case _ :
+                                                                        break
+                                    
                                                             case "4" :
-                                                                backup_password = input("please enter new backup password")
+                                                                cafe_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match cafe_4 :
+                                                                    case "1" :
+                                                                        name_1_4 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_1_4)
+                                                                    case "2" :
+                                                                        p_1_4 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_1_4)
+                                                                    case "3" :
+                                                                        name_1_4 = input("please enter new name :\n")
+                                                                        p_1_4 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_1_4, "and" ,"new price is :" , p_1_4 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "5" :
+                                                                cafe_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match cafe_5 :
+                                                                    case "1" :
+                                                                        name_1_5 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_1_5)
+                                                                    case "2" :
+                                                                        p_1_5 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_1_5)
+                                                                    case "3" :
+                                                                        name_1_5 = input("please enter new name :\n")
+                                                                        p_1_5 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_1_5, "and" ,"new price is :" , p_1_5 )
+
+                                                                    case _ :
+                                                                        break
+                                                            case "6" :
+                                                                sarfas_1 = input("please enter new name for sarfasl_1 :\n")
+                                        
                                                             case _ :
                                                                 break
                                                     else :
-                                                        print("backup password wrong")
-                                                        j+=1
-                                                    if j == 3 :
                                                         print("you are block")
                                                         break
-                                            else :
-                                                print("you are block")
-                                                break
-                                                
+
+
+                                        
+                                                case "2" :
+                                                    if j < 3 :
+                                                        print("\n\n" , "1.",name_2_1 ,"..." ,p_2_1, "\n", "2.", name_2_2 ,"..." ,p_2_2, "\n", "3.", name_2_3 ,"..." ,p_2_3, "\n", "4.", name_2_4 ,"..." ,p_2_4, "\n", "5.", name_2_5 ,"..." ,p_2_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
+                                                        m_fast = input()
+                                    
+                                                        match m_fast :
+                                                            case "1" :
+
+                                                                fast_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match fast_1 :
+                                                                    case "1" :
+                                                                        name_2_1 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_2_1)
+                                                                    case "2" :
+                                                                        p_2_1 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_2_1)
+                                                                    case "3" :
+                                                                        name_2_1 = input("please enter new name :\n")
+                                                                        p_2_1 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_2_1, "and" ,"new price is :" , p_2_1 )
+                                                                    case _ :
+                                                                        break
+                                                                
+                                                                
+                                                            case "2" :
+                                                                fast_2 = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                                match fast_2 :
+                                                                    case "1" :
+                                                                        name_2_2 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_2_2)
+                                                                    case "2" :
+                                                                        p_2_2 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_2_2)
+                                                                    case "3" :
+                                                                        name_2_2 = input("please enter new name :\n")
+                                                                        p_2_2 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_2_2, "and" ,"new price is :" , p_2_2 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "3" :
+                                                                fast_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match fast_3 :
+                                                                    case "1" :
+                                                                        name_2_3 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_2_3)
+                                                                    case "2" :
+                                                                        p_2_3 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_2_3)
+                                                                    case "3" :
+                                                                        name_2_3 = input("please enter new name :\n")
+                                                                        p_2_3 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_2_3, "and" ,"new price is :" , p_2_3 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "4" :
+                                                                fast_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match fast_4 :
+                                                                    case "1" :
+                                                                        name_2_4 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_2_4)
+                                                                    case "2" :
+                                                                        p_2_4 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_2_4)
+                                                                    case "3" :
+                                                                        name_2_4 = input("please enter new name :\n")
+                                                                        p_2_4 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_2_4, "and" ,"new price is :" , p_2_4 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "5" :
+                                                                fast_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match fast_5 :
+                                                                    case "1" :
+                                                                        name_2_5 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_2_5)
+                                                                    case "2" :
+                                                                        p_2_5 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_2_5)
+                                                                    case "3" :
+                                                                        name_2_5 = input("please enter new name :\n")
+                                                                        p_2_5 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_2_5, "and" ,"new price is :" , p_2_5 )
+                                                                    case _ :
+                                                                        break
+                                                            case "6" :
+                                                                sarfas_2 = input("please enter new name for sarfasl_2 :\n")
+                                        
+                                                            case _ :
+                                                                break     
+                                                    else :
+                                                        print("you are block")
+                                                        break
+                                                    
+                                
+                                                case "3" :
+                                                    if j < 3 :
+                                                        print("\n\n" , "1.",name_3_1 ,"..." ,p_3_1, "\n", "2.", name_3_2 ,"..." ,p_3_2, "\n", "3.", name_3_3 ,"..." ,p_3_3, "\n", "4.", name_3_4 ,"..." ,p_3_4, "\n", "5.", name_3_5 ,"..." ,p_3_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
+                                                        m_irani = input()
+                                    
+                                                        match m_irani :
+                                                            case "1" :
+
+                                                                irani_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match irani_1 :
+                                                                    case "1" :
+                                                                        name_3_1 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_3_1)
+                                                                    case "2" :
+                                                                        p_3_1 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_3_1)
+                                                                    case "3" :
+                                                                        name_3_1 = input("please enter new name :\n")
+                                                                        p_3_1 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_3_1, "and" ,"new price is :" , p_3_1 )
+                                                                    case _ :
+                                                                        break
+                                                                
+                                                                
+                                                            case "2" :
+                                                                irani_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match irani_2 :
+                                                                    case "1" :
+                                                                        name_3_2 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_3_2)
+                                                                    case "2" :
+                                                                        p_3_2 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_3_2)
+                                                                    case "3" :
+                                                                        name_3_2 = input("please enter new name :\n")
+                                                                        p_3_2 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_3_2, "and" ,"new price is :" , p_3_2 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "3" :
+                                                                irani_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match irani_3 :
+                                                                    case "1" :
+                                                                        name_3_3 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_3_3)
+                                                                    case "2" :
+                                                                        p_3_3 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_3_3)
+                                                                    case "3" :
+                                                                        name_3_3 = input("please enter new name :\n")
+                                                                        p_3_3 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_3_3, "and" ,"new price is :" , p_3_3 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "4" :
+                                                                irani_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match irani_4 :
+                                                                    case "1" :
+                                                                        name_3_4 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_3_4)
+                                                                    case "2" :
+                                                                        p_3_4 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_3_4)
+                                                                    case "3" :
+                                                                        name_3_4 = input("please enter new name :\n")
+                                                                        p_3_4 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_3_4, "and" ,"new price is :" , p_3_4 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "5" :
+                                                                irani_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match irani_5 :
+                                                                    case "1" :
+                                                                        name_3_5 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_3_5)
+                                                                    case "2" :
+                                                                        p_3_5 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_3_5)
+                                                                    case "3" :
+                                                                        name_3_5 = input("please enter new name :\n")
+                                                                        p_3_5 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_3_5, "and" ,"new price is :" , p_3_5 )
+                                                                    case _ :
+                                                                        break
+                                                            case "6" :
+                                                                sarfas_3 = input("please enter new name for sarfasl_3 :\n")
+                                        
+                                                            case _ :
+                                                                break
+                                                    else :
+                                                        print("you are block")
+                                                        break
+                                                        
+                                                case "4" :
+                                                    if j < 3 :
+                                                        print("\n\n" , "1.",name_4_1 ,"..." ,p_4_1, "\n", "2.", name_4_2 ,"..." ,p_4_2, "\n", "3.", name_4_3 ,"..." ,p_4_3, "\n", "4.", name_4_4 ,"..." ,p_4_4, "\n", "5.", name_4_5 ,"..." ,p_4_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
+                                                        m_bar = input()
+                                    
+                                                        match m_bar :
+                                                            case "1" :
+
+                                                                bar_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match bar_1 :
+                                                                    case "1" :
+                                                                        name_4_1 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_4_1)
+                                                                    case "2" :
+                                                                        p_4_1 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_4_1)
+                                                                    case "3" :
+                                                                        name_4_1 = input("please enter new name :\n")
+                                                                        p_4_1 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_4_1, "and" ,"new price is :" , p_4_1 )
+                                                                    case _ :
+                                                                        break
+                                                                
+                                                                
+                                                            case "2" :
+                                                                bar_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match bar_2 :
+                                                                    case "1" :
+                                                                        name_4_2 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_4_2)
+                                                                    case "2" :
+                                                                        p_4_2 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_4_2)
+                                                                    case "3" :
+                                                                        name_4_2 = input("please enter new name :\n")
+                                                                        p_4_2 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_4_2, "and" ,"new price is :" , p_4_2 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "3" :
+                                                                bar_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match bar_3 :
+                                                                    case "1" :
+                                                                        name_4_3 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_4_3)
+                                                                    case "2" :
+                                                                        p_4_3 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_4_3)
+                                                                    case "3" :
+                                                                        name_4_3 = input("please enter new name :\n")
+                                                                        p_4_3 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_4_3, "and" ,"new price is :" , p_4_3 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "4" :
+                                                                bar_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match bar_4 :
+                                                                    case "1" :
+                                                                        name_4_4 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_4_4)
+                                                                    case "2" :
+                                                                        p_4_4 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_4_4)
+                                                                    case "3" :
+                                                                        name_4_4 = input("please enter new name :\n")
+                                                                        p_4_4 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_4_4, "and" ,"new price is :" , p_4_4 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "5" :
+                                                                bar_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match bar_5 :
+                                                                    case "1" :
+                                                                        name_4_5 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_4_5)
+                                                                    case "2" :
+                                                                        p_4_5 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_4_5)
+                                                                    case "3" :
+                                                                        name_4_5 = input("please enter new name :\n")
+                                                                        p_4_5 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_4_5, "and" ,"new price is :" , p_4_5 )
+                                                                    
+                                                                    case _ :
+                                                                        break
+                                                            case "6" :
+                                                                sarfas_4 = input("please enter new name for sarfasl_4 :\n")
+                                        
+                                                            case _ :
+                                                                break
+                                                    else :
+                                                        print("you are block")
+                                                        break
+
+                                                        
+                                                case "5" :
+                                                    if j < 3 :
+                                                        print("\n\n" , "1.",name_5_1 ,"..." ,p_5_1, "\n", "2.", name_5_2 ,"..." ,p_5_2, "\n", "3.", name_5_3 ,"..." ,p_5_3, "\n", "4.", name_5_4 ,"..." ,p_5_4, "\n", "5.", name_5_5 ,"..." ,p_5_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
+                                                        m_boardgame = input()
+                                    
+                                                        match m_boardgame :
+                                                            case "1" :
+
+                                                                boardgame_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match boardgame_1 :
+                                                                    case "1" :
+                                                                        name_5_1 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_5_1)
+                                                                    case "2" :
+                                                                        p_5_1 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_5_1)
+                                                                    case "3" :
+                                                                        name_5_1 = input("please enter new name :\n")
+                                                                        p_5_1 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_5_1, "and" ,"new price is :" , p_5_1 )
+                                                                    case _ :
+                                                                        break
+                                                                
+                                                                
+                                                            case "2" :
+                                                                boardgame_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match boardgame_2 :
+                                                                    case "1" :
+                                                                        name_5_2 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_5_2)
+                                                                    case "2" :
+                                                                        p_5_2 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_5_2)
+                                                                    case "3" :
+                                                                        name_5_2 = input("please enter new name :\n")
+                                                                        p_5_2 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_5_2, "and" ,"new price is :" , p_5_2 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "3" :
+                                                                boardgame_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match boardgame_3 :
+                                                                    case "1" :
+                                                                        name_5_3 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_5_3)
+                                                                    case "2" :
+                                                                        p_5_3 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_5_3)
+                                                                    case "3" :
+                                                                        name_5_3 = input("please enter new name :\n")
+                                                                        p_5_3 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_5_3, "and" ,"new price is :" , p_5_3 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "4" :
+                                                                boardgame_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match boardgame_4 :
+                                                                    case "1" :
+                                                                        name_5_4 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_5_4)
+                                                                    case "2" :
+                                                                        p_5_4 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_5_4)
+                                                                    case "3" :
+                                                                        name_5_4 = input("please enter new name :\n")
+                                                                        p_5_4 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_5_4, "and" ,"new price is :" , p_5_4 )
+                                                                    case _ :
+                                                                        break
+                                    
+                                                            case "5" :
+                                                                boardgame_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match boardgame_5 :
+                                                                    case "1" :
+                                                                        name_5_5 = input("please enter new name :\n")
+                                                                        print("new name is :" , name_5_5)
+                                                                    case "2" :
+                                                                        p_5_5 = int(input("please enter new price :\n"))
+                                                                        print("new price is :" , p_5_5)
+                                                                    case "3" :
+                                                                        name_5_5 = input("please enter new name :\n")
+                                                                        p_5_5 = int(input("please enter new price :\n"))
+                                                                        print("new name is :" , name_5_5, "and" ,"new price is :" , p_5_5 )
+                                                                    case _ :
+                                                                        break
+                                                            case "6" :
+                                                                sarfas_5 = input("please enter new name for sarfasl_5 :\n")
+                                        
+                                                            case _ :
+                                                                break
+                                                    else :
+                                                        print("you are block")
+                                                        break
+
+                                                case "6" :
+                                                    if j < 3 :
+                                                        d_servis = float(input("please enter service percent :\n"))
+                                                        d_servis = d_servis /100
+                                                        tax = float(input("please enter tax percent :\n"))
+                                                        tax = tax /100
+                                                        s_peyk = int(input("please enter peyk price :\n"))
+                                                        break
+                                                    else :
+                                                        print("you are block")
+                                                        break
+
+                                                case "7" :
+                                                    if j < 3 :
+                                                        gozaresh = input("\n1.amare foroshe mahsoolat \n2.por forosh tarin mahsoolat \n3.kam forosh tarin mahsoolat \n4.amare kole forosh \n5.back to main menu \n")
+                                                        match gozaresh :
+                                                            case "1" :
+
+                                                                print("\n", sarfas_1 , "...." , total_num_1_1+total_num_1_2+total_num_1_3+total_num_1_4+total_num_1_5 , "adad" , "..." , total_sell_1_1+total_sell_1_2+total_sell_1_3+total_sell_1_4+total_sell_1_5)
+                                                                print("\n", sarfas_2 , "...." , total_num_2_1+total_num_2_2+total_num_2_3+total_num_2_4+total_num_2_5 , "adad" , "..." , total_sell_2_1+total_sell_2_2+total_sell_2_3+total_sell_2_4+total_sell_2_5)
+                                                                print("\n", sarfas_3 , "...." , total_num_3_1+total_num_3_2+total_num_3_3+total_num_3_4+total_num_3_5 , "adad" , "..." , total_sell_3_1+total_sell_3_2+total_sell_3_3+total_sell_3_4+total_sell_3_5)
+                                                                print("\n", sarfas_4 , "...." , total_num_4_1+total_num_4_2+total_num_4_3+total_num_4_4+total_num_4_5 , "adad" , "..." , total_sell_4_1+total_sell_4_2+total_sell_4_3+total_sell_4_4+total_sell_4_5)
+                                                                print("\n", sarfas_5 , "...." , total_num_5_1+total_num_5_2+total_num_5_3+total_num_5_4+total_num_5_5 , "adad" , "..." , total_sell_5_1+total_sell_5_2+total_sell_5_3+total_sell_5_4+total_sell_5_5)
+
+                                                                print("\n1.", name_1_1 , "...." , total_num_1_1 , "adad" , "..." , total_sell_1_1)
+                                                                print("\n2.", name_1_2 , "...." , total_num_1_2 , "adad" , "..." , total_sell_1_2)
+                                                                print("\n3.", name_1_3 , "...." , total_num_1_3 , "adad" , "..." , total_sell_1_3)
+                                                                print("\n4.", name_1_4 , "...." , total_num_1_4 , "adad" , "..." , total_sell_1_4)
+                                                                print("\n5.", name_1_5 , "...." , total_num_1_5 , "adad" , "..." , total_sell_1_5)
+
+                                                                print("\n6.", name_2_1 , "...." , total_num_2_1 , "adad" , "..." , total_sell_2_1)
+                                                                print("\n7.", name_2_2 , "...." , total_num_2_2 , "adad" , "..." , total_sell_2_2)
+                                                                print("\n8.", name_2_3 , "...." , total_num_2_3 , "adad" , "..." , total_sell_2_3)
+                                                                print("\n9.", name_2_4 , "...." , total_num_2_4 , "adad" , "..." , total_sell_2_4)
+                                                                print("\n10.", name_2_5 , "...." , total_num_2_5 , "adad" , "..." , total_sell_2_5)
+
+                                                                print("\n11.", name_3_1 , "...." , total_num_3_1 , "adad" , "..." , total_sell_3_1)
+                                                                print("\n12.", name_3_2 , "...." , total_num_3_2 , "adad" , "..." , total_sell_3_2)
+                                                                print("\n13.", name_3_3 , "...." , total_num_3_3 , "adad" , "..." , total_sell_3_3)
+                                                                print("\n14.", name_3_4 , "...." , total_num_3_4 , "adad" , "..." , total_sell_3_4)
+                                                                print("\n15.", name_3_5 , "...." , total_num_3_5 , "adad" , "..." , total_sell_3_5)
+
+                                                                print("\n16.", name_4_1 , "...." , total_num_4_1 , "adad" , "..." , total_sell_4_1)
+                                                                print("\n17.", name_4_2 , "...." , total_num_4_2 , "adad" , "..." , total_sell_4_2)
+                                                                print("\n18.", name_4_3 , "...." , total_num_4_3 , "adad" , "..." , total_sell_4_3)
+                                                                print("\n19.", name_4_4 , "...." , total_num_4_4 , "adad" , "..." , total_sell_4_4)
+                                                                print("\n20.", name_4_5 , "...." , total_num_4_5 , "adad" , "..." , total_sell_4_5)
+
+                                                                print("\n21.", name_5_1 , "...." , total_num_5_1 , "adad" , "..." , total_sell_5_1)
+                                                                print("\n22.", name_5_2 , "...." , total_num_5_2 , "adad" , "..." , total_sell_5_2)
+                                                                print("\n23.", name_5_3 , "...." , total_num_5_3 , "adad" , "..." , total_sell_5_3)
+                                                                print("\n24.", name_5_4 , "...." , total_num_5_4 , "adad" , "..." , total_sell_5_4)
+                                                                print("\n25.", name_5_5 , "...." , total_num_5_5 , "adad" , "..." , total_sell_5_5)
+
+
+                                                                
+                                                            case "2" :
+                                                                print("por forosh tarin mahsool " ,total_por_forosh_name , "...." , total_por_forosh , "adad")
+                                                                print("por forosh tarin mahsoole ",sarfas_1 ,por_forosh_name_1 , "...." , por_forosh_1 , "adad")
+                                                                print("por forosh tarin mahsoole ",sarfas_2 ,por_forosh_name_2 , "...." , por_forosh_2 , "adad")
+                                                                print("por forosh tarin mahsoole ",sarfas_3 ,por_forosh_name_3 , "...." , por_forosh_3 , "adad")
+                                                                print("por forosh tarin mahsoole ",sarfas_4 ,por_forosh_name_4 , "...." , por_forosh_4 , "adad")
+                                                                print("por forosh tarin mahsoole ",sarfas_5 ,por_forosh_name_5 , "...." , por_forosh_5 , "adad")
+
+
+
+                                                            case "3" :
+                                                                print("kam forosh tarin mahsool " ,total_kam_forosh_name , "...." , total_kam_forosh , "adad")
+                                                                print("kam forosh tarin mahsoole ",sarfas_1 ,kam_forosh_name_1 , "...." , kam_forosh_1 , "adad")
+                                                                print("kam forosh tarin mahsoole ",sarfas_2 ,kam_forosh_name_2 , "...." , kam_forosh_2 , "adad")
+                                                                print("kam forosh tarin mahsoole ",sarfas_3 ,kam_forosh_name_3 , "...." , kam_forosh_3 , "adad")
+                                                                print("kam forosh tarin mahsoole ",sarfas_4 ,kam_forosh_name_4 , "...." , kam_forosh_4 , "adad")
+                                                                print("kam forosh tarin mahsoole ",sarfas_5 ,kam_forosh_name_5 , "...." , kam_forosh_5 , "adad")
+                                                            case "4" :
+                                                                print("\ntedade factor haye sader shode :", tedad_factor ,"\ntedade mahsoolate sefaresh dade shode :" , total_num , "\nmajmooe kole daramd :" , int(total_forosh) , "\ntedade biron bar :", num_peyk , "\ntedade salon :" , num_salon)
+                                                        
+                                                            case _ :
+                                                                break
+
+                                                    else :
+                                                        print("you are block")
+                                                        break
+
+
+                                                case "8" :
+                                                    if j < 3 :
+                                                        for i in range(3):
+                                                            change_password = input("please enter backup password :\n")
+                                                            if change_password == backup_password :
+                                                                J = 0
+                                                                change = input ("1.change username \n2.change password\n3.change username and password\n4.change backup password \n")
+                                                                match change :
+                                                                    case "1" :
+                                                                        main_username = input("please enter new username :\n")
+                                                                        print("new username is :" , main_username)
+                                                                    case "2" :
+                                                                        main_password = input("please enter new password :\n")
+                                                                        print("new password is :" , main_password)
+                                                                    case "3" :
+                                                                        main_username = input("please enter new username :\n")
+                                                                        main_password = input("please enter new password :\n")
+                                                                        print("new username is :" , main_username, "and" ,"new password is :" , main_password )
+                                                                    case "4" :
+                                                                        backup_password = input("please enter new backup password")
+                                                                    case _ :
+                                                                        break
+                                                            else :
+                                                                print("backup password wrong")
+                                                                j+=1
+                                                            if j == 3 :
+                                                                print("you are block")
+                                                                break
+                                                    else :
+                                                        print("you are block")
+                                                        break
+                                                        
+
+                                else :
+                                    print("username or password wrong")
+                                
+                                    k +=1
+                                    if k == 3 :
+                                        print("you are block")
+                                        break
 
                         else :
-                            print("username or password wrong")
-                        
-                            k +=1
-                            if k == 3 :
-                                print("you are block")
+                            print("you are block")
+                            break
+    
+
+                    case _ :
+                        break
+        else :
+            bazyabi = input("1.bazyabi admin \n2.moshtari\n")
+            match bazyabi :
+                case "1" :
+                    b_password = input("please enter bazyabi password :\n")
+                    if b_password == bazyabi_password :
+                        k = 0
+                        print("you are unblocked")
+                        while True :
+                            new_bazyabi_password = input("lotfan ramze bazyabi ra avaz konid :\n")
+                            if new_bazyabi_password == bazyabi_password :
+                                print("new bazyabi password wrong")
+                                continue
+                            else :
+                                bazyabi_password = new_bazyabi_password
                                 break
-
-                else :
-                    print("you are block")
+                case _:
                     break
- 
-
-            case _ :
-                break
-
+        
                 
     while True :
 

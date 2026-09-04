@@ -229,8 +229,6 @@ while True :
                                 username = input("please enter username :")
                                 password = input("please enter password :")
 
-                                
-
                                 if username == main_username and password == main_password :
 
                                     k = 0
@@ -2502,10 +2500,7 @@ while True :
                             continue
                         case _ :
                             break
-                
-
-
-                
+                 
         print ("\n     *** soorat hesab ***\n")    
             
         if num_1_1 > 0 :

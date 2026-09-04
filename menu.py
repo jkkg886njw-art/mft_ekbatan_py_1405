@@ -1514,6 +1514,9 @@ while True :
                                             if e1 > 0 and e1 <= n_1_1 :
                                         
                                                 num_1_1 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_1_1)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1528,6 +1531,9 @@ while True :
                                             if e1 > 0 and e1 <= n_1_2:
                                         
                                                 num_1_2 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_1_2)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1542,6 +1548,9 @@ while True :
                                             if e1 > 0 and e1 <= n_1_3:
                                         
                                                 num_1_3 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_1_3)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1556,6 +1565,9 @@ while True :
                                             if e1 > 0 and e1 <= n_1_4:
                                         
                                                 num_1_4 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_1_4)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1570,6 +1582,9 @@ while True :
                                             if e1 > 0 and e1 <= n_1_5:
                                         
                                                 num_1_5 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_1_5)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1584,6 +1599,9 @@ while True :
                                             if e1 > 0 and e1 <= n_2_1:
                                         
                                                 num_2_1 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_2_1)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1598,6 +1616,9 @@ while True :
                                             if e1 > 0 and e1 <= n_2_2:
                                         
                                                 num_2_2 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_2_2)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1612,6 +1633,9 @@ while True :
                                             if e1 > 0 and e1 <= n_2_3:
                                         
                                                 num_2_3 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_2_3)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1626,6 +1650,9 @@ while True :
                                             if e1 > 0 and e1 <= n_2_4:
                                         
                                                 num_2_4 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_2_4)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1640,6 +1667,9 @@ while True :
                                             if e1 > 0 and e1 <= n_2_5:
                                         
                                                 num_2_5 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_2_5)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1654,6 +1684,9 @@ while True :
                                             if e1 > 0 and e1 <= n_3_1:
                                         
                                                 num_3_1 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_3_1)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1668,6 +1701,9 @@ while True :
                                             if e1 > 0 and e1 <= n_3_2:
                                         
                                                 num_3_2 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_3_2)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1682,6 +1718,9 @@ while True :
                                             if e1 > 0 and e1 <= n_3_3:
                                         
                                                 num_3_3 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_3_3)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1696,6 +1735,9 @@ while True :
                                             if e1 > 0 and e1 <= n_3_4:
                                         
                                                 num_3_4 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_3_4)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1710,6 +1752,9 @@ while True :
                                             if e1 > 0 and e1 <= n_3_5:
                                         
                                                 num_3_5 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_3_5)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1724,6 +1769,9 @@ while True :
                                             if e1 > 0 and e1 <= n_4_1:
                                         
                                                 num_4_1 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_4_1)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1738,6 +1786,9 @@ while True :
                                             if e1 > 0 and e1 <= n_4_2:
                                         
                                                 num_4_2 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_4_2)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1752,6 +1803,9 @@ while True :
                                             if e1 > 0 and e1 <= n_4_3:
                                         
                                                 num_4_3 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_4_3)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1766,6 +1820,9 @@ while True :
                                             if e1 > 0 and e1 <= n_4_4:
                                         
                                                 num_4_4 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_4_4)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1780,6 +1837,9 @@ while True :
                                             if e1 > 0 and e1 <= n_4_5:
                                         
                                                 num_4_5 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_4_4)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1794,6 +1854,9 @@ while True :
                                             if e1 > 0 and e1 <= n_5_1:
                                         
                                                 num_5_1 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_5_1)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1808,6 +1871,9 @@ while True :
                                             if e1 > 0 and e1 <= n_5_2:
                                         
                                                 num_5_2 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_5_2)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1822,6 +1888,9 @@ while True :
                                             if e1 > 0 and e1 <= n_5_3:
                                         
                                                 num_5_3 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_5_3)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1836,6 +1905,9 @@ while True :
                                             if e1 > 0 and e1 <= n_5_4:
                                         
                                                 num_5_4 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_5_4)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")
@@ -1850,6 +1922,9 @@ while True :
                                             if e1 > 0 and e1 <= n_5_5:
                                         
                                                 num_5_5 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_5_5)
+
                                                 break
                                             else :
                                                 print("vorodi sahih nist")

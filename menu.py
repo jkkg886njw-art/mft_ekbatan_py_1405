@@ -233,7 +233,7 @@ while True :
 
                                 if username == main_username and password == main_password :
 
-                                    K = 0
+                                    k = 0
 
                                     while True :
 
@@ -822,7 +822,7 @@ while True :
                                                         for i in range(3):
                                                             change_password = input("please enter backup password :\n")
                                                             if change_password == backup_password :
-                                                                J = 0
+                                                                j = 0
                                                                 change = input ("1.change username \n2.change password\n3.change username and password\n4.change backup password \n")
                                                                 match change :
                                                                     case "1" :

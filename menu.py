@@ -10,6 +10,8 @@ print("wellcome to my program")
 sarfas_1 = "pish ghaza"
 
 name_1_1 = "soup"
+
+name_p_1_1 = name_1_1
 p_1_1 = 250000
 
 name_1_2 = "salad sezar"
@@ -200,6 +202,10 @@ total_sell_5_5 = 0
 num_salon = 0
 num_peyk = 0
 
+main_username = "admin"
+main_password = "admin"
+backup_password = "12345"
+
 
 while True :
 
@@ -211,15 +217,15 @@ while True :
                 username = input("please enter username :")
                 password = input("please enter password :")
 
-                if username == "admin" and password == "admin" :
+                if username == main_username and password == main_password :
 
                 
                     while True :
 
-                        print("\n" , "\n1.edit" , sarfas_1 ,"\n2.edit",sarfas_2,"\n3.edit", sarfas_3, "\n4.edit",sarfas_4,"\n5.edit", sarfas_5, "\n6.edit service/tax/peyk \n7.gozareshat \n8.exit\n")
+                        print("\n" , "\n1.edit" , sarfas_1 ,"\n2.edit",sarfas_2,"\n3.edit", sarfas_3, "\n4.edit",sarfas_4,"\n5.edit", sarfas_5, "\n6.edit service/tax/peyk \n7.gozareshat \n8.change username and password \n9.exit\n")
                         menu = input()
                         
-                        if menu == "8" :
+                        if menu == "9" :
                             break
 
                         while True :
@@ -762,6 +768,26 @@ while True :
                                     
                                         case _ :
                                             break
+                                case "8" :
+                                    change_password = input("please enter backup password :\n")
+                                    if change_password == backup_password
+                                    change = input ("1.change username \n2.change password\n3.change username and password\n4.change backup password \n")
+                                    match change :
+                                        case "1" :
+                                            main_username = input("please enter new username :\n")
+                                            print("new username is :" , main_username)
+                                        case "2" :
+                                            main_password = input("please enter new password :\n")
+                                            print("new password is :" , main_password)
+                                        case "3" :
+                                            main_username = input("please enter new name :\n")
+                                            main_password = input("please enter new price :\n")
+                                            print("new username is :" , main_username, "and" ,"new password is :" , main_password )
+                                        case "4" :
+                                            backup_password = input("please enter new backup password")
+                                        case _ :
+                                            break
+                                    
 
                 else :
                     print("username or password wrong")
@@ -840,9 +866,245 @@ while True :
         total_price = 0
         total_num = 0
 
+        #ziba sazie menu
+
+        
+
+        while True :
+            a = 0
+            for i in name_1_1 :
+                a+=1
+            if a < 30 :
+                name_1_1 = name_1_1 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_1_2 :
+                a+=1
+            if a < 30 :
+                name_1_2 = name_1_2 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_1_3 :
+                a+=1
+            if a < 30 :
+                name_1_3 = name_1_3 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_1_4 :
+                a+=1
+            if a < 30 :
+                name_1_4 = name_1_4 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_1_5 :
+                a+=1
+            if a < 30 :
+                name_1_5 = name_1_5 +"."
+            else :
+                break
+        
+        
+
+        while True :
+            a = 0
+            for i in name_2_1 :
+                a+=1
+            if a < 30 :
+                name_2_1 = name_2_1 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_2_2 :
+                a+=1
+            if a < 30 :
+                name_2_2 = name_2_2 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_2_3 :
+                a+=1
+            if a < 30 :
+                name_2_3 = name_2_3 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_2_4 :
+                a+=1
+            if a < 30 :
+                name_2_4 = name_2_4 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_2_5 :
+                a+=1
+            if a < 30 :
+                name_2_5 = name_2_5 +"."
+            else :
+                break
+        
+
+        while True :
+            a = 0
+            for i in name_3_1 :
+                a+=1
+            if a < 30 :
+                name_3_1 = name_3_1 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_3_2 :
+                a+=1
+            if a < 30 :
+                name_3_2 = name_3_2 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_3_3 :
+                a+=1
+            if a < 30 :
+                name_3_3 = name_3_3 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_3_4 :
+                a+=1
+            if a < 30 :
+                name_3_4 = name_3_4 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_3_5 :
+                a+=1
+            if a < 30 :
+                name_3_5 = name_3_5 +"."
+            else :
+                break
+        
+
+        while True :
+            a = 0
+            for i in name_4_1 :
+                a+=1
+            if a < 30 :
+                name_4_1 = name_4_1 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_4_2 :
+                a+=1
+            if a < 30 :
+                name_4_2 = name_4_2 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_4_3 :
+                a+=1
+            if a < 30 :
+                name_4_3 = name_4_3 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_4_4 :
+                a+=1
+            if a < 30 :
+                name_4_4 = name_4_4 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_4_5 :
+                a+=1
+            if a < 30 :
+                name_4_5 = name_4_5 +"."
+            else :
+                break
+
+        
+        while True :
+            a = 0
+            for i in name_5_1 :
+                a+=1
+            if a < 30 :
+                name_5_1 = name_5_1 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_5_2 :
+                a+=1
+            if a < 30 :
+                name_5_2 = name_5_2 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_5_3 :
+                a+=1
+            if a < 30 :
+                name_5_3 = name_5_3 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_5_4 :
+                a+=1
+            if a < 30 :
+                name_5_4 = name_5_4 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_5_5 :
+                a+=1
+            if a < 30 :
+                name_5_5 = name_5_5 +"."
+            else :
+                break
+
+   
+
         while True :
 
-            print("\n" , "\n1." , sarfas_1 ,"\n2.",sarfas_2,"\n3.", sarfas_3, "\n4.",sarfas_4,"\n5.", sarfas_5, "\n6.soorat hesab \n")
+            print("\n" , "\n1." , sarfas_1 ,"\n2.",sarfas_2,"\n3.", sarfas_3, "\n4.",sarfas_4,"\n5.", sarfas_5, "\n\n6. soorat hesab \n")
             menu = input()
 
             if menu == "6" :
@@ -880,7 +1142,7 @@ while True :
                 match menu :
 
                     case "1" :
-                        print("\n\n" , "1.",name_1_1 ,"..." ,p_1_1, "\n", "2.", name_1_2 ,"..." ,p_1_2, "\n", "3.", name_1_3 ,"..." ,p_1_3, "\n", "4.", name_1_4 ,"..." ,p_1_4, "\n", "5.", name_1_5 ,"..." ,p_1_5, "\n", "\n6.back to main menu\n")
+                        print("\n\n" , "1.",name_p_1_1 ,"..." ,p_1_1, "\n", "2.", name_1_2 ,"..." ,p_1_2, "\n", "3.", name_1_3 ,"..." ,p_1_3, "\n", "4.", name_1_4 ,"..." ,p_1_4, "\n", "5.", name_1_5 ,"..." ,p_1_5, "\n", "\n6.back to main menu\n")
                         m_sarfasl_1 = input()
                         
                         match m_sarfasl_1 :

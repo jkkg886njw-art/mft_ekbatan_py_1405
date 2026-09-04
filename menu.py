@@ -216,7 +216,7 @@ while True :
                 
                     while True :
 
-                        print("\n" , "\n1.edit" , sarfas_1 ,"\n2.edit",sarfas_2,"\n3.edit", sarfas_3, "\n4.edit",sarfas_4,"\n5.edit", sarfas_5, "\n6.service/tax/peyk \n7.gozareshat \n8.exit\n")
+                        print("\n" , "\n1.edit" , sarfas_1 ,"\n2.edit",sarfas_2,"\n3.edit", sarfas_3, "\n4.edit",sarfas_4,"\n5.edit", sarfas_5, "\n6.edit service/tax/peyk \n7.gozareshat \n8.exit\n")
                         menu = input()
                         
                         if menu == "8" :

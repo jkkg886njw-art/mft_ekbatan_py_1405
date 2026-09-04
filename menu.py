@@ -1439,419 +1439,492 @@ while True :
                 if num_5_5 > 0 :
                     print(name_5_5, "...." ,num_5_5, " adad ")
 
-                edit = input ("baraye eslahe sefaresh 0 ra vared namayid")
-                match edit :
-                    case "0" :
-                        print("kodam sefaresh ra mikhahid eslah konid :")
-                        if num_1_1 > 0 :
-                            print(name_1_1, "...." ,num_1_1, " enter 1 " )
-                        if num_1_2 > 0 :
-                            print(name_1_2, "...." ,num_1_2, " enter 2 ")
-                        if num_1_3 > 0 :
-                            print(name_1_3, "...." ,num_1_3, " enter 3 ")
-                        if num_1_4 > 0 :
-                            print(name_1_4, "...." ,num_1_4, " enter 4 ")
-                        if num_1_5 > 0 :
-                            print(name_1_5, "...." ,num_1_5, " enter 5 ")
+                
+                while True :
+                    edit = input ("baraye eslahe sefaresh 0 ra vared namayid")
+
+                    match edit :
+                        case "0" :
+                            print("kodam sefaresh ra mikhahid eslah konid :")
+                            if num_1_1 > 0 :
+                                print(name_1_1, "...." ,num_1_1, " enter 1 " )
+                            if num_1_2 > 0 :
+                                print(name_1_2, "...." ,num_1_2, " enter 2 ")
+                            if num_1_3 > 0 :
+                                print(name_1_3, "...." ,num_1_3, " enter 3 ")
+                            if num_1_4 > 0 :
+                                print(name_1_4, "...." ,num_1_4, " enter 4 ")
+                            if num_1_5 > 0 :
+                                print(name_1_5, "...." ,num_1_5, " enter 5 ")
 
 
-                        if num_2_1 > 0 :
-                            print(name_2_1, "...." ,num_2_1, " enter 6 " )
-                        if num_2_2 > 0 :
-                            print(name_2_2, "...." ,num_2_2, " enter 7 ")
-                        if num_2_3 > 0 :
-                            print(name_2_3, "...." ,num_2_3, " enter 8 ")
-                        if num_2_4 > 0 :
-                            print(name_2_4, "...." ,num_2_4, " enter 9 ")
-                        if num_2_5 > 0 :
-                            print(name_2_5, "...." ,num_2_5, " enter 10 ")
+                            if num_2_1 > 0 :
+                                print(name_2_1, "...." ,num_2_1, " enter 6 " )
+                            if num_2_2 > 0 :
+                                print(name_2_2, "...." ,num_2_2, " enter 7 ")
+                            if num_2_3 > 0 :
+                                print(name_2_3, "...." ,num_2_3, " enter 8 ")
+                            if num_2_4 > 0 :
+                                print(name_2_4, "...." ,num_2_4, " enter 9 ")
+                            if num_2_5 > 0 :
+                                print(name_2_5, "...." ,num_2_5, " enter 10 ")
 
 
-                        if num_3_1 > 0 :
-                            print(name_3_1, "...." ,num_3_1, " enter 11 " )
-                        if num_3_2 > 0 :
-                            print(name_3_2, "...." ,num_3_2, " enter 12 ")
-                        if num_3_3 > 0 :
-                            print(name_3_3, "...." ,num_3_3, " enter 13 ")
-                        if num_3_4 > 0 :
-                            print(name_3_4, "...." ,num_3_4, " enter 14 ")
-                        if num_3_5 > 0 :
-                            print(name_3_5, "...." ,num_3_5, " enter 15 ")
+                            if num_3_1 > 0 :
+                                print(name_3_1, "...." ,num_3_1, " enter 11 " )
+                            if num_3_2 > 0 :
+                                print(name_3_2, "...." ,num_3_2, " enter 12 ")
+                            if num_3_3 > 0 :
+                                print(name_3_3, "...." ,num_3_3, " enter 13 ")
+                            if num_3_4 > 0 :
+                                print(name_3_4, "...." ,num_3_4, " enter 14 ")
+                            if num_3_5 > 0 :
+                                print(name_3_5, "...." ,num_3_5, " enter 15 ")
 
-                        if num_4_1 > 0 :
-                            print(name_4_1, "...." ,num_4_1, " enter 16 " )
-                        if num_4_2 > 0 :
-                            print(name_4_2, "...." ,num_4_2, " enter 17 ")
-                        if num_4_3 > 0 :
-                            print(name_4_3, "...." ,num_4_3, " enter 18 ")
-                        if num_4_4 > 0 :
-                            print(name_4_4, "...." ,num_4_4, " enter 19 ")
-                        if num_4_5 > 0 :
-                            print(name_4_5, "...." ,num_4_5, " enter 20 ")
+                            if num_4_1 > 0 :
+                                print(name_4_1, "...." ,num_4_1, " enter 16 " )
+                            if num_4_2 > 0 :
+                                print(name_4_2, "...." ,num_4_2, " enter 17 ")
+                            if num_4_3 > 0 :
+                                print(name_4_3, "...." ,num_4_3, " enter 18 ")
+                            if num_4_4 > 0 :
+                                print(name_4_4, "...." ,num_4_4, " enter 19 ")
+                            if num_4_5 > 0 :
+                                print(name_4_5, "...." ,num_4_5, " enter 20 ")
 
-                        if num_5_1 > 0 :
-                            print(name_5_1, "...." ,num_5_1, " enter 21 " )
-                        if num_5_2 > 0 :
-                            print(name_5_2, "...." ,num_5_2, " enter 22 ")
-                        if num_5_3 > 0 :
-                            print(name_5_3, "...." ,num_5_3, " enter 23 ")
-                        if num_5_4 > 0 :
-                            print(name_5_4, "...." ,num_5_4, " enter 24 ")
-                        if num_5_5 > 0 :
-                            print(name_5_5, "...." ,num_5_5, " enter 25 ")
-                        
-                        edit_m = input()
-                        match edit_m :
-                            case "1" :
-                                while True :
+                            if num_5_1 > 0 :
+                                print(name_5_1, "...." ,num_5_1, " enter 21 " )
+                            if num_5_2 > 0 :
+                                print(name_5_2, "...." ,num_5_2, " enter 22 ")
+                            if num_5_3 > 0 :
+                                print(name_5_3, "...." ,num_5_3, " enter 23 ")
+                            if num_5_4 > 0 :
+                                print(name_5_4, "...." ,num_5_4, " enter 24 ")
+                            if num_5_5 > 0 :
+                                print(name_5_5, "...." ,num_5_5, " enter 25 ")
+                            
+                            edit_m = input()
+                            match edit_m :
+                                case "1" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_1_1 :
-                                    
-                                            num_1_1 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_1_1 :
+                                        
+                                                num_1_1 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "2" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "2" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_1_2:
-                                    
-                                            num_1_2 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_1_2:
+                                        
+                                                num_1_2 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "3" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "3" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_1_3:
-                                    
-                                            num_1_3 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_1_3:
+                                        
+                                                num_1_3 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "4" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "4" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_1_4:
-                                    
-                                            num_1_4 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_1_4:
+                                        
+                                                num_1_4 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "5" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "5" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_1_5:
-                                    
-                                            num_1_5 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_1_5:
+                                        
+                                                num_1_5 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "6" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "6" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_2_1:
-                                    
-                                            num_2_1 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_2_1:
+                                        
+                                                num_2_1 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "7" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "7" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_2_2:
-                                    
-                                            num_2_2 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_2_2:
+                                        
+                                                num_2_2 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "8" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "8" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_2_3:
-                                    
-                                            num_2_3 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_2_3:
+                                        
+                                                num_2_3 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "9" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "9" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_2_4:
-                                    
-                                            num_2_4 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_2_4:
+                                        
+                                                num_2_4 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "10" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "10" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_2_5:
-                                    
-                                            num_2_5 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_2_5:
+                                        
+                                                num_2_5 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "11" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "11" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_3_1:
-                                    
-                                            num_3_1 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_3_1:
+                                        
+                                                num_3_1 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "12" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "12" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_3_2:
-                                    
-                                            num_3_2 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_3_2:
+                                        
+                                                num_3_2 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "13" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "13" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_3_3:
-                                    
-                                            num_3_3 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_3_3:
+                                        
+                                                num_3_3 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "14" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "14" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_3_4:
-                                    
-                                            num_3_4 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_3_4:
+                                        
+                                                num_3_4 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "15" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "15" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_3_5:
-                                    
-                                            num_3_5 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_3_5:
+                                        
+                                                num_3_5 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "16" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "16" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_4_1:
-                                    
-                                            num_4_1 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_4_1:
+                                        
+                                                num_4_1 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "17" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "17" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_4_2:
-                                    
-                                            num_4_2 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_4_2:
+                                        
+                                                num_4_2 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "18" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "18" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_4_3:
-                                    
-                                            num_4_3 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_4_3:
+                                        
+                                                num_4_3 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "19" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "19" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_4_4:
-                                    
-                                            num_4_4 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_4_4:
+                                        
+                                                num_4_4 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "20" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "20" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_4_5:
-                                    
-                                            num_4_5 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_4_5:
+                                        
+                                                num_4_5 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "21" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "21" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_5_1:
-                                    
-                                            num_5_1 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_5_1:
+                                        
+                                                num_5_1 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "22" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "22" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_5_2:
-                                    
-                                            num_5_2 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_5_2:
+                                        
+                                                num_5_2 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "23" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "23" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_5_3:
-                                    
-                                            num_5_3 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_5_3:
+                                        
+                                                num_5_3 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "24" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "24" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_5_4:
-                                    
-                                            num_5_4 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_5_4:
+                                        
+                                                num_5_4 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            case "25" :
-                                while True :
+                                            print("vorodi bayad adad bashad")
+                                case "25" :
+                                    while True :
 
-                                    e1 = input("tedade morede nazar baraye eslah ra vared konid")
-                                    if e1.isdigit()==True :
-                                        e1 = int(e1)
-                                        if e1 > 0 and e1 <= n_5_5:
-                                    
-                                            num_5_5 -= e1
-                                            break
+                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= n_5_5:
+                                        
+                                                num_5_5 -= e1
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
                                         else :
-                                            print("vorodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
+                                            print("vorodi bayad adad bashad")
+                                case _ :
+                                    break
+
+                    print("   sefareshe eslah shode shoma\n")
+
+                    if num_1_1 > 0 :
+                        print(name_1_1, "...." ,num_1_1, " adad " )
+                    if num_1_2 > 0 :
+                        print(name_1_2, "...." ,num_1_2, " adad ")
+                    if num_1_3 > 0 :
+                        print(name_1_3, "...." ,num_1_3, " adad ")
+                    if num_1_4 > 0 :
+                        print(name_1_4, "...." ,num_1_4, " adad ")
+                    if num_1_5 > 0 :
+                        print(name_1_5, "...." ,num_1_5, " adad ")
+
+
+                    if num_2_1 > 0 :
+                        print(name_2_1, "...." ,num_2_1, " adad " )
+                    if num_2_2 > 0 :
+                        print(name_2_2, "...." ,num_2_2, " adad ")
+                    if num_2_3 > 0 :
+                        print(name_2_3, "...." ,num_2_3, " adad ")
+                    if num_2_4 > 0 :
+                        print(name_2_4, "...." ,num_2_4, " adad ")
+                    if num_2_5 > 0 :
+                        print(name_2_5, "...." ,num_2_5, " adad ")
+
+
+                    if num_3_1 > 0 :
+                        print(name_3_1, "...." ,num_3_1, " adad " )
+                    if num_3_2 > 0 :
+                        print(name_3_2, "...." ,num_3_2, " adad ")
+                    if num_3_3 > 0 :
+                        print(name_3_3, "...." ,num_3_3, " adad ")
+                    if num_3_4 > 0 :
+                        print(name_3_4, "...." ,num_3_4, " adad ")
+                    if num_3_5 > 0 :
+                        print(name_3_5, "...." ,num_3_5, " adad ")
+
+                    if num_4_1 > 0 :
+                        print(name_4_1, "...." ,num_4_1, " adad " )
+                    if num_4_2 > 0 :
+                        print(name_4_2, "...." ,num_4_2, " adad ")
+                    if num_4_3 > 0 :
+                        print(name_4_3, "...." ,num_4_3, " adad ")
+                    if num_4_4 > 0 :
+                        print(name_4_4, "...." ,num_4_4, " adad ")
+                    if num_4_5 > 0 :
+                        print(name_4_5, "...." ,num_4_5, " adad ")
+
+                    if num_5_1 > 0 :
+                        print(name_5_1, "...." ,num_5_1, " adad " )
+                    if num_5_2 > 0 :
+                        print(name_5_2, "...." ,num_5_2, " adad ")
+                    if num_5_3 > 0 :
+                        print(name_5_3, "...." ,num_5_3, " adad ")
+                    if num_5_4 > 0 :
+                        print(name_5_4, "...." ,num_5_4, " adad ")
+                    if num_5_5 > 0 :
+                        print(name_5_5, "...." ,num_5_5, " adad ")
+
+                    print("eslahe jadidi darid : 1.yes 2.no")
+                    pasokh = input()
+                    match pasokh :
+                        case "1" :
+                            continue
+                        case _ :
+                            break
+                
 
 
                 

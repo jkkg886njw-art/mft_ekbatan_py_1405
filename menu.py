@@ -1441,7 +1441,7 @@ while True :
 
                 
                 while True :
-                    edit = input ("baraye eslahe sefaresh 0 ra vared namayid")
+                    edit = input ("baraye eslahe sefaresh 0 ra vared namayid : \n dar gheyre in soorat baraye edame sefaresh enter ra bezanid\n")
 
                     match edit :
                         case "0" :
@@ -1917,7 +1917,7 @@ while True :
                     if num_5_5 > 0 :
                         print(name_5_5, "...." ,num_5_5, " adad ")
 
-                    print("eslahe jadidi darid : 1.yes 2.no")
+                    print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
                     pasokh = input()
                     match pasokh :
                         case "1" :

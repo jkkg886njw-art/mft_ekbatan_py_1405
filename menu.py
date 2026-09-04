@@ -758,7 +758,7 @@ while True :
                                             print("kam forosh tarin mahsoole ",sarfas_4 ,kam_forosh_name_4 , "...." , kam_forosh_4 , "adad")
                                             print("kam forosh tarin mahsoole ",sarfas_5 ,kam_forosh_name_5 , "...." , kam_forosh_5 , "adad")
                                         case "4" :
-                                            print("\ntedade factor haye sader shode :", tedad_factor ,"\ntedade mahsoolate sefaresh dade shode :" , total_num , "\nmajmooe kole daramd :" , total_forosh , "\ntedade biron bar :", num_peyk , "\ntedade salon :" , num_salon)
+                                            print("\ntedade factor haye sader shode :", tedad_factor ,"\ntedade mahsoolate sefaresh dade shode :" , total_num , "\nmajmooe kole daramd :" , int(total_forosh) , "\ntedade biron bar :", num_peyk , "\ntedade salon :" , num_salon)
                                     
                                         case _ :
                                             break
@@ -2082,8 +2082,8 @@ while True :
                                                 print("vorodi sahih nist")
                                         else :
                                             print("vorodi bayad adad bashad")
-                                case _ :
-                                    break
+                        case _ :
+                            break
 
                     print("   sefareshe eslah shode shoma\n")
 

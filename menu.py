@@ -1503,12 +1503,12 @@ while True :
                         edit_m = input()
                         match edit_m :
                             case "1" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_1_1 :
                                     
                                             num_1_1 -= e1
                                             break
@@ -1517,12 +1517,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "2" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_1_2:
                                     
                                             num_1_2 -= e1
                                             break
@@ -1531,12 +1531,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "3" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_1_3:
                                     
                                             num_1_3 -= e1
                                             break
@@ -1545,12 +1545,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "4" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_1_4:
                                     
                                             num_1_4 -= e1
                                             break
@@ -1559,12 +1559,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "5" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_1_5:
                                     
                                             num_1_5 -= e1
                                             break
@@ -1573,12 +1573,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "6" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_2_1:
                                     
                                             num_2_1 -= e1
                                             break
@@ -1587,12 +1587,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "7" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_2_2:
                                     
                                             num_2_2 -= e1
                                             break
@@ -1601,12 +1601,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "8" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_2_3:
                                     
                                             num_2_3 -= e1
                                             break
@@ -1615,12 +1615,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "9" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_2_4:
                                     
                                             num_2_4 -= e1
                                             break
@@ -1629,12 +1629,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "10" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_2_5:
                                     
                                             num_2_5 -= e1
                                             break
@@ -1643,12 +1643,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "11" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_3_1:
                                     
                                             num_3_1 -= e1
                                             break
@@ -1657,12 +1657,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "12" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_3_2:
                                     
                                             num_3_2 -= e1
                                             break
@@ -1671,12 +1671,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "13" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_3_3:
                                     
                                             num_3_3 -= e1
                                             break
@@ -1685,12 +1685,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "14" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_3_4:
                                     
                                             num_3_4 -= e1
                                             break
@@ -1699,12 +1699,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "15" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_3_5:
                                     
                                             num_3_5 -= e1
                                             break
@@ -1713,12 +1713,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "16" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_4_1:
                                     
                                             num_4_1 -= e1
                                             break
@@ -1727,12 +1727,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "17" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_4_2:
                                     
                                             num_4_2 -= e1
                                             break
@@ -1741,12 +1741,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "18" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_4_3:
                                     
                                             num_4_3 -= e1
                                             break
@@ -1755,12 +1755,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "19" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_4_4:
                                     
                                             num_4_4 -= e1
                                             break
@@ -1769,12 +1769,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "20" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_4_5:
                                     
                                             num_4_5 -= e1
                                             break
@@ -1783,12 +1783,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "21" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_5_1:
                                     
                                             num_5_1 -= e1
                                             break
@@ -1797,12 +1797,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "22" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_5_2:
                                     
                                             num_5_2 -= e1
                                             break
@@ -1811,12 +1811,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "23" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_5_3:
                                     
                                             num_5_3 -= e1
                                             break
@@ -1825,12 +1825,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "24" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_5_4:
                                     
                                             num_5_4 -= e1
                                             break
@@ -1839,12 +1839,12 @@ while True :
                                     else :
                                         print("vorodi bayad adad bashad")
                             case "25" :
-                                while true :
+                                while True :
 
                                     e1 = input("tedade morede nazar baraye eslah ra vared konid")
                                     if e1.isdigit()==True :
                                         e1 = int(e1)
-                                        if e1 > 0 :
+                                        if e1 > 0 and e1 <= n_5_5:
                                     
                                             num_5_5 -= e1
                                             break

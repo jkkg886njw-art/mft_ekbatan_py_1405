@@ -112,7 +112,7 @@ kam_forosh_name_4 = " "
 kam_forosh_name_5 = " "
 
 d_servis = 0.12
-tax = 0.09
+d_tax = 0.09
 s_peyk = 100000
 
 tedad_factor = 0
@@ -207,6 +207,7 @@ bazyabi_password = "54321"
 j = 0
 k = 0
 start = 0
+y = 0
 
 
 while True :
@@ -234,6 +235,9 @@ while True :
 
                             for l in range(3):
 
+                                if y == 1 :
+                                    break
+
                                 username = input("please enter username :")
                                 password = input("please enter password :")
 
@@ -245,8 +249,9 @@ while True :
 
                                         print("\n" , "\n1.edit" , sarfas_1 ,"\n2.edit",sarfas_2,"\n3.edit", sarfas_3, "\n4.edit",sarfas_4,"\n5.edit", sarfas_5, "\n6.edit service/tax/peyk \n7.gozareshat \n8.change username and password \n9.exit\n")
                                         menu = input()
-                                        
+                                        y = 0
                                         if menu == "9" :
+                                            y = 1
                                             break
 
                                         while True :
@@ -743,8 +748,8 @@ while True :
                                                     if j < 3 :
                                                         d_servis = float(input("please enter service percent :\n"))
                                                         d_servis = d_servis /100
-                                                        tax = float(input("please enter tax percent :\n"))
-                                                        tax = tax /100
+                                                        d_tax = float(input("please enter tax percent :\n"))
+                                                        d_tax = d_tax /100
                                                         s_peyk = int(input("please enter peyk price :\n"))
                                                         break
                                                     else :
@@ -1243,7 +1248,7 @@ while True :
                 match menu :
 
                     case "1" :
-                        print("\n\n" , "1.",name_p_1_1 ,"..." ,p_1_1, "\n", "2.", name_1_2 ,"..." ,p_1_2, "\n", "3.", name_1_3 ,"..." ,p_1_3, "\n", "4.", name_1_4 ,"..." ,p_1_4, "\n", "5.", name_1_5 ,"..." ,p_1_5, "\n", "\n6.back to main menu\n")
+                        print("\n\n" , "1.",name_1_1 ,"..." ,p_1_1, "\n", "2.", name_1_2 ,"..." ,p_1_2, "\n", "3.", name_1_3 ,"..." ,p_1_3, "\n", "4.", name_1_4 ,"..." ,p_1_4, "\n", "5.", name_1_5 ,"..." ,p_1_5, "\n", "\n6.back to main menu\n")
                         choice = input()
                         
                         match choice :
@@ -1882,7 +1887,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_1_1 :
+                                            if e1 > 0 and e1 <= num_1_1 :
                                         
                                                 num_1_1 -= e1
                                                 total_num -= e1
@@ -1905,7 +1910,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_1_2:
+                                            if e1 > 0 and e1 <= num_1_2:
                                         
                                                 num_1_2 -= e1
                                                 total_num -= e1
@@ -1928,7 +1933,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_1_3:
+                                            if e1 > 0 and e1 <= num_1_3:
                                         
                                                 num_1_3 -= e1
                                                 total_num -= e1
@@ -1951,7 +1956,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_1_4:
+                                            if e1 > 0 and e1 <= num_1_4:
                                         
                                                 num_1_4 -= e1
                                                 total_num -= e1
@@ -1974,7 +1979,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_1_5:
+                                            if e1 > 0 and e1 <= num_1_5:
                                         
                                                 num_1_5 -= e1
                                                 total_num -= e1
@@ -1997,7 +2002,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_2_1:
+                                            if e1 > 0 and e1 <= num_2_1:
                                         
                                                 num_2_1 -= e1
                                                 total_num -= e1
@@ -2020,7 +2025,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_2_2:
+                                            if e1 > 0 and e1 <= num_2_2:
                                         
                                                 num_2_2 -= e1
                                                 total_num -= e1
@@ -2043,7 +2048,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_2_3:
+                                            if e1 > 0 and e1 <= num_2_3:
                                         
                                                 num_2_3 -= e1
                                                 total_num -= e1
@@ -2066,7 +2071,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_2_4:
+                                            if e1 > 0 and e1 <= num_2_4:
                                         
                                                 num_2_4 -= e1
                                                 total_num -= e1
@@ -2089,7 +2094,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_2_5:
+                                            if e1 > 0 and e1 <= num_2_5:
                                         
                                                 num_2_5 -= e1
                                                 total_num -= e1
@@ -2112,7 +2117,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_3_1:
+                                            if e1 > 0 and e1 <= num_3_1:
                                         
                                                 num_3_1 -= e1
                                                 total_num -= e1
@@ -2135,7 +2140,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_3_2:
+                                            if e1 > 0 and e1 <= num_3_2:
                                         
                                                 num_3_2 -= e1
                                                 total_num -= e1
@@ -2158,7 +2163,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_3_3:
+                                            if e1 > 0 and e1 <= num_3_3:
                                         
                                                 num_3_3 -= e1
                                                 total_num -= e1
@@ -2181,7 +2186,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_3_4:
+                                            if e1 > 0 and e1 <= num_3_4:
                                         
                                                 num_3_4 -= e1
                                                 total_num -= e1
@@ -2204,7 +2209,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_3_5:
+                                            if e1 > 0 and e1 <= num_3_5:
                                         
                                                 num_3_5 -= e1
                                                 total_num -= e1
@@ -2227,7 +2232,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_4_1:
+                                            if e1 > 0 and e1 <= num_4_1:
                                         
                                                 num_4_1 -= e1
                                                 total_num -= e1
@@ -2250,7 +2255,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_4_2:
+                                            if e1 > 0 and e1 <= num_4_2:
                                         
                                                 num_4_2 -= e1
                                                 total_num -= e1
@@ -2273,7 +2278,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_4_3:
+                                            if e1 > 0 and e1 <= num_4_3:
                                         
                                                 num_4_3 -= e1
                                                 total_num -= e1
@@ -2296,7 +2301,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_4_4:
+                                            if e1 > 0 and e1 <= num_4_4:
                                         
                                                 num_4_4 -= e1
                                                 total_num -= e1
@@ -2319,7 +2324,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_4_5:
+                                            if e1 > 0 and e1 <= num_4_5:
                                         
                                                 num_4_5 -= e1
                                                 total_num -= e1
@@ -2342,7 +2347,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_5_1:
+                                            if e1 > 0 and e1 <= num_5_1:
                                         
                                                 num_5_1 -= e1
                                                 total_num -= e1
@@ -2365,7 +2370,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_5_2:
+                                            if e1 > 0 and e1 <= num_5_2:
                                         
                                                 num_5_2 -= e1
                                                 total_num -= e1
@@ -2388,7 +2393,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_5_3:
+                                            if e1 > 0 and e1 <= num_5_3:
                                         
                                                 num_5_3 -= e1
                                                 total_num -= e1
@@ -2411,7 +2416,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_5_4:
+                                            if e1 > 0 and e1 <= num_5_4:
                                         
                                                 num_5_4 -= e1
                                                 total_num -= e1
@@ -2434,7 +2439,7 @@ while True :
                                             break
                                         if e1.isdigit()==True :
                                             e1 = int(e1)
-                                            if e1 > 0 and e1 <= n_5_5:
+                                            if e1 > 0 and e1 <= num_5_5:
                                         
                                                 num_5_5 -= e1
                                                 total_num -= e1
@@ -2582,16 +2587,16 @@ while True :
             s_peyk = 0
         if p_peyk > 0 :
 
-            if total_num > 20 or total_price > 3000 :
+            if total_num > 20 or total_price > 3000000 :
                 print("...*** ersal rayegan ***...")
                 s_peyk = 0
             else :
                 print("hazine ersal.................." , s_peyk)
 
+        tax = total_price*d_tax
+        print("tax......................." , int(tax))
 
-        print("tax......................." , int(total_price*tax/100))
-
-        total_price = total_price  * (1 + tax) + servis + s_peyk
+        total_price = total_price  +  tax + servis + s_peyk
 
         print("\nmablaghe ghabele pardakht ....." , int(total_price))
 

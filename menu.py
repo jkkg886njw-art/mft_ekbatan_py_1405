@@ -204,15 +204,22 @@ main_username = "admin"
 main_password = "admin"
 backup_password = "12345"
 bazyabi_password = "54321"
+
+#shomarande change password
 j = 0
+#shomarande passworde admin
 k = 0
 start = 0
-y = 0
-
+administrator_exit = 0
+program_exit = 0
+no_order = 0
 
 while True :
 
     while True :
+
+        if program_exit == 1 :
+            break
 
         if start == "2" :
             break
@@ -221,25 +228,46 @@ while True :
 
             while True :
                 
-                start = input("1.administrator \n2.moshtari\n")
+                start = input("1.administrator \n2.sefaresh giri\n0.EXIT_0_\n")
+               
+
+                if start == "0" :
+                    program_exit = 1
+                    break
+                else :
+                    program_exit = 0
+                
 
                 if start == "2" :
                         break
 
                 match start :
 
-                    
                     case "1" :
 
                         if k < 3 :
 
-                            for l in range(3):
+                            while True :
 
                                 if y == 1 :
                                     break
 
-                                username = input("please enter username :")
-                                password = input("please enter password :")
+                                print("EXIT_0_\ntalashe", k +1 ,"/3\n" ,"please enter username :\n")
+                                username = input( )
+
+                                if username == "0" and k < 2 :
+
+                                    k = 0
+
+                                    break
+
+                                password = input("0EXIT_0_\nplease enter password :\n")
+
+                                if password == "0" and k < 2 :
+
+                                    k = 0
+
+                                    break
 
                                 if username == main_username and password == main_password :
 
@@ -247,11 +275,11 @@ while True :
 
                                     while True :
 
-                                        print("\n" , "\n1.edit" , sarfas_1 ,"\n2.edit",sarfas_2,"\n3.edit", sarfas_3, "\n4.edit",sarfas_4,"\n5.edit", sarfas_5, "\n6.edit service/tax/peyk \n7.gozareshat \n8.change username and password \n9.exit\n")
+                                        print("\n" , "\n1.edit" , sarfas_1 ,"\n2.edit",sarfas_2,"\n3.edit", sarfas_3, "\n4.edit",sarfas_4,"\n5.edit", sarfas_5, "\n6.edit service/tax/peyk \n7.gozareshat \n8.change username and password \n0.EXIT_0_\n")
                                         menu = input()
-                                        y = 0
-                                        if menu == "9" :
-                                            y = 1
+                                        administrator_exit = 0
+                                        if menu == "0" :
+                                            administrator_exit = 1
                                             break
 
                                         while True :
@@ -904,6 +932,9 @@ while True :
                 
     while True :
 
+        if program_exit == 1 :
+            break
+
         print("\n\n *** wellcome to my resturant *** ")
         
         num_1_1 = 0
@@ -1207,16 +1238,23 @@ while True :
                 break
 
    
+        order_exit = 0
+        no_order = 0
 
         while True :
 
-            print("\n" , "\n1." , sarfas_1 ,"\n2.",sarfas_2,"\n3.", sarfas_3, "\n4.",sarfas_4,"\n5.", sarfas_5, "\n\n6. soorat hesab \n")
+            print("\n" , "\n1.  " , sarfas_1.upper() ,"\n2.  ",sarfas_2.upper() ,"\n3.  ", sarfas_3.upper() , "\n4.  ",sarfas_4.upper() ,"\n5.  ", sarfas_5.upper() , "\n\n6. EDIT ORDER \n\n7. SOORAT HESAB \n\n0. EXIT_0_")
             menu = input()
 
-            if menu == "6" :
+            if menu == "0" :
+                order_exit = 1
+                break
+
+            if menu == "7" :
 
                 if total_num == 0 :
-                    print("shoma sefaresh nadadid, bye")
+                    print("\nshoma sefaresh nadadid")
+                    no_order = 1
                     break
 
                 peyk = input("1.salon \n2.outdoor\n")
@@ -1248,7 +1286,7 @@ while True :
                 match menu :
 
                     case "1" :
-                        print("\n\n" , "1.",name_1_1 ,"..." ,p_1_1, "\n", "2.", name_1_2 ,"..." ,p_1_2, "\n", "3.", name_1_3 ,"..." ,p_1_3, "\n", "4.", name_1_4 ,"..." ,p_1_4, "\n", "5.", name_1_5 ,"..." ,p_1_5, "\n", "\n6.back to main menu\n")
+                        print("\n\n" , "1.",name_1_1 ,"..." ,p_1_1, "\n", "2.", name_1_2 ,"..." ,p_1_2, "\n", "3.", name_1_3 ,"..." ,p_1_3, "\n", "4.", name_1_4 ,"..." ,p_1_4, "\n", "5.", name_1_5 ,"..." ,p_1_5, "\n", "\n6.EDIT \n0.back to main menu\n")
                         choice = input()
                         
                         match choice :
@@ -1343,13 +1381,170 @@ while True :
 
                                 total_num = total_num + n_1_5
 
+                            case "6" :
+                                while True :
+                                    print("kodam sefaresh ra mikhahid eslah konid :")
+
+                                    if num_1_1 > 0 :
+                                        print(name_1_1, "...." ,num_1_1, " enter 1 " )
+                                    if num_1_2 > 0 :
+                                        print(name_1_2, "...." ,num_1_2, " enter 2 ")
+                                    if num_1_3 > 0 :
+                                        print(name_1_3, "...." ,num_1_3, " enter 3 ")
+                                    if num_1_4 > 0 :
+                                        print(name_1_4, "...." ,num_1_4, " enter 4 ")
+                                    if num_1_5 > 0 :
+                                        print(name_1_5, "...." ,num_1_5, " enter 5 ")
+                                    
+                                    edit_m = input()
+
+                                    print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
+
+                                    match edit_m :
+
+                                        case "1" :
+
+                                            if n_1_1 == 0 :
+                                                break
+                    
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_1_1 :
+                                                
+                                                        num_1_1 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_1_1)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "2" :
+
+                                            if n_1_2 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_1_2:
+                                                
+                                                        num_1_2 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_1_2)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "3" :
+
+                                            if n_1_3 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_1_3:
+                                                
+                                                        num_1_3 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_1_3)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "4" :
+
+                                            if n_1_4 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_1_4:
+                                                
+                                                        num_1_4 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_1_4)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "5" :
+
+                                            if n_1_5 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_1_5:
+                                                
+                                                        num_1_5 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_1_5)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+
+                                    print("   sefareshe eslah shode shoma\n")
+
+                                    if num_1_1 > 0 :
+                                        print(name_1_1, "...." ,num_1_1, " adad " )
+                                    if num_1_2 > 0 :
+                                        print(name_1_2, "...." ,num_1_2, " adad ")
+                                    if num_1_3 > 0 :
+                                        print(name_1_3, "...." ,num_1_3, " adad ")
+                                    if num_1_4 > 0 :
+                                        print(name_1_4, "...." ,num_1_4, " adad ")
+                                    if num_1_5 > 0 :
+                                        print(name_1_5, "...." ,num_1_5, " adad ")
+                                    print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
+                                    pasokh = input()
+                                    match pasokh :
+                                        case "1" :
+                                            continue
+                                        case _ :
+                                            break
                                 
+
                             case _ :
                                 break
 
 
                     case "2" :
-                        print("\n\n" , "1.",name_2_1 ,"..." ,p_2_1, "\n", "2.", name_2_2 ,"..." ,p_2_2, "\n", "3.", name_2_3 ,"..." ,p_2_3, "\n", "4.", name_2_4 ,"..." ,p_2_4, "\n", "5.", name_2_5 ,"..." ,p_2_5, "\n", "\n6.back to main menu\n")
+                        print("\n\n" , "1.",name_2_1 ,"..." ,p_2_1, "\n", "2.", name_2_2 ,"..." ,p_2_2, "\n", "3.", name_2_3 ,"..." ,p_2_3, "\n", "4.", name_2_4 ,"..." ,p_2_4, "\n", "5.", name_2_5 ,"..." ,p_2_5, "\n", "\n6.EDIT \n0.back to main menu\n")
                         choice = input()
                             
                         match choice :
@@ -1443,13 +1638,172 @@ while True :
 
                                 total_num = total_num + n_2_5
 
+                            case "6" :
+                                while True :
+
+                                    print("kodam sefaresh ra mikhahid eslah konid :")
+
+                                    if num_2_1 > 0 :
+                                        print(name_2_1, "...." ,num_2_1, " enter 1 " )
+                                    if num_2_2 > 0 :
+                                        print(name_2_2, "...." ,num_2_2, " enter 2 ")
+                                    if num_2_3 > 0 :
+                                        print(name_2_3, "...." ,num_2_3, " enter 3 ")
+                                    if num_2_4 > 0 :
+                                        print(name_2_4, "...." ,num_2_4, " enter 4 ")
+                                    if num_2_5 > 0 :
+                                        print(name_2_5, "...." ,num_2_5, " enter 5 ")
+
+                                    edit_m = input()
+
+                                    print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
+
+                                    match edit_m :
+                                        case "1" :
+
+                                            if n_2_1 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_2_1:
+                                                
+                                                        num_2_1 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_2_1)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "2" :
+
+                                            if n_2_2 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_2_2:
+                                                
+                                                        num_2_2 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_2_2)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "3" :
+
+                                            if n_2_3 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_2_3:
+                                                
+                                                        num_2_3 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_2_3)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "4" :
+
+                                            if n_2_4 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_2_4:
+                                                
+                                                        num_2_4 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_2_4)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "5" :
+
+                                            if n_2_5 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_2_5:
+                                                
+                                                        num_2_5 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_2_5)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+
+                                    print("   sefareshe eslah shode shoma\n")
+
+                                    if num_2_1 > 0 :
+                                        print(name_2_1, "...." ,num_2_1, " adad " )
+                                    if num_2_2 > 0 :
+                                        print(name_2_2, "...." ,num_2_2, " adad ")
+                                    if num_2_3 > 0 :
+                                        print(name_2_3, "...." ,num_2_3, " adad ")
+                                    if num_2_4 > 0 :
+                                        print(name_2_4, "...." ,num_2_4, " adad ")
+                                    if num_2_5 > 0 :
+                                        print(name_2_5, "...." ,num_2_5, " adad ")
+
+                                    print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
+                                    pasokh = input()
+                                    match pasokh :
+                                        case "1" :
+                                            continue
+                                        case _ :
+                                            break
+
+                                    
                                 
                             case _ :
                                 break
 
 
                     case "3" :
-                        print("\n\n" , "1.",name_3_1 ,"..." ,p_3_1, "\n", "2.", name_3_2 ,"..." ,p_3_2, "\n", "3.", name_3_3 ,"..." ,p_3_3, "\n", "4.", name_3_4 ,"..." ,p_3_4, "\n", "5.", name_3_5 ,"..." ,p_3_5, "\n", "\n6.back to main menu\n")
+                        print("\n\n" , "1.",name_3_1 ,"..." ,p_3_1, "\n", "2.", name_3_2 ,"..." ,p_3_2, "\n", "3.", name_3_3 ,"..." ,p_3_3, "\n", "4.", name_3_4 ,"..." ,p_3_4, "\n", "5.", name_3_5 ,"..." ,p_3_5, "\n", "\n6.EDIT \n0.back to main menu\n")
                         choice = input()
 
                         match choice :
@@ -1543,13 +1897,170 @@ while True :
 
                                 total_num = total_num + n_3_5
 
+                            case "6" :
+                                while True :
+
+                                    print("kodam sefaresh ra mikhahid eslah konid :")
+
+                                    if num_3_1 > 0 :
+                                        print(name_3_1, "...." ,num_3_1, " enter 1 " )
+                                    if num_3_2 > 0 :
+                                        print(name_3_2, "...." ,num_3_2, " enter 2 ")
+                                    if num_3_3 > 0 :
+                                        print(name_3_3, "...." ,num_3_3, " enter 3 ")
+                                    if num_3_4 > 0 :
+                                        print(name_3_4, "...." ,num_3_4, " enter 4 ")
+                                    if num_3_5 > 0 :
+                                        print(name_3_5, "...." ,num_3_5, " enter 5 ")
+
+                                    edit_m = input()
+
+                                    print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
+
+                                    match edit_m :
+                                        case "1" :
+
+                                            if n_3_1 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_3_1:
+                                                
+                                                        num_3_1 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_3_1)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "2" :
+
+                                            if n_3_2 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_3_2:
+                                                
+                                                        num_3_2 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_3_2)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "3" :
+
+                                            if n_3_3 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_3_3:
+                                                
+                                                        num_3_3 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_3_3)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "4" :
+
+                                            if n_3_4 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_3_4:
+                                                
+                                                        num_3_4 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_3_4)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "5" :
+
+                                            if n_3_5 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_3_5:
+                                                
+                                                        num_3_5 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_3_5)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+
+                                    print("   sefareshe eslah shode shoma\n")
+
+                                    if num_3_1 > 0 :
+                                        print(name_3_1, "...." ,num_3_1, " adad " )
+                                    if num_3_2 > 0 :
+                                        print(name_3_2, "...." ,num_3_2, " adad ")
+                                    if num_3_3 > 0 :
+                                        print(name_3_3, "...." ,num_3_3, " adad ")
+                                    if num_3_4 > 0 :
+                                        print(name_3_4, "...." ,num_3_4, " adad ")
+                                    if num_3_5 > 0 :
+                                        print(name_3_5, "...." ,num_3_5, " adad ")
+
+                                    print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
+                                    pasokh = input()
+                                    match pasokh :
+                                        case "1" :
+                                            continue
+                                        case _ :
+                                            break
 
                             case _ :
                                 break
 
 
                     case "4" :
-                        print("\n\n" , "1.",name_4_1 ,"..." ,p_4_1, "\n", "2.", name_4_2 ,"..." ,p_4_2, "\n", "3.", name_4_3 ,"..." ,p_4_3, "\n", "4.", name_4_4 ,"..." ,p_4_4, "\n", "5.", name_4_5 ,"..." ,p_4_5, "\n", "\n6.back to main menu\n")
+                        print("\n\n" , "1.",name_4_1 ,"..." ,p_4_1, "\n", "2.", name_4_2 ,"..." ,p_4_2, "\n", "3.", name_4_3 ,"..." ,p_4_3, "\n", "4.", name_4_4 ,"..." ,p_4_4, "\n", "5.", name_4_5 ,"..." ,p_4_5, "\n", "\n6.EDIT \n0.back to main menu\n")
                         choice = input()
 
                         match choice :
@@ -1643,11 +2154,170 @@ while True :
 
                                 total_num = total_num + n_4_5
 
+                            case "6" :
+                                while True :
+
+                                    print("kodam sefaresh ra mikhahid eslah konid :")
+
+                                    if num_4_1 > 0 :
+                                        print(name_4_1, "...." ,num_4_1, " enter 1 " )
+                                    if num_4_2 > 0 :
+                                        print(name_4_2, "...." ,num_4_2, " enter 2 ")
+                                    if num_4_3 > 0 :
+                                        print(name_4_3, "...." ,num_4_3, " enter 3 ")
+                                    if num_4_4 > 0 :
+                                        print(name_4_4, "...." ,num_4_4, " enter 4 ")
+                                    if num_4_5 > 0 :
+                                        print(name_4_5, "...." ,num_4_5, " enter 5 ")
+
+                                    edit_m = input()
+
+                                    print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
+
+                                    match edit_m :
+                                        case "1" :
+
+                                            if n_4_1 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_4_1:
+                                                
+                                                        num_4_1 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_4_1)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "2" :
+
+                                            if n_4_2 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_4_2:
+                                                
+                                                        num_4_2 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_4_2)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "3" :
+
+                                            if n_4_3 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_4_3:
+                                                
+                                                        num_4_3 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_4_3)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "4" :
+
+                                            if n_4_4 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_4_4:
+                                                
+                                                        num_4_4 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_4_4)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "5" :
+
+                                            if n_4_5 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_4_5:
+                                                
+                                                        num_4_5 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_4_5)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+
+                                    print("   sefareshe eslah shode shoma\n")
+
+                                    if num_4_1 > 0 :
+                                        print(name_4_1, "...." ,num_4_1, " adad " )
+                                    if num_4_2 > 0 :
+                                        print(name_4_2, "...." ,num_4_2, " adad ")
+                                    if num_4_3 > 0 :
+                                        print(name_4_3, "...." ,num_4_3, " adad ")
+                                    if num_4_4 > 0 :
+                                        print(name_4_4, "...." ,num_4_4, " adad ")
+                                    if num_4_5 > 0 :
+                                        print(name_4_5, "...." ,num_4_5, " adad ")
+
+                                    print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
+                                    pasokh = input()
+                                    match pasokh :
+                                        case "1" :
+                                            continue
+                                        case _ :
+                                            break
                                 
                             case _ :
                                 break
+
+
                     case "5" :
-                        print("\n\n" , "1.",name_5_1 ,"..." ,p_5_1, "\n", "2.", name_5_2 ,"..." ,p_5_2, "\n", "3.", name_5_3 ,"..." ,p_5_3, "\n", "4.", name_5_4 ,"..." ,p_5_4, "\n", "5.", name_5_5 ,"..." ,p_5_5, "\n", "\n6.back to main menu\n")
+                        print("\n\n" , "1.",name_5_1 ,"..." ,p_5_1, "\n", "2.", name_5_2 ,"..." ,p_5_2, "\n", "3.", name_5_3 ,"..." ,p_5_3, "\n", "4.", name_5_4 ,"..." ,p_5_4, "\n", "5.", name_5_5 ,"..." ,p_5_5, "\n", "\n6.EDIT \n0.back to main menu\n")
                         choice = input()
 
                         match choice :
@@ -1741,10 +2411,881 @@ while True :
 
                                 total_num = total_num + n_5_5
 
+                            case "6" :
+                                while True :
+
+                                    print("kodam sefaresh ra mikhahid eslah konid :")
+
+                                    if num_5_1 > 0 :
+                                        print(name_5_1, "...." ,num_5_1, " enter 1 " )
+                                    if num_5_2 > 0 :
+                                        print(name_5_2, "...." ,num_5_2, " enter 2 ")
+                                    if num_5_3 > 0 :
+                                        print(name_5_3, "...." ,num_5_3, " enter 3 ")
+                                    if num_5_4 > 0 :
+                                        print(name_5_4, "...." ,num_5_4, " enter 4 ")
+                                    if num_5_5 > 0 :
+                                        print(name_5_5, "...." ,num_5_5, " enter 5 ")
+
+                                    edit_m = input()
+
+                                    print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
+
+                                    match edit_m :
+                                        case "1" :
+
+                                            if n_5_1 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_5_1:
+                                                
+                                                        num_5_1 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_5_1)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "2" :
+
+                                            if n_5_2 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_5_2:
+                                                
+                                                        num_5_2 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_5_2)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "3" :
+
+                                            if n_5_3 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_5_3:
+                                                
+                                                        num_5_3 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_5_3)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "4" :
+
+                                            if n_2_4 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_5_4:
+                                                
+                                                        num_5_4 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_5_4)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+                                        case "5" :
+
+                                            if n_5_5 == 0 :
+                                                break
+
+                                            while True :
+
+                                                e1 = input()
+                                                if e1 == "0" :
+                                                    break
+                                                if e1.isdigit()==True :
+                                                    e1 = int(e1)
+                                                    if e1 > 0 and e1 <= num_5_5:
+                                                
+                                                        num_5_5 -= e1
+                                                        total_num -= e1
+                                                        total_price -= (e1*p_5_5)
+
+                                                        break
+                                                    else :
+                                                        print("vorodi sahih nist")
+                                                else :
+                                                    print("vorodi bayad adad bashad")
+
+                                    print("   sefareshe eslah shode shoma\n")
+
+                                    if num_5_1 > 0 :
+                                        print(name_5_1, "...." ,num_5_1, " adad " )
+                                    if num_5_2 > 0 :
+                                        print(name_5_2, "...." ,num_5_2, " adad ")
+                                    if num_5_3 > 0 :
+                                        print(name_5_3, "...." ,num_5_3, " adad ")
+                                    if num_5_4 > 0 :
+                                        print(name_5_4, "...." ,num_5_4, " adad ")
+                                    if num_5_5 > 0 :
+                                        print(name_5_5, "...." ,num_5_5, " adad ")
+
+                                    print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
+                                    pasokh = input()
+                                    match pasokh :
+                                        case "1" :
+                                            continue
+                                        case _ :
+                                            break
                                 
                             case _ :
                                 break
 
+                    case "6" :
+
+                        while True :
+                    
+  
+                            print("kodam sefaresh ra mikhahid eslah konid :")
+                            if num_1_1 > 0 :
+                                print(name_1_1, "...." ,num_1_1, " enter 1 " )
+                            if num_1_2 > 0 :
+                                print(name_1_2, "...." ,num_1_2, " enter 2 ")
+                            if num_1_3 > 0 :
+                                print(name_1_3, "...." ,num_1_3, " enter 3 ")
+                            if num_1_4 > 0 :
+                                print(name_1_4, "...." ,num_1_4, " enter 4 ")
+                            if num_1_5 > 0 :
+                                print(name_1_5, "...." ,num_1_5, " enter 5 ")
+
+
+                            if num_2_1 > 0 :
+                                print(name_2_1, "...." ,num_2_1, " enter 6 " )
+                            if num_2_2 > 0 :
+                                print(name_2_2, "...." ,num_2_2, " enter 7 ")
+                            if num_2_3 > 0 :
+                                print(name_2_3, "...." ,num_2_3, " enter 8 ")
+                            if num_2_4 > 0 :
+                                print(name_2_4, "...." ,num_2_4, " enter 9 ")
+                            if num_2_5 > 0 :
+                                print(name_2_5, "...." ,num_2_5, " enter 10 ")
+
+
+                            if num_3_1 > 0 :
+                                print(name_3_1, "...." ,num_3_1, " enter 11 " )
+                            if num_3_2 > 0 :
+                                print(name_3_2, "...." ,num_3_2, " enter 12 ")
+                            if num_3_3 > 0 :
+                                print(name_3_3, "...." ,num_3_3, " enter 13 ")
+                            if num_3_4 > 0 :
+                                print(name_3_4, "...." ,num_3_4, " enter 14 ")
+                            if num_3_5 > 0 :
+                                print(name_3_5, "...." ,num_3_5, " enter 15 ")
+
+                            if num_4_1 > 0 :
+                                print(name_4_1, "...." ,num_4_1, " enter 16 " )
+                            if num_4_2 > 0 :
+                                print(name_4_2, "...." ,num_4_2, " enter 17 ")
+                            if num_4_3 > 0 :
+                                print(name_4_3, "...." ,num_4_3, " enter 18 ")
+                            if num_4_4 > 0 :
+                                print(name_4_4, "...." ,num_4_4, " enter 19 ")
+                            if num_4_5 > 0 :
+                                print(name_4_5, "...." ,num_4_5, " enter 20 ")
+
+                            if num_5_1 > 0 :
+                                print(name_5_1, "...." ,num_5_1, " enter 21 " )
+                            if num_5_2 > 0 :
+                                print(name_5_2, "...." ,num_5_2, " enter 22 ")
+                            if num_5_3 > 0 :
+                                print(name_5_3, "...." ,num_5_3, " enter 23 ")
+                            if num_5_4 > 0 :
+                                print(name_5_4, "...." ,num_5_4, " enter 24 ")
+                            if num_5_5 > 0 :
+                                print(name_5_5, "...." ,num_5_5, " enter 25 ")
+                            
+                            edit_m = input()
+
+                            print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
+
+                            match edit_m :
+
+                                
+
+                                case "1" :
+
+                                    if n_1_1 == 0 :
+                                        break
+            
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_1_1 :
+                                        
+                                                num_1_1 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_1_1)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "2" :
+
+                                    if n_1_2 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_1_2:
+                                        
+                                                num_1_2 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_1_2)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "3" :
+
+                                    if n_1_3 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_1_3:
+                                        
+                                                num_1_3 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_1_3)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "4" :
+
+                                    if n_1_4 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_1_4:
+                                        
+                                                num_1_4 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_1_4)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "5" :
+
+                                    if n_1_5 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_1_5:
+                                        
+                                                num_1_5 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_1_5)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "6" :
+
+                                    if n_2_1 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_2_1:
+                                        
+                                                num_2_1 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_2_1)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "7" :
+
+                                    if n_2_2 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_2_2:
+                                        
+                                                num_2_2 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_2_2)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "8" :
+
+                                    if n_2_3 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_2_3:
+                                        
+                                                num_2_3 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_2_3)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "9" :
+
+                                    if n_2_4 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_2_4:
+                                        
+                                                num_2_4 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_2_4)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "10" :
+
+                                    if n_2_5 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_2_5:
+                                        
+                                                num_2_5 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_2_5)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "11" :
+
+                                    if n_3_1 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_3_1:
+                                        
+                                                num_3_1 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_3_1)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "12" :
+
+                                    if n_3_2 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_3_2:
+                                        
+                                                num_3_2 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_3_2)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "13" :
+
+                                    if n_3_3 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_3_3:
+                                        
+                                                num_3_3 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_3_3)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "14" :
+
+                                    if n_3_4 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_3_4:
+                                        
+                                                num_3_4 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_3_4)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "15" :
+
+                                    if n_3_5 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_3_5:
+                                        
+                                                num_3_5 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_3_5)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "16" :
+
+                                    if n_4_1 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_4_1:
+                                        
+                                                num_4_1 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_4_1)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "17" :
+
+                                    if n_4_2 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_4_2:
+                                        
+                                                num_4_2 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_4_2)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "18" :
+
+                                    if n_4_3 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_4_3:
+                                        
+                                                num_4_3 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_4_3)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "19" :
+
+                                    if n_4_4 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_4_4:
+                                        
+                                                num_4_4 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_4_4)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "20" :
+
+                                    if n_4_5 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_4_5:
+                                        
+                                                num_4_5 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_4_4)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "21" :
+
+                                    if n_5_1 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_5_1:
+                                        
+                                                num_5_1 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_5_1)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "22" :
+
+                                    if n_5_2 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_5_2:
+                                        
+                                                num_5_2 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_5_2)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "23" :
+
+                                    if n_5_3 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_5_3:
+                                        
+                                                num_5_3 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_5_3)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "24" :
+
+                                    if n_5_4 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_5_4:
+                                        
+                                                num_5_4 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_5_4)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+                                case "25" :
+
+                                    if n_5_5 == 0 :
+                                        break
+
+                                    while True :
+
+                                        e1 = input()
+                                        if e1 == "0" :
+                                            break
+                                        if e1.isdigit()==True :
+                                            e1 = int(e1)
+                                            if e1 > 0 and e1 <= num_5_5:
+                                        
+                                                num_5_5 -= e1
+                                                total_num -= e1
+                                                total_price -= (e1*p_5_5)
+
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
+
+                            print("   sefareshe eslah shode shoma\n")
+
+                            if num_1_1 > 0 :
+                                print(name_1_1, "...." ,num_1_1, " adad " )
+                            if num_1_2 > 0 :
+                                print(name_1_2, "...." ,num_1_2, " adad ")
+                            if num_1_3 > 0 :
+                                print(name_1_3, "...." ,num_1_3, " adad ")
+                            if num_1_4 > 0 :
+                                print(name_1_4, "...." ,num_1_4, " adad ")
+                            if num_1_5 > 0 :
+                                print(name_1_5, "...." ,num_1_5, " adad ")
+
+
+                            if num_2_1 > 0 :
+                                print(name_2_1, "...." ,num_2_1, " adad " )
+                            if num_2_2 > 0 :
+                                print(name_2_2, "...." ,num_2_2, " adad ")
+                            if num_2_3 > 0 :
+                                print(name_2_3, "...." ,num_2_3, " adad ")
+                            if num_2_4 > 0 :
+                                print(name_2_4, "...." ,num_2_4, " adad ")
+                            if num_2_5 > 0 :
+                                print(name_2_5, "...." ,num_2_5, " adad ")
+
+
+                            if num_3_1 > 0 :
+                                print(name_3_1, "...." ,num_3_1, " adad " )
+                            if num_3_2 > 0 :
+                                print(name_3_2, "...." ,num_3_2, " adad ")
+                            if num_3_3 > 0 :
+                                print(name_3_3, "...." ,num_3_3, " adad ")
+                            if num_3_4 > 0 :
+                                print(name_3_4, "...." ,num_3_4, " adad ")
+                            if num_3_5 > 0 :
+                                print(name_3_5, "...." ,num_3_5, " adad ")
+
+                            if num_4_1 > 0 :
+                                print(name_4_1, "...." ,num_4_1, " adad " )
+                            if num_4_2 > 0 :
+                                print(name_4_2, "...." ,num_4_2, " adad ")
+                            if num_4_3 > 0 :
+                                print(name_4_3, "...." ,num_4_3, " adad ")
+                            if num_4_4 > 0 :
+                                print(name_4_4, "...." ,num_4_4, " adad ")
+                            if num_4_5 > 0 :
+                                print(name_4_5, "...." ,num_4_5, " adad ")
+
+                            if num_5_1 > 0 :
+                                print(name_5_1, "...." ,num_5_1, " adad " )
+                            if num_5_2 > 0 :
+                                print(name_5_2, "...." ,num_5_2, " adad ")
+                            if num_5_3 > 0 :
+                                print(name_5_3, "...." ,num_5_3, " adad ")
+                            if num_5_4 > 0 :
+                                print(name_5_4, "...." ,num_5_4, " adad ")
+                            if num_5_5 > 0 :
+                                print(name_5_5, "...." ,num_5_5, " adad ")
+
+                            print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
+                            pasokh = input()
+                            match pasokh :
+                                case "1" :
+                                    continue
+                                case _ :
+                                    break
+                        break
 
                     case _ :
                         break
@@ -1809,716 +3350,17 @@ while True :
                 if num_5_5 > 0 :
                     print(name_5_5, "...." ,num_5_5, " adad ")
 
-                
-                while True :
-                    edit = input ("baraye eslahe sefaresh 0 ra vared namayid : \n dar gheyre in soorat baraye edame sefaresh enter ra bezanid\n")
 
-                    match edit :
-                        case "0" :
-                            print("kodam sefaresh ra mikhahid eslah konid :")
-                            if num_1_1 > 0 :
-                                print(name_1_1, "...." ,num_1_1, " enter 1 " )
-                            if num_1_2 > 0 :
-                                print(name_1_2, "...." ,num_1_2, " enter 2 ")
-                            if num_1_3 > 0 :
-                                print(name_1_3, "...." ,num_1_3, " enter 3 ")
-                            if num_1_4 > 0 :
-                                print(name_1_4, "...." ,num_1_4, " enter 4 ")
-                            if num_1_5 > 0 :
-                                print(name_1_5, "...." ,num_1_5, " enter 5 ")
 
 
-                            if num_2_1 > 0 :
-                                print(name_2_1, "...." ,num_2_1, " enter 6 " )
-                            if num_2_2 > 0 :
-                                print(name_2_2, "...." ,num_2_2, " enter 7 ")
-                            if num_2_3 > 0 :
-                                print(name_2_3, "...." ,num_2_3, " enter 8 ")
-                            if num_2_4 > 0 :
-                                print(name_2_4, "...." ,num_2_4, " enter 9 ")
-                            if num_2_5 > 0 :
-                                print(name_2_5, "...." ,num_2_5, " enter 10 ")
 
 
-                            if num_3_1 > 0 :
-                                print(name_3_1, "...." ,num_3_1, " enter 11 " )
-                            if num_3_2 > 0 :
-                                print(name_3_2, "...." ,num_3_2, " enter 12 ")
-                            if num_3_3 > 0 :
-                                print(name_3_3, "...." ,num_3_3, " enter 13 ")
-                            if num_3_4 > 0 :
-                                print(name_3_4, "...." ,num_3_4, " enter 14 ")
-                            if num_3_5 > 0 :
-                                print(name_3_5, "...." ,num_3_5, " enter 15 ")
 
-                            if num_4_1 > 0 :
-                                print(name_4_1, "...." ,num_4_1, " enter 16 " )
-                            if num_4_2 > 0 :
-                                print(name_4_2, "...." ,num_4_2, " enter 17 ")
-                            if num_4_3 > 0 :
-                                print(name_4_3, "...." ,num_4_3, " enter 18 ")
-                            if num_4_4 > 0 :
-                                print(name_4_4, "...." ,num_4_4, " enter 19 ")
-                            if num_4_5 > 0 :
-                                print(name_4_5, "...." ,num_4_5, " enter 20 ")
+        if order_exit == 1 :
+            break
 
-                            if num_5_1 > 0 :
-                                print(name_5_1, "...." ,num_5_1, " enter 21 " )
-                            if num_5_2 > 0 :
-                                print(name_5_2, "...." ,num_5_2, " enter 22 ")
-                            if num_5_3 > 0 :
-                                print(name_5_3, "...." ,num_5_3, " enter 23 ")
-                            if num_5_4 > 0 :
-                                print(name_5_4, "...." ,num_5_4, " enter 24 ")
-                            if num_5_5 > 0 :
-                                print(name_5_5, "...." ,num_5_5, " enter 25 ")
-                            
-                            edit_m = input()
-                            match edit_m :
-                                case "1" :
-
-                                    if n_1_1 == 0 :
-                                        break
-            
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_1_1 :
-                                        
-                                                num_1_1 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_1_1)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "2" :
-
-                                    if n_1_2 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_1_2:
-                                        
-                                                num_1_2 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_1_2)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "3" :
-
-                                    if n_1_3 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_1_3:
-                                        
-                                                num_1_3 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_1_3)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "4" :
-
-                                    if n_1_4 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_1_4:
-                                        
-                                                num_1_4 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_1_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "5" :
-
-                                    if n_1_5 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_1_5:
-                                        
-                                                num_1_5 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_1_5)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "6" :
-
-                                    if n_2_1 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_2_1:
-                                        
-                                                num_2_1 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_2_1)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "7" :
-
-                                    if n_2_2 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_2_2:
-                                        
-                                                num_2_2 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_2_2)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "8" :
-
-                                    if n_2_3 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_2_3:
-                                        
-                                                num_2_3 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_2_3)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "9" :
-
-                                    if n_2_4 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_2_4:
-                                        
-                                                num_2_4 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_2_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "10" :
-
-                                    if n_2_5 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_2_5:
-                                        
-                                                num_2_5 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_2_5)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "11" :
-
-                                    if n_3_1 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_3_1:
-                                        
-                                                num_3_1 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_3_1)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "12" :
-
-                                    if n_3_2 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_3_2:
-                                        
-                                                num_3_2 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_3_2)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "13" :
-
-                                    if n_3_3 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_3_3:
-                                        
-                                                num_3_3 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_3_3)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "14" :
-
-                                    if n_3_4 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_3_4:
-                                        
-                                                num_3_4 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_3_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "15" :
-
-                                    if n_3_5 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_3_5:
-                                        
-                                                num_3_5 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_3_5)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "16" :
-
-                                    if n_4_1 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_4_1:
-                                        
-                                                num_4_1 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_4_1)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "17" :
-
-                                    if n_4_2 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_4_2:
-                                        
-                                                num_4_2 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_4_2)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "18" :
-
-                                    if n_4_3 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_4_3:
-                                        
-                                                num_4_3 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_4_3)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "19" :
-
-                                    if n_4_4 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_4_4:
-                                        
-                                                num_4_4 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_4_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "20" :
-
-                                    if n_4_5 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_4_5:
-                                        
-                                                num_4_5 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_4_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "21" :
-
-                                    if n_5_1 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_5_1:
-                                        
-                                                num_5_1 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_5_1)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "22" :
-
-                                    if n_5_2 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_5_2:
-                                        
-                                                num_5_2 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_5_2)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "23" :
-
-                                    if n_5_3 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_5_3:
-                                        
-                                                num_5_3 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_5_3)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "24" :
-
-                                    if n_5_4 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_5_4:
-                                        
-                                                num_5_4 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_5_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                                case "25" :
-
-                                    if n_5_5 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input("tedade morede nazar baraye eslah ra vared konid :\n")
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_5_5:
-                                        
-                                                num_5_5 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_5_5)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
-                        case _ :
-                            break
-
-                    print("   sefareshe eslah shode shoma\n")
-
-                    if num_1_1 > 0 :
-                        print(name_1_1, "...." ,num_1_1, " adad " )
-                    if num_1_2 > 0 :
-                        print(name_1_2, "...." ,num_1_2, " adad ")
-                    if num_1_3 > 0 :
-                        print(name_1_3, "...." ,num_1_3, " adad ")
-                    if num_1_4 > 0 :
-                        print(name_1_4, "...." ,num_1_4, " adad ")
-                    if num_1_5 > 0 :
-                        print(name_1_5, "...." ,num_1_5, " adad ")
-
-
-                    if num_2_1 > 0 :
-                        print(name_2_1, "...." ,num_2_1, " adad " )
-                    if num_2_2 > 0 :
-                        print(name_2_2, "...." ,num_2_2, " adad ")
-                    if num_2_3 > 0 :
-                        print(name_2_3, "...." ,num_2_3, " adad ")
-                    if num_2_4 > 0 :
-                        print(name_2_4, "...." ,num_2_4, " adad ")
-                    if num_2_5 > 0 :
-                        print(name_2_5, "...." ,num_2_5, " adad ")
-
-
-                    if num_3_1 > 0 :
-                        print(name_3_1, "...." ,num_3_1, " adad " )
-                    if num_3_2 > 0 :
-                        print(name_3_2, "...." ,num_3_2, " adad ")
-                    if num_3_3 > 0 :
-                        print(name_3_3, "...." ,num_3_3, " adad ")
-                    if num_3_4 > 0 :
-                        print(name_3_4, "...." ,num_3_4, " adad ")
-                    if num_3_5 > 0 :
-                        print(name_3_5, "...." ,num_3_5, " adad ")
-
-                    if num_4_1 > 0 :
-                        print(name_4_1, "...." ,num_4_1, " adad " )
-                    if num_4_2 > 0 :
-                        print(name_4_2, "...." ,num_4_2, " adad ")
-                    if num_4_3 > 0 :
-                        print(name_4_3, "...." ,num_4_3, " adad ")
-                    if num_4_4 > 0 :
-                        print(name_4_4, "...." ,num_4_4, " adad ")
-                    if num_4_5 > 0 :
-                        print(name_4_5, "...." ,num_4_5, " adad ")
-
-                    if num_5_1 > 0 :
-                        print(name_5_1, "...." ,num_5_1, " adad " )
-                    if num_5_2 > 0 :
-                        print(name_5_2, "...." ,num_5_2, " adad ")
-                    if num_5_3 > 0 :
-                        print(name_5_3, "...." ,num_5_3, " adad ")
-                    if num_5_4 > 0 :
-                        print(name_5_4, "...." ,num_5_4, " adad ")
-                    if num_5_5 > 0 :
-                        print(name_5_5, "...." ,num_5_5, " adad ")
-
-                    print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
-                    pasokh = input()
-                    match pasokh :
-                        case "1" :
-                            continue
-                        case _ :
-                            break
+        if no_order == 1 :
+            break
                  
         print ("\n     *** soorat hesab ***\n")    
             
@@ -2608,6 +3450,9 @@ while True :
             case _ :
                 print("thank you bye")
                 break
+    
+    if program_exit == 1 :
+        break
 
 
     #gozaresh

@@ -10,8 +10,6 @@ print("wellcome to my program")
 sarfas_1 = "pish ghaza"
 
 name_1_1 = "soup"
-
-name_p_1_1 = name_1_1
 p_1_1 = 250000
 
 name_1_2 = "salad sezar"
@@ -208,18 +206,28 @@ backup_password = "12345"
 bazyabi_password = "54321"
 j = 0
 k = 0
-p = 0
+start = 0
+
 
 while True :
 
     while True :
+
+        if start == "2" :
+            break
 
         if k < 3 :
 
             while True :
                 
                 start = input("1.administrator \n2.moshtari\n")
+
+                if start == "2" :
+                        break
+
                 match start :
+
+                    
                     case "1" :
 
                         if k < 3 :
@@ -247,13 +255,13 @@ while True :
                                                 case "1" :
                                                     if j < 3 :
                                                         print("\n\n" , "1.",name_1_1 ,"..." ,p_1_1, "\n", "2.", name_1_2 ,"..." ,p_1_2, "\n", "3.", name_1_3 ,"..." ,p_1_3, "\n", "4.", name_1_4 ,"..." ,p_1_4, "\n", "5.", name_1_5 ,"..." ,p_1_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
-                                                        m_cafe = input()
+                                                        choice = input()
                                     
-                                                        match m_cafe :
+                                                        match choice :
                                                             case "1" :
 
-                                                                cafe_1 = input ("1.edit name \n2.edit price \n3.edit name and price\n")
-                                                                match cafe_1 :
+                                                                sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_1_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_1)
@@ -270,8 +278,8 @@ while True :
                                                                 
                                                                 
                                                             case "2" :
-                                                                cafe_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match cafe_2 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_1_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_2)
@@ -286,8 +294,8 @@ while True :
                                                                         break
                                     
                                                             case "3" :
-                                                                cafe_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match cafe_3 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_1_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_3)
@@ -302,8 +310,8 @@ while True :
                                                                         break
                                     
                                                             case "4" :
-                                                                cafe_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match cafe_4 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_1_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_4)
@@ -318,8 +326,8 @@ while True :
                                                                         break
                                     
                                                             case "5" :
-                                                                cafe_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match cafe_5 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_1_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_5)
@@ -347,13 +355,13 @@ while True :
                                                 case "2" :
                                                     if j < 3 :
                                                         print("\n\n" , "1.",name_2_1 ,"..." ,p_2_1, "\n", "2.", name_2_2 ,"..." ,p_2_2, "\n", "3.", name_2_3 ,"..." ,p_2_3, "\n", "4.", name_2_4 ,"..." ,p_2_4, "\n", "5.", name_2_5 ,"..." ,p_2_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
-                                                        m_fast = input()
+                                                        choice = input()
                                     
-                                                        match m_fast :
+                                                        match choice :
                                                             case "1" :
 
-                                                                fast_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match fast_1 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_2_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_1)
@@ -369,8 +377,8 @@ while True :
                                                                 
                                                                 
                                                             case "2" :
-                                                                fast_2 = input ("1.edit name \n2.edit price \n3.edit name and price\n")
-                                                                match fast_2 :
+                                                                sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_2_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_2)
@@ -385,8 +393,8 @@ while True :
                                                                         break
                                     
                                                             case "3" :
-                                                                fast_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match fast_3 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_2_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_3)
@@ -401,8 +409,8 @@ while True :
                                                                         break
                                     
                                                             case "4" :
-                                                                fast_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match fast_4 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_2_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_4)
@@ -417,8 +425,8 @@ while True :
                                                                         break
                                     
                                                             case "5" :
-                                                                fast_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match fast_5 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_2_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_5)
@@ -444,13 +452,13 @@ while True :
                                                 case "3" :
                                                     if j < 3 :
                                                         print("\n\n" , "1.",name_3_1 ,"..." ,p_3_1, "\n", "2.", name_3_2 ,"..." ,p_3_2, "\n", "3.", name_3_3 ,"..." ,p_3_3, "\n", "4.", name_3_4 ,"..." ,p_3_4, "\n", "5.", name_3_5 ,"..." ,p_3_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
-                                                        m_irani = input()
+                                                        choice = input()
                                     
-                                                        match m_irani :
+                                                        match choice :
                                                             case "1" :
 
-                                                                irani_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match irani_1 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_3_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_1)
@@ -466,8 +474,8 @@ while True :
                                                                 
                                                                 
                                                             case "2" :
-                                                                irani_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match irani_2 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_3_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_2)
@@ -482,8 +490,8 @@ while True :
                                                                         break
                                     
                                                             case "3" :
-                                                                irani_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match irani_3 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_3_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_3)
@@ -498,8 +506,8 @@ while True :
                                                                         break
                                     
                                                             case "4" :
-                                                                irani_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match irani_4 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_3_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_4)
@@ -514,8 +522,8 @@ while True :
                                                                         break
                                     
                                                             case "5" :
-                                                                irani_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match irani_5 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_3_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_5)
@@ -540,13 +548,13 @@ while True :
                                                 case "4" :
                                                     if j < 3 :
                                                         print("\n\n" , "1.",name_4_1 ,"..." ,p_4_1, "\n", "2.", name_4_2 ,"..." ,p_4_2, "\n", "3.", name_4_3 ,"..." ,p_4_3, "\n", "4.", name_4_4 ,"..." ,p_4_4, "\n", "5.", name_4_5 ,"..." ,p_4_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
-                                                        m_bar = input()
+                                                        choice = input()
                                     
-                                                        match m_bar :
+                                                        match choice :
                                                             case "1" :
 
-                                                                bar_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match bar_1 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_4_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_1)
@@ -562,8 +570,8 @@ while True :
                                                                 
                                                                 
                                                             case "2" :
-                                                                bar_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match bar_2 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_4_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_2)
@@ -578,8 +586,8 @@ while True :
                                                                         break
                                     
                                                             case "3" :
-                                                                bar_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match bar_3 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_4_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_3)
@@ -594,8 +602,8 @@ while True :
                                                                         break
                                     
                                                             case "4" :
-                                                                bar_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match bar_4 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_4_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_4)
@@ -610,8 +618,8 @@ while True :
                                                                         break
                                     
                                                             case "5" :
-                                                                bar_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match bar_5 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_4_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_5)
@@ -638,13 +646,13 @@ while True :
                                                 case "5" :
                                                     if j < 3 :
                                                         print("\n\n" , "1.",name_5_1 ,"..." ,p_5_1, "\n", "2.", name_5_2 ,"..." ,p_5_2, "\n", "3.", name_5_3 ,"..." ,p_5_3, "\n", "4.", name_5_4 ,"..." ,p_5_4, "\n", "5.", name_5_5 ,"..." ,p_5_5, "\n", "6.sarfasl name edite \n7.back to main menu\n")
-                                                        m_boardgame = input()
+                                                        choice = input()
                                     
-                                                        match m_boardgame :
+                                                        match choice :
                                                             case "1" :
 
-                                                                boardgame_1 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match boardgame_1 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_5_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_1)
@@ -660,8 +668,8 @@ while True :
                                                                 
                                                                 
                                                             case "2" :
-                                                                boardgame_2 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match boardgame_2 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_5_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_2)
@@ -676,8 +684,8 @@ while True :
                                                                         break
                                     
                                                             case "3" :
-                                                                boardgame_3 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match boardgame_3 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_5_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_3)
@@ -692,8 +700,8 @@ while True :
                                                                         break
                                     
                                                             case "4" :
-                                                                boardgame_4 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match boardgame_4 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_5_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_4)
@@ -708,8 +716,8 @@ while True :
                                                                         break
                                     
                                                             case "5" :
-                                                                boardgame_5 = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match boardgame_5 :
+                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
+                                                                match sub_choice :
                                                                     case "1" :
                                                                         name_5_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_5)
@@ -859,10 +867,13 @@ while True :
                         else :
                             print("you are block")
                             break
-    
 
                     case _ :
+                        print("voroode moshtari")
                         break
+                        
+
+
         else :
             bazyabi = input("1.bazyabi admin \n2.moshtari\n")
             match bazyabi :
@@ -880,7 +891,10 @@ while True :
                                 bazyabi_password = new_bazyabi_password
                                 break
                 case _:
+                    p = 1
                     break
+                    
+    start = 0        
         
                 
     while True :
@@ -1230,9 +1244,9 @@ while True :
 
                     case "1" :
                         print("\n\n" , "1.",name_p_1_1 ,"..." ,p_1_1, "\n", "2.", name_1_2 ,"..." ,p_1_2, "\n", "3.", name_1_3 ,"..." ,p_1_3, "\n", "4.", name_1_4 ,"..." ,p_1_4, "\n", "5.", name_1_5 ,"..." ,p_1_5, "\n", "\n6.back to main menu\n")
-                        m_sarfasl_1 = input()
+                        choice = input()
                         
-                        match m_sarfasl_1 :
+                        match choice :
                             case "1" :
                                 while True :
                                     n_1_1 = input("num of order : ")
@@ -1331,9 +1345,9 @@ while True :
 
                     case "2" :
                         print("\n\n" , "1.",name_2_1 ,"..." ,p_2_1, "\n", "2.", name_2_2 ,"..." ,p_2_2, "\n", "3.", name_2_3 ,"..." ,p_2_3, "\n", "4.", name_2_4 ,"..." ,p_2_4, "\n", "5.", name_2_5 ,"..." ,p_2_5, "\n", "\n6.back to main menu\n")
-                        m_sarfasl_2 = input()
+                        choice = input()
                             
-                        match m_sarfasl_2 :
+                        match choice :
                             case "1" :
                                 while True :
                                     n_2_1 = input("num of order : ")
@@ -1431,9 +1445,9 @@ while True :
 
                     case "3" :
                         print("\n\n" , "1.",name_3_1 ,"..." ,p_3_1, "\n", "2.", name_3_2 ,"..." ,p_3_2, "\n", "3.", name_3_3 ,"..." ,p_3_3, "\n", "4.", name_3_4 ,"..." ,p_3_4, "\n", "5.", name_3_5 ,"..." ,p_3_5, "\n", "\n6.back to main menu\n")
-                        m_sarfasl_3 = input()
+                        choice = input()
 
-                        match m_sarfasl_3 :
+                        match choice :
                             case "1" :
                                 while True :
                                     n_3_1 = input("num of order : ")
@@ -1531,9 +1545,9 @@ while True :
 
                     case "4" :
                         print("\n\n" , "1.",name_4_1 ,"..." ,p_4_1, "\n", "2.", name_4_2 ,"..." ,p_4_2, "\n", "3.", name_4_3 ,"..." ,p_4_3, "\n", "4.", name_4_4 ,"..." ,p_4_4, "\n", "5.", name_4_5 ,"..." ,p_4_5, "\n", "\n6.back to main menu\n")
-                        m_sarfasl_4 = input()
+                        choice = input()
 
-                        match m_sarfasl_4 :
+                        match choice :
                             case "1" :
                                 while True :
                                     n_4_1 = input("num of order : ")
@@ -1629,9 +1643,9 @@ while True :
                                 break
                     case "5" :
                         print("\n\n" , "1.",name_5_1 ,"..." ,p_5_1, "\n", "2.", name_5_2 ,"..." ,p_5_2, "\n", "3.", name_5_3 ,"..." ,p_5_3, "\n", "4.", name_5_4 ,"..." ,p_5_4, "\n", "5.", name_5_5 ,"..." ,p_5_5, "\n", "\n6.back to main menu\n")
-                        m_sarfasl_5 = input()
+                        choice = input()
 
-                        match m_sarfasl_5 :
+                        match choice :
                             case "1" :
                                 while True :
                                     n_5_1 = input("num of order : ")
@@ -2410,7 +2424,7 @@ while True :
                                             print("vorodi bayad adad bashad")
                                 case "25" :
 
-                                    if n_55 == 0 :
+                                    if n_5_5 == 0 :
                                         break
 
                                     while True :

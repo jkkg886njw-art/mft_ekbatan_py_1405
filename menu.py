@@ -1943,7 +1943,7 @@ while True :
 
                             case "6" :
                                 while True :
-                                    print("kodam sefaresh ra mikhahid eslah konid :")
+                                    print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
 
                                     if num_1_1 > 0 :
                                         print(name_1_1, "...." ,num_1_1, " enter 1 " )
@@ -1958,7 +1958,12 @@ while True :
                                     
                                     edit_m = input()
 
+                                    if edit_m == "0" :
+                                        break
+
                                     print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
+
+                                    
 
                                     match edit_m :
 
@@ -2201,7 +2206,7 @@ while True :
                             case "6" :
                                 while True :
 
-                                    print("kodam sefaresh ra mikhahid eslah konid :")
+                                    print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
 
                                     if num_2_1 > 0 :
                                         print(name_2_1, "...." ,num_2_1, " enter 1 " )
@@ -2216,7 +2221,12 @@ while True :
 
                                     edit_m = input()
 
+                                    if edit_m == "0" :
+                                        break
+
                                     print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
+                                    
+                                    
 
                                     match edit_m :
                                         case "1" :
@@ -2460,7 +2470,7 @@ while True :
                             case "6" :
                                 while True :
 
-                                    print("kodam sefaresh ra mikhahid eslah konid :")
+                                    print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
 
                                     if num_3_1 > 0 :
                                         print(name_3_1, "...." ,num_3_1, " enter 1 " )
@@ -2475,7 +2485,12 @@ while True :
 
                                     edit_m = input()
 
+                                    if edit_m == "0" :
+                                        break
+
                                     print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
+                                    
+                                    
 
                                     match edit_m :
                                         case "1" :
@@ -2717,7 +2732,7 @@ while True :
                             case "6" :
                                 while True :
 
-                                    print("kodam sefaresh ra mikhahid eslah konid :")
+                                    print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
 
                                     if num_4_1 > 0 :
                                         print(name_4_1, "...." ,num_4_1, " enter 1 " )
@@ -2732,7 +2747,13 @@ while True :
 
                                     edit_m = input()
 
+                                    if edit_m == "0" :
+                                        break
+
                                     print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
+                                    
+
+                                    
 
                                     match edit_m :
                                         case "1" :
@@ -2974,7 +2995,7 @@ while True :
                             case "6" :
                                 while True :
 
-                                    print("kodam sefaresh ra mikhahid eslah konid :")
+                                    print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
 
                                     if num_5_1 > 0 :
                                         print(name_5_1, "...." ,num_5_1, " enter 1 " )
@@ -2989,7 +3010,13 @@ while True :
 
                                     edit_m = input()
 
+                                    if edit_m == "0" :
+                                        break
+
                                     print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
+
+                                    
+                                    
 
                                     match edit_m :
                                         case "1" :
@@ -3137,7 +3164,7 @@ while True :
                         while True :
                     
   
-                            print("kodam sefaresh ra mikhahid eslah konid :")
+                            print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
                             if num_1_1 > 0 :
                                 print(name_1_1, "...." ,num_1_1, " enter 1 " )
                             if num_1_2 > 0 :
@@ -3197,12 +3224,13 @@ while True :
                             
                             edit_m = input()
 
+                            if edit_m == "0" :
+                                break
+
                             print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
 
                             match edit_m :
-
-                                
-
+                               
                                 case "1" :
 
                                     if n_1_1 == 0 :

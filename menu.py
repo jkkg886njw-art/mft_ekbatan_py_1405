@@ -251,7 +251,7 @@ while True :
 
                             while True :
 
-                                if program_exit == 1 :
+                                if administrator_exit == 1 :
                                     break
 
                                 print("EXIT_0_\ntalashe", k +1 ,"/3\n" ,"please enter username :\n")

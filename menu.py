@@ -249,7 +249,7 @@ while True :
 
                             while True :
 
-                                if y == 1 :
+                                if program_exit == 1 :
                                     break
 
                                 print("EXIT_0_\ntalashe", k +1 ,"/3\n" ,"please enter username :\n")
@@ -299,12 +299,24 @@ while True :
                                                                         name_1_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_1)
                                                                     case "2" :
-                                                                        p_1_1 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_1_1)
+                                                                        new_p_1_1 = input("please enter new price :\n")
+                                                                        if new_p_1_1.isdigit():
+                                                                            p_1_1 = int(new_p_1_1)
+                                                                            print("new price is :" , p_1_1)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
                                                                     case "3" :
                                                                         name_1_1 = input("please enter new name :\n")
-                                                                        p_1_1 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_1_1, "and" ,"new price is :" , p_1_1 )
+                                                                        new_p_1_1 = input("please enter new price :\n")
+
+                                                                        if new_p_1_1.isdigit():
+                                                                            p_1_1 = int(new_p_1_1)
+                                                                            print("new name is :" , name_1_1, "and" ,"new price is :" , p_1_1 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+
+                                                                        
                                                                             
                                                                     case _ :
                                                                         break
@@ -317,12 +329,26 @@ while True :
                                                                         name_1_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_2)
                                                                     case "2" :
-                                                                        p_1_2 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_1_2)
+                                                                        
+                                                                        new_p_1_2 = input("please enter new price :\n")
+                                                                        if new_p_1_2.isdigit():
+                                                                            p_1_2 = int(new_p_1_2)
+                                                                            print("new price is :" , p_1_2)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                            
+                                                                        
                                                                     case "3" :
                                                                         name_1_2 = input("please enter new name :\n")
-                                                                        p_1_2 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_1_2, "and" ,"new price is :" , p_1_2 )
+
+                                                                        new_p_1_2 = input("please enter new price :\n")
+                                                                        if new_p_1_2.isdigit():
+                                                                            p_1_2 = int(new_p_1_2)
+                                                                            print("new name is :" , name_1_2, "and" ,"new price is :" , p_1_2 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -333,12 +359,26 @@ while True :
                                                                         name_1_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_3)
                                                                     case "2" :
-                                                                        p_1_3 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_1_3)
+                                                                        
+                                                                        new_p_1_3 = input("please enter new price :\n")
+                                                                        if new_p_1_3.isdigit():
+                                                                            p_1_3 = int(new_p_1_3)
+                                                                            print("new price is :" , p_1_3)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                            
+                                                                        
                                                                     case "3" :
                                                                         name_1_3 = input("please enter new name :\n")
-                                                                        p_1_3 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_1_3, "and" ,"new price is :" , p_1_3 )
+                                                                        
+                                                                        new_p_1_3 = input("please enter new price :\n")
+                                                                        if new_p_1_3.isdigit():
+                                                                            p_1_3 = int(new_p_1_3)
+                                                                            print("new name is :" , name_1_3, "and" ,"new price is :" , p_1_3 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                            
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -349,12 +389,26 @@ while True :
                                                                         name_1_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_4)
                                                                     case "2" :
-                                                                        p_1_4 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_1_4)
+                                                                        
+                                                                        new_p_1_4 = input("please enter new price :\n")
+                                                                        if new_p_1_4.isdigit():
+                                                                            p_1_4 = int(new_p_1_4)
+                                                                            print("new price is :" , p_1_4)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                            
+                                                                        
                                                                     case "3" :
                                                                         name_1_4 = input("please enter new name :\n")
-                                                                        p_1_4 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_1_4, "and" ,"new price is :" , p_1_4 )
+                                                                        
+                                                                        new_p_1_4 = input("please enter new price :\n")
+                                                                        if new_p_1_4.isdigit():
+                                                                            p_1_4 = int(new_p_1_4)
+                                                                            print("new name is :" , name_1_4, "and" ,"new price is :" , p_1_4 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                            
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -365,12 +419,26 @@ while True :
                                                                         name_1_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_5)
                                                                     case "2" :
-                                                                        p_1_5 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_1_5)
+                                                                        
+                                                                        new_p_1_5 = input("please enter new price :\n")
+                                                                        if new_p_1_5.isdigit():
+                                                                            p_1_5 = int(new_p_1_5)
+                                                                            print("new price is :" , p_1_5)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                            
+                                                                        
                                                                     case "3" :
                                                                         name_1_5 = input("please enter new name :\n")
-                                                                        p_1_5 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_1_5, "and" ,"new price is :" , p_1_5 )
+                                                                        
+                                                                        new_p_1_5 = input("please enter new price :\n")
+                                                                        if new_p_1_5.isdigit():
+                                                                            p_1_5 = int(new_p_1_5)
+                                                                            print("new name is :" , name_1_5, "and" ,"new price is :" , p_1_5 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                            
+                                                                        
 
                                                                     case _ :
                                                                         break
@@ -399,12 +467,26 @@ while True :
                                                                         name_2_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_1)
                                                                     case "2" :
-                                                                        p_2_1 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_2_1)
+                                                                        
+                                                                        new_p_2_1 = input("please enter new price :\n")
+                                                                        if new_p_2_1.isdigit():
+                                                                            p_2_1 = int(new_p_2_1)
+                                                                            print("new price is :" , p_2_1)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                            
+                                                                        
                                                                     case "3" :
                                                                         name_2_1 = input("please enter new name :\n")
-                                                                        p_2_1 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_2_1, "and" ,"new price is :" , p_2_1 )
+
+                                                                        new_p_2_1 = input("please enter new price :\n")
+                                                                        if new_p_2_1.isdigit():
+                                                                            p_2_1 = int(new_p_2_1)
+                                                                            print("new name is :" , name_2_1, "and" ,"new price is :" , p_2_1 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+
+                                                                        
                                                                     case _ :
                                                                         break
                                                                 
@@ -416,12 +498,26 @@ while True :
                                                                         name_2_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_2)
                                                                     case "2" :
-                                                                        p_2_2 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_2_2)
+                                                                                                                                                
+                                                                        new_p_2_2 = input("please enter new price :\n")
+                                                                        if new_p_2_2.isdigit():
+                                                                            p_2_2 = int(new_p_2_2)
+                                                                            print("new price is :" , p_2_2)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                         
+                                                                        
                                                                     case "3" :
                                                                         name_2_2 = input("please enter new name :\n")
-                                                                        p_2_2 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_2_2, "and" ,"new price is :" , p_2_2 )
+                                                                                                                                                
+                                                                        new_p_2_2 = input("please enter new price :\n")
+                                                                        if new_p_2_2.isdigit():
+                                                                            p_2_2 = int(new_p_2_2)
+                                                                            print("new name is :" , name_2_2, "and" ,"new price is :" , p_2_2 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                         
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -432,12 +528,26 @@ while True :
                                                                         name_2_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_3)
                                                                     case "2" :
-                                                                        p_2_3 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_2_3)
+                                                                                                                                                
+                                                                        new_p_2_3 = input("please enter new price :\n")
+                                                                        if new_p_2_3.isdigit():
+                                                                            p_2_3 = int(new_p_2_3)
+                                                                            print("new price is :" , p_2_3)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                         
+                                                                        
                                                                     case "3" :
                                                                         name_2_3 = input("please enter new name :\n")
-                                                                        p_2_3 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_2_3, "and" ,"new price is :" , p_2_3 )
+                                                                                                                                                
+                                                                        new_p_2_3 = input("please enter new price :\n")
+                                                                        if new_p_2_3.isdigit():
+                                                                            p_2_3 = int(new_p_2_3)
+                                                                            print("new name is :" , name_2_3, "and" ,"new price is :" , p_2_3 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                         
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -448,12 +558,26 @@ while True :
                                                                         name_2_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_4)
                                                                     case "2" :
-                                                                        p_2_4 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_2_4)
+                                                                                                                                                
+                                                                        new_p_2_4 = input("please enter new price :\n")
+                                                                        if new_p_2_4.isdigit():
+                                                                            p_2_4 = int(new_p_2_4)
+                                                                            print("new price is :" , p_2_4)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                         
+                                                                        
                                                                     case "3" :
                                                                         name_2_4 = input("please enter new name :\n")
-                                                                        p_2_4 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_2_4, "and" ,"new price is :" , p_2_4 )
+                                                                                                                                                
+                                                                        new_p_2_4 = input("please enter new price :\n")
+                                                                        if new_p_2_4.isdigit():
+                                                                            p_2_4 = int(new_p_2_4)
+                                                                            print("new name is :" , name_2_4, "and" ,"new price is :" , p_2_4 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                         
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -464,12 +588,26 @@ while True :
                                                                         name_2_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_5)
                                                                     case "2" :
-                                                                        p_2_5 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_2_5)
+                                                                                                                                                
+                                                                        new_p_2_5 = input("please enter new price :\n")
+                                                                        if new_p_2_5.isdigit():
+                                                                            p_2_5 = int(new_p_2_5)
+                                                                            print("new price is :" , p_2_5)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                         
+                                                                        
                                                                     case "3" :
                                                                         name_2_5 = input("please enter new name :\n")
-                                                                        p_2_5 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_2_5, "and" ,"new price is :" , p_2_5 )
+                                                                                                                                                
+                                                                        new_p_2_5 = input("please enter new price :\n")
+                                                                        if new_p_2_5.isdigit():
+                                                                            p_2_5 = int(new_p_2_5)
+                                                                            print("new name is :" , name_2_5, "and" ,"new price is :" , p_2_5 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                         
+                                                                        
                                                                     case _ :
                                                                         break
                                                             case "6" :
@@ -496,12 +634,26 @@ while True :
                                                                         name_3_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_1)
                                                                     case "2" :
-                                                                        p_3_1 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_3_1)
+                                                                                                                                                
+                                                                        new_p_3_1 = input("please enter new price :\n")
+                                                                        if new_p_3_1.isdigit():
+                                                                            p_3_1 = int(new_p_3_1)
+                                                                            print("new price is :" , p_3_1)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                         
+                                                                        
                                                                     case "3" :
                                                                         name_3_1 = input("please enter new name :\n")
-                                                                        p_3_1 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_3_1, "and" ,"new price is :" , p_3_1 )
+                                                                                                                                                
+                                                                        new_p_3_1 = input("please enter new price :\n")
+                                                                        if new_p_3_1.isdigit():
+                                                                            p_3_1 = int(new_p_3_1)
+                                                                            print("new name is :" , name_3_1, "and" ,"new price is :" , p_3_1 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                                                 
@@ -513,12 +665,26 @@ while True :
                                                                         name_3_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_2)
                                                                     case "2" :
-                                                                        p_3_2 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_3_2)
+                                                                                                                                                
+                                                                        new_p_3_2 = input("please enter new price :\n")
+                                                                        if new_p_3_2.isdigit():
+                                                                            p_3_2 = int(new_p_3_2)
+                                                                            print("new price is :" , p_3_2)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_3_2 = input("please enter new name :\n")
-                                                                        p_3_2 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_3_2, "and" ,"new price is :" , p_3_2 )
+                                                                                                                                                
+                                                                        new_p_3_2 = input("please enter new price :\n")
+                                                                        if new_p_3_2.isdigit():
+                                                                            p_3_2 = int(new_p_3_2)
+                                                                            print("new name is :" , name_3_2, "and" ,"new price is :" , p_3_2 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -529,12 +695,26 @@ while True :
                                                                         name_3_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_3)
                                                                     case "2" :
-                                                                        p_3_3 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_3_3)
+                                                                                                                                                
+                                                                        new_p_3_3 = input("please enter new price :\n")
+                                                                        if new_p_3_3.isdigit():
+                                                                            p_3_3 = int(new_p_3_3)
+                                                                            print("new price is :" , p_3_3)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_3_3 = input("please enter new name :\n")
-                                                                        p_3_3 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_3_3, "and" ,"new price is :" , p_3_3 )
+                                                                                                                                                
+                                                                        new_p_3_3 = input("please enter new price :\n")
+                                                                        if new_p_3_3.isdigit():
+                                                                            p_3_3 = int(new_p_3_3)
+                                                                            print("new name is :" , name_3_3, "and" ,"new price is :" , p_3_3 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -545,12 +725,26 @@ while True :
                                                                         name_3_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_4)
                                                                     case "2" :
-                                                                        p_3_4 = int(input("please enter new price :\n"))
+                                                                                                                                                
+                                                                        new_p_3_4 = input("please enter new price :\n")
+                                                                        if new_p_3_4.isdigit():
+                                                                            p_3_4 = int(new_p_3_4)
+                                                                            print("vorodi eshtebah ast")
+                                                                        else:
+                                                                            
+                                                                        
                                                                         print("new price is :" , p_3_4)
                                                                     case "3" :
                                                                         name_3_4 = input("please enter new name :\n")
-                                                                        p_3_4 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_3_4, "and" ,"new price is :" , p_3_4 )
+                                                                                                                                                
+                                                                        new_p_3_4 = input("please enter new price :\n")
+                                                                        if new_p_3_4.isdigit():
+                                                                            p_3_4 = int(new_p_3_4)
+                                                                            print("new name is :" , name_3_4, "and" ,"new price is :" , p_3_4 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -561,12 +755,26 @@ while True :
                                                                         name_3_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_5)
                                                                     case "2" :
-                                                                        p_3_5 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_3_5)
+                                                                                                                                                
+                                                                        new_p_3_5 = input("please enter new price :\n")
+                                                                        if new_p_3_5.isdigit():
+                                                                            p_3_5 = int(new_p_3_5)
+                                                                            print("new price is :" , p_3_5)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_3_5 = input("please enter new name :\n")
-                                                                        p_3_5 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_3_5, "and" ,"new price is :" , p_3_5 )
+                                                                                                                                                
+                                                                        new_p_3_5 = input("please enter new price :\n")
+                                                                        if new_p_3_5.isdigit():
+                                                                            p_3_5 = int(new_p_3_5)
+                                                                            print("new name is :" , name_3_5, "and" ,"new price is :" , p_3_5 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                                             case "6" :
@@ -592,12 +800,26 @@ while True :
                                                                         name_4_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_1)
                                                                     case "2" :
-                                                                        p_4_1 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_4_1)
+                                                                                                                                                
+                                                                        new_p_4_1 = input("please enter new price :\n")
+                                                                        if new_p_4_1.isdigit():
+                                                                            p_4_1 = int(new_p_4_1)
+                                                                            print("new price is :" , p_4_1)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_4_1 = input("please enter new name :\n")
-                                                                        p_4_1 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_4_1, "and" ,"new price is :" , p_4_1 )
+                                                                                                                                                
+                                                                        new_p_4_1 = input("please enter new price :\n")
+                                                                        if new_p_4_1.isdigit():
+                                                                            p_4_1 = int(new_p_4_1)
+                                                                            print("new name is :" , name_4_1, "and" ,"new price is :" , p_4_1 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                                                 
@@ -609,12 +831,26 @@ while True :
                                                                         name_4_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_2)
                                                                     case "2" :
-                                                                        p_4_2 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_4_2)
+                                                                                                                                                
+                                                                        new_p_4_2 = input("please enter new price :\n")
+                                                                        if new_p_4_2.isdigit():
+                                                                            p_4_2 = int(new_p_4_2)
+                                                                            print("new price is :" , p_4_2)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_4_2 = input("please enter new name :\n")
-                                                                        p_4_2 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_4_2, "and" ,"new price is :" , p_4_2 )
+                                                                                                                                                
+                                                                        new_p_4_2 = input("please enter new price :\n")
+                                                                        if new_p_4_2.isdigit():
+                                                                            p_4_2 = int(new_p_4_2)
+                                                                            print("new name is :" , name_4_2, "and" ,"new price is :" , p_4_2 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -625,12 +861,26 @@ while True :
                                                                         name_4_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_3)
                                                                     case "2" :
-                                                                        p_4_3 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_4_3)
+                                                                                                                                                
+                                                                        new_p_4_3 = input("please enter new price :\n")
+                                                                        if new_p_4_3.isdigit():
+                                                                            p_4_3 = int(new_p_4_3)
+                                                                            print("new price is :" , p_4_3)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_4_3 = input("please enter new name :\n")
-                                                                        p_4_3 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_4_3, "and" ,"new price is :" , p_4_3 )
+                                                                                                                                                
+                                                                        new_p_4_3 = input("please enter new price :\n")
+                                                                        if new_p_4_3.isdigit():
+                                                                            p_4_3 = int(new_p_4_3)
+                                                                            print("new name is :" , name_4_3, "and" ,"new price is :" , p_4_3 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -641,12 +891,26 @@ while True :
                                                                         name_4_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_4)
                                                                     case "2" :
-                                                                        p_4_4 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_4_4)
+                                                                                                                                                
+                                                                        new_p_4_4 = input("please enter new price :\n")
+                                                                        if new_p_4_4.isdigit():
+                                                                            p_4_4 = int(new_p_4_4)
+                                                                            print("new price is :" , p_4_4)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_4_4 = input("please enter new name :\n")
-                                                                        p_4_4 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_4_4, "and" ,"new price is :" , p_4_4 )
+                                                                                                                                                
+                                                                        new_p_4_4 = input("please enter new price :\n")
+                                                                        if new_p_4_4.isdigit():
+                                                                            p_4_4 = int(new_p_4_4)
+                                                                            print("new name is :" , name_4_4, "and" ,"new price is :" , p_4_4 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -657,12 +921,26 @@ while True :
                                                                         name_4_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_5)
                                                                     case "2" :
-                                                                        p_4_5 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_4_5)
+                                                                                                                                                
+                                                                        new_p_4_5 = input("please enter new price :\n")
+                                                                        if new_p_4_5.isdigit():
+                                                                            p_4_5 = int(new_p_4_5)
+                                                                            print("new price is :" , p_4_5)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_4_5 = input("please enter new name :\n")
-                                                                        p_4_5 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_4_5, "and" ,"new price is :" , p_4_5 )
+                                                                                                                                                
+                                                                        new_p_4_5 = input("please enter new price :\n")
+                                                                        if new_p_4_5.isdigit():
+                                                                            p_4_5 = int(new_p_4_5)
+                                                                            print("new name is :" , name_4_5, "and" ,"new price is :" , p_4_5 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     
                                                                     case _ :
                                                                         break
@@ -690,12 +968,26 @@ while True :
                                                                         name_5_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_1)
                                                                     case "2" :
-                                                                        p_5_1 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_5_1)
+                                                                                                                                                
+                                                                        new_p_5_1 = input("please enter new price :\n")
+                                                                        if new_p_5_1.isdigit():
+                                                                            p_5_1 = int(new_p_5_1)
+                                                                            print("new price is :" , p_5_1)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_5_1 = input("please enter new name :\n")
-                                                                        p_5_1 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_5_1, "and" ,"new price is :" , p_5_1 )
+                                                                                                                                                
+                                                                        new_p_5_1 = input("please enter new price :\n")
+                                                                        if new_p_5_1.isdigit():
+                                                                            p_5_1 = int(new_p_5_1)
+                                                                            print("new name is :" , name_5_1, "and" ,"new price is :" , p_5_1 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                                                 
@@ -707,12 +999,26 @@ while True :
                                                                         name_5_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_2)
                                                                     case "2" :
-                                                                        p_5_2 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_5_2)
+                                                                                                                                                
+                                                                        new_p_5_2 = input("please enter new price :\n")
+                                                                        if new_p_5_2.isdigit():
+                                                                            p_5_2 = int(new_p_5_2)
+                                                                            print("new price is :" , p_5_2)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_5_2 = input("please enter new name :\n")
-                                                                        p_5_2 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_5_2, "and" ,"new price is :" , p_5_2 )
+                                                                                                                                                
+                                                                        new_p_5_2 = input("please enter new price :\n")
+                                                                        if new_p_5_2.isdigit():
+                                                                            p_5_2 = int(new_p_5_2)
+                                                                            print("new name is :" , name_5_2, "and" ,"new price is :" , p_5_2 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -723,12 +1029,26 @@ while True :
                                                                         name_5_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_3)
                                                                     case "2" :
-                                                                        p_5_3 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_5_3)
+                                                                                                                                                
+                                                                        new_p_5_3 = input("please enter new price :\n")
+                                                                        if new_p_5_3.isdigit():
+                                                                            p_5_3 = int(new_p_5_3)
+                                                                            print("new price is :" , p_5_3)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_5_3 = input("please enter new name :\n")
-                                                                        p_5_3 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_5_3, "and" ,"new price is :" , p_5_3 )
+                                                                                                                                                
+                                                                        new_p_5_3 = input("please enter new price :\n")
+                                                                        if new_p_5_3.isdigit():
+                                                                            p_5_3 = int(new_p_5_3)
+                                                                            print("new name is :" , name_5_3, "and" ,"new price is :" , p_5_3 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -739,12 +1059,26 @@ while True :
                                                                         name_5_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_4)
                                                                     case "2" :
-                                                                        p_5_4 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_5_4)
+                                                                                                                                                
+                                                                        new_p_5_4 = input("please enter new price :\n")
+                                                                        if new_p_5_4.isdigit():
+                                                                            p_5_4 = int(new_p_5_4)
+                                                                            print("new price is :" , p_5_4)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_5_4 = input("please enter new name :\n")
-                                                                        p_5_4 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_5_4, "and" ,"new price is :" , p_5_4 )
+                                                                                                                                                
+                                                                        new_p_5_4 = input("please enter new price :\n")
+                                                                        if new_p_5_4.isdigit():
+                                                                            p_5_4 = int(new_p_5_4)
+                                                                            print("new name is :" , name_5_4, "and" ,"new price is :" , p_5_4 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                     
@@ -755,12 +1089,26 @@ while True :
                                                                         name_5_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_5)
                                                                     case "2" :
-                                                                        p_5_5 = int(input("please enter new price :\n"))
-                                                                        print("new price is :" , p_5_5)
+                                                                                                                                                
+                                                                        new_p_5_5 = input("please enter new price :\n")
+                                                                        if new_p_5_5.isdigit():
+                                                                            p_5_5 = int(new_p_5_5)
+                                                                            print("new price is :" , p_5_5)
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case "3" :
                                                                         name_5_5 = input("please enter new name :\n")
-                                                                        p_5_5 = int(input("please enter new price :\n"))
-                                                                        print("new name is :" , name_5_5, "and" ,"new price is :" , p_5_5 )
+                                                                                                                                                
+                                                                        new_p_5_5 = input("please enter new price :\n")
+                                                                        if new_p_5_5.isdigit():
+                                                                            p_5_5 = int(new_p_5_5)
+                                                                            print("new name is :" , name_5_5, "and" ,"new price is :" , p_5_5 )
+                                                                        else:
+                                                                            print("vorodi eshtebah ast")
+                                                                        
+                                                                        
                                                                     case _ :
                                                                         break
                                                             case "6" :
@@ -774,11 +1122,28 @@ while True :
 
                                                 case "6" :
                                                     if j < 3 :
-                                                        d_servis = float(input("please enter service percent :\n"))
+                                                        d_servis = input("please enter service percent :\n")
+                                                        if d_servis.isdigit():
+                                                            d_servis = int(d_servis)
+                                                        else:
+                                                            print("vorodi eshtebah ast")
+
                                                         d_servis = d_servis /100
-                                                        d_tax = float(input("please enter tax percent :\n"))
+
+                                                        d_tax = input("please enter tax percent :\n")
+                                                        if d_tax.isdigit():
+                                                            d_tax = int(d_tax)
+                                                        else:
+                                                            print("vorodi eshtebah ast")
+
                                                         d_tax = d_tax /100
-                                                        s_peyk = int(input("please enter peyk price :\n"))
+
+                                                        s_peyk = input("please enter peyk price :\n")
+                                                        if s_peyk.isdigit():
+                                                            s_peyk = int(s_peyk)
+                                                        else:
+                                                            print("vorodi eshtebah ast")
+                                                                        
                                                         break
                                                     else :
                                                         print("you are block")
@@ -902,7 +1267,7 @@ while True :
                             break
 
                     case _ :
-                        print("voroode moshtari")
+                        
                         break
                         
 
@@ -3351,17 +3716,13 @@ while True :
                     print(name_5_5, "...." ,num_5_5, " adad ")
 
 
-
-
-
-
-
-        if order_exit == 1 :
-            break
-
         if no_order == 1 :
             break
                  
+        if order_exit == 1 :
+            break
+
+        
         print ("\n     *** soorat hesab ***\n")    
             
         if num_1_1 > 0 :
@@ -3536,7 +3897,7 @@ while True :
 
     por_forosh_1 = total_num_1_1
     por_forosh_name_1 = name_1_1
-    total_por_forosh = total_num_1_1
+
 
     if total_num_1_2 > por_forosh_1 :
         por_forosh_1 = total_num_1_2
@@ -3555,7 +3916,7 @@ while True :
         por_forosh_name_1 = name_1_5
 
     por_forosh_2 = total_num_2_1
-    por_forosh_name = name_2_1
+    por_forosh_name_2 = name_2_1
 
     if total_num_2_2 > por_forosh_2 :
         por_forosh_2 = total_num_2_2
@@ -3574,7 +3935,7 @@ while True :
         por_forosh_name_2 = name_2_5
 
     por_forosh_3 = total_num_3_1
-    por_forosh_name = name_3_1
+    por_forosh_name_3 = name_3_1
     
     if total_num_3_2 > por_forosh_3 :
         por_forosh_3 = total_num_3_2
@@ -3593,7 +3954,7 @@ while True :
         por_forosh_name_3 = name_3_5
 
     por_forosh_4 = total_num_4_1
-    por_forosh_name = name_4_1
+    por_forosh_name_4 = name_4_1
     
     if total_num_4_2 > por_forosh_4 :
         por_forosh_4 = total_num_4_2
@@ -3612,7 +3973,7 @@ while True :
         por_forosh_name_4 = name_4_5
 
     por_forosh_5 = total_num_5_1
-    por_forosh_name = name_5_1
+    por_forosh_name_5 = name_5_1
     
     if total_num_5_2 > por_forosh_5 :
         por_forosh_5 = total_num_5_2
@@ -3640,6 +4001,9 @@ while True :
     if por_forosh_3 > total_por_forosh :
         total_por_forosh = por_forosh_3
         total_por_forosh_name = por_forosh_name_3
+    if por_forosh_4 > total_por_forosh :
+        total_por_forosh = por_forosh_4
+        total_por_forosh_name = por_forosh_name_4
     if por_forosh_5 > total_por_forosh :
         total_por_forosh = por_forosh_5
         total_por_forosh_name = por_forosh_name_5

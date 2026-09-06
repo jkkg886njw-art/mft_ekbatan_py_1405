@@ -237,6 +237,8 @@ while True :
         if k < 3 :
 
             while True :
+
+                administrator_exit = 0
                 
                 start = input("1.administrator \n2.sefaresh giri\n0.EXIT_0_\n")
                

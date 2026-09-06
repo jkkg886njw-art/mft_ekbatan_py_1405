@@ -7,6 +7,8 @@ print("wellcome to my program")
 #منظور از name نام زیرمجموعه مورد نظر است
 #منظور از p قیمت پایه است که خلاصه شده price است
 
+business_name = "resturan golbahar"
+
 sarfas_1 = "pish ghaza"
 
 name_1_1 = "soup"
@@ -275,7 +277,7 @@ while True :
 
                                     while True :
 
-                                        print("\n" , "\n1.edit" , sarfas_1 ,"\n2.edit",sarfas_2,"\n3.edit", sarfas_3, "\n4.edit",sarfas_4,"\n5.edit", sarfas_5, "\n6.edit service/tax/peyk \n7.gozareshat \n8.change username and password \n0.EXIT_0_\n")
+                                        print("\n" , "\n1.edit" , sarfas_1 ,"\n2.edit",sarfas_2,"\n3.edit", sarfas_3, "\n4.edit",sarfas_4,"\n5.edit", sarfas_5, "\n6.edit service/tax/peyk \n7.gozareshat \n8.change username and password \n9.change business name \n0.EXIT_0_\n")
                                         menu = input()
                                         administrator_exit = 0
                                         if menu == "0" :
@@ -1253,6 +1255,8 @@ while True :
                                                         print("you are block")
                                                         break
                                                         
+                                                case "9" :
+                                                    busines_name = input("please enter new business name")
 
                                 else :
                                     print("username or password wrong")
@@ -1300,7 +1304,7 @@ while True :
         if program_exit == 1 :
             break
 
-        print("\n\n *** wellcome to my resturant *** ")
+        print("\n\n *** wellcome to ",business_name.upper(), " *** ")
         
         num_1_1 = 0
         num_1_2 = 0

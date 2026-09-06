@@ -314,7 +314,7 @@ while True :
                                                                             p_1_1 = int(new_p_1_1)
                                                                             print("new name is :" , name_1_1, "and" ,"new price is :" , p_1_1 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
 
                                                                         
                                                                             
@@ -346,7 +346,7 @@ while True :
                                                                             p_1_2 = int(new_p_1_2)
                                                                             print("new name is :" , name_1_2, "and" ,"new price is :" , p_1_2 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
 
                                                                         
                                                                     case _ :
@@ -376,7 +376,7 @@ while True :
                                                                             p_1_3 = int(new_p_1_3)
                                                                             print("new name is :" , name_1_3, "and" ,"new price is :" , p_1_3 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                             
                                                                         
                                                                     case _ :
@@ -406,7 +406,7 @@ while True :
                                                                             p_1_4 = int(new_p_1_4)
                                                                             print("new name is :" , name_1_4, "and" ,"new price is :" , p_1_4 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                             
                                                                         
                                                                     case _ :
@@ -436,7 +436,7 @@ while True :
                                                                             p_1_5 = int(new_p_1_5)
                                                                             print("new name is :" , name_1_5, "and" ,"new price is :" , p_1_5 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                             
                                                                         
 
@@ -484,7 +484,7 @@ while True :
                                                                             p_2_1 = int(new_p_2_1)
                                                                             print("new name is :" , name_2_1, "and" ,"new price is :" , p_2_1 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
 
                                                                         
                                                                     case _ :
@@ -515,7 +515,7 @@ while True :
                                                                             p_2_2 = int(new_p_2_2)
                                                                             print("new name is :" , name_2_2, "and" ,"new price is :" , p_2_2 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                          
                                                                         
                                                                     case _ :
@@ -545,7 +545,7 @@ while True :
                                                                             p_2_3 = int(new_p_2_3)
                                                                             print("new name is :" , name_2_3, "and" ,"new price is :" , p_2_3 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                          
                                                                         
                                                                     case _ :
@@ -575,7 +575,7 @@ while True :
                                                                             p_2_4 = int(new_p_2_4)
                                                                             print("new name is :" , name_2_4, "and" ,"new price is :" , p_2_4 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                          
                                                                         
                                                                     case _ :
@@ -605,7 +605,7 @@ while True :
                                                                             p_2_5 = int(new_p_2_5)
                                                                             print("new name is :" , name_2_5, "and" ,"new price is :" , p_2_5 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                          
                                                                         
                                                                     case _ :
@@ -651,7 +651,7 @@ while True :
                                                                             p_3_1 = int(new_p_3_1)
                                                                             print("new name is :" , name_3_1, "and" ,"new price is :" , p_3_1 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -682,7 +682,7 @@ while True :
                                                                             p_3_2 = int(new_p_3_2)
                                                                             print("new name is :" , name_3_2, "and" ,"new price is :" , p_3_2 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -712,7 +712,7 @@ while True :
                                                                             p_3_3 = int(new_p_3_3)
                                                                             print("new name is :" , name_3_3, "and" ,"new price is :" , p_3_3 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -729,11 +729,11 @@ while True :
                                                                         new_p_3_4 = input("please enter new price :\n")
                                                                         if new_p_3_4.isdigit():
                                                                             p_3_4 = int(new_p_3_4)
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("new price is :" , p_3_4)
                                                                         else:
+                                                                            print("vorodi eshtebah ast")
                                                                             
                                                                         
-                                                                        print("new price is :" , p_3_4)
                                                                     case "3" :
                                                                         name_3_4 = input("please enter new name :\n")
                                                                                                                                                 
@@ -742,7 +742,7 @@ while True :
                                                                             p_3_4 = int(new_p_3_4)
                                                                             print("new name is :" , name_3_4, "and" ,"new price is :" , p_3_4 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -772,7 +772,7 @@ while True :
                                                                             p_3_5 = int(new_p_3_5)
                                                                             print("new name is :" , name_3_5, "and" ,"new price is :" , p_3_5 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -817,7 +817,7 @@ while True :
                                                                             p_4_1 = int(new_p_4_1)
                                                                             print("new name is :" , name_4_1, "and" ,"new price is :" , p_4_1 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -848,7 +848,7 @@ while True :
                                                                             p_4_2 = int(new_p_4_2)
                                                                             print("new name is :" , name_4_2, "and" ,"new price is :" , p_4_2 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -878,7 +878,7 @@ while True :
                                                                             p_4_3 = int(new_p_4_3)
                                                                             print("new name is :" , name_4_3, "and" ,"new price is :" , p_4_3 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -908,7 +908,7 @@ while True :
                                                                             p_4_4 = int(new_p_4_4)
                                                                             print("new name is :" , name_4_4, "and" ,"new price is :" , p_4_4 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -938,7 +938,7 @@ while True :
                                                                             p_4_5 = int(new_p_4_5)
                                                                             print("new name is :" , name_4_5, "and" ,"new price is :" , p_4_5 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     
@@ -985,7 +985,7 @@ while True :
                                                                             p_5_1 = int(new_p_5_1)
                                                                             print("new name is :" , name_5_1, "and" ,"new price is :" , p_5_1 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -1016,7 +1016,7 @@ while True :
                                                                             p_5_2 = int(new_p_5_2)
                                                                             print("new name is :" , name_5_2, "and" ,"new price is :" , p_5_2 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -1046,7 +1046,7 @@ while True :
                                                                             p_5_3 = int(new_p_5_3)
                                                                             print("new name is :" , name_5_3, "and" ,"new price is :" , p_5_3 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -1076,7 +1076,7 @@ while True :
                                                                             p_5_4 = int(new_p_5_4)
                                                                             print("new name is :" , name_5_4, "and" ,"new price is :" , p_5_4 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :
@@ -1106,7 +1106,7 @@ while True :
                                                                             p_5_5 = int(new_p_5_5)
                                                                             print("new name is :" , name_5_5, "and" ,"new price is :" , p_5_5 )
                                                                         else:
-                                                                            print("vorodi eshtebah ast")
+                                                                            print("vorodie price eshtebah ast")
                                                                         
                                                                         
                                                                     case _ :

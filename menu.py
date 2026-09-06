@@ -763,7 +763,7 @@ while True :
                                                                             print("vorodi eshtebah ast")
                                                                         
                                                                         
-                                                                    case "3" :\
+                                                                    case "3" :
                                                                         if admin_user == 2 :
                                                                             print("EROR :: user cant")
                                                                             break

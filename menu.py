@@ -3,6 +3,16 @@
 
 print("wellcome to my program")
 
+
+main_username_admin = "admin"
+main_password_admin = "admin"
+
+main_username_user = "user"
+main_password_user = "user"
+
+backup_password = "12345"
+bazyabi_password = "54321"
+
 #عدد اول مربوط به سرفصل منو و عدد دوم مربوط به زیرمجموعه منو است
 #منظور از name نام زیرمجموعه مورد نظر است
 #منظور از p قیمت پایه است که خلاصه شده price است
@@ -202,10 +212,7 @@ total_sell_5_5 = 0
 num_salon = 0
 num_peyk = 0
 
-main_username = "admin"
-main_password = "admin"
-backup_password = "12345"
-bazyabi_password = "54321"
+
 
 #shomarande change password
 j = 0
@@ -215,6 +222,7 @@ start = 0
 administrator_exit = 0
 program_exit = 0
 no_order = 0
+admin_user = 0
 
 while True :
 
@@ -271,7 +279,16 @@ while True :
 
                                     break
 
-                                if username == main_username and password == main_password :
+                                if username == main_username_admin and password == main_password_admin or username == main_username_user and password == main_password_user :
+
+                                    if username == main_username_admin and password == main_password_admin :
+
+                                        admin_user = 1
+
+                                    elif username == main_username_user and password == main_password_user :
+
+                                        admin_user = 2
+                                    
 
                                     k = 0
 
@@ -298,6 +315,10 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
+
                                                                         name_1_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_1)
                                                                     case "2" :
@@ -309,6 +330,10 @@ while True :
                                                                             print("vorodi eshtebah ast")
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
+                                                                        
                                                                         name_1_1 = input("please enter new name :\n")
                                                                         new_p_1_1 = input("please enter new price :\n")
 
@@ -328,6 +353,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_1_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_2)
                                                                     case "2" :
@@ -341,6 +369,9 @@ while True :
                                                                             
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_1_2 = input("please enter new name :\n")
 
                                                                         new_p_1_2 = input("please enter new price :\n")
@@ -358,6 +389,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_1_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_3)
                                                                     case "2" :
@@ -371,6 +405,9 @@ while True :
                                                                             
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_1_3 = input("please enter new name :\n")
                                                                         
                                                                         new_p_1_3 = input("please enter new price :\n")
@@ -388,6 +425,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_1_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_4)
                                                                     case "2" :
@@ -401,6 +441,9 @@ while True :
                                                                             
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_1_4 = input("please enter new name :\n")
                                                                         
                                                                         new_p_1_4 = input("please enter new price :\n")
@@ -418,6 +461,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_1_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_1_5)
                                                                     case "2" :
@@ -428,9 +474,11 @@ while True :
                                                                             print("new price is :" , p_1_5)
                                                                         else:
                                                                             print("vorodi eshtebah ast")
-                                                                            
-                                                                        
+                                                                              
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_1_5 = input("please enter new name :\n")
                                                                         
                                                                         new_p_1_5 = input("please enter new price :\n")
@@ -466,6 +514,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_2_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_1)
                                                                     case "2" :
@@ -479,6 +530,9 @@ while True :
                                                                             
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_2_1 = input("please enter new name :\n")
 
                                                                         new_p_2_1 = input("please enter new price :\n")
@@ -497,6 +551,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_2_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_2)
                                                                     case "2" :
@@ -510,6 +567,9 @@ while True :
                                                                          
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_2_2 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_2_2 = input("please enter new price :\n")
@@ -527,6 +587,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_2_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_3)
                                                                     case "2" :
@@ -540,6 +603,9 @@ while True :
                                                                          
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_2_3 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_2_3 = input("please enter new price :\n")
@@ -557,6 +623,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_2_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_4)
                                                                     case "2" :
@@ -570,6 +639,9 @@ while True :
                                                                          
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_2_4 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_2_4 = input("please enter new price :\n")
@@ -587,6 +659,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_2_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_2_5)
                                                                     case "2" :
@@ -600,6 +675,9 @@ while True :
                                                                          
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_2_5 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_2_5 = input("please enter new price :\n")
@@ -633,6 +711,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_3_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_1)
                                                                     case "2" :
@@ -646,6 +727,9 @@ while True :
                                                                          
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_3_1 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_3_1 = input("please enter new price :\n")
@@ -664,6 +748,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_3_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_2)
                                                                     case "2" :
@@ -676,7 +763,10 @@ while True :
                                                                             print("vorodi eshtebah ast")
                                                                         
                                                                         
-                                                                    case "3" :
+                                                                    case "3" :\
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_3_2 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_3_2 = input("please enter new price :\n")
@@ -694,6 +784,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_3_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_3)
                                                                     case "2" :
@@ -707,6 +800,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_3_3 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_3_3 = input("please enter new price :\n")
@@ -724,6 +820,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_3_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_4)
                                                                     case "2" :
@@ -737,6 +836,9 @@ while True :
                                                                             
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_3_4 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_3_4 = input("please enter new price :\n")
@@ -754,6 +856,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_3_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_3_5)
                                                                     case "2" :
@@ -767,6 +872,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_3_5 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_3_5 = input("please enter new price :\n")
@@ -799,6 +907,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_4_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_1)
                                                                     case "2" :
@@ -812,6 +923,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_4_1 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_4_1 = input("please enter new price :\n")
@@ -830,6 +944,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_4_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_2)
                                                                     case "2" :
@@ -843,6 +960,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_4_2 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_4_2 = input("please enter new price :\n")
@@ -860,6 +980,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_4_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_3)
                                                                     case "2" :
@@ -873,6 +996,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_4_3 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_4_3 = input("please enter new price :\n")
@@ -890,6 +1016,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_4_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_4)
                                                                     case "2" :
@@ -903,6 +1032,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_4_4 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_4_4 = input("please enter new price :\n")
@@ -920,6 +1052,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_4_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_4_5)
                                                                     case "2" :
@@ -933,6 +1068,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_4_5 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_4_5 = input("please enter new price :\n")
@@ -967,6 +1105,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_5_1 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_1)
                                                                     case "2" :
@@ -980,6 +1121,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_5_1 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_5_1 = input("please enter new price :\n")
@@ -998,6 +1142,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_5_2 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_2)
                                                                     case "2" :
@@ -1011,6 +1158,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_5_2 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_5_2 = input("please enter new price :\n")
@@ -1028,6 +1178,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_5_3 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_3)
                                                                     case "2" :
@@ -1041,6 +1194,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_5_3 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_5_3 = input("please enter new price :\n")
@@ -1058,6 +1214,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_5_4 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_4)
                                                                     case "2" :
@@ -1071,6 +1230,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_5_4 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_5_4 = input("please enter new price :\n")
@@ -1088,6 +1250,9 @@ while True :
                                                                 sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
                                                                 match sub_choice :
                                                                     case "1" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_5_5 = input("please enter new name :\n")
                                                                         print("new name is :" , name_5_5)
                                                                     case "2" :
@@ -1101,6 +1266,9 @@ while True :
                                                                         
                                                                         
                                                                     case "3" :
+                                                                        if admin_user == 2 :
+                                                                            print("EROR :: user cant")
+                                                                            break
                                                                         name_5_5 = input("please enter new name :\n")
                                                                                                                                                 
                                                                         new_p_5_5 = input("please enter new price :\n")
@@ -1213,6 +1381,9 @@ while True :
                                                                 print("kam forosh tarin mahsoole ",sarfas_4 ,kam_forosh_name_4 , "...." , kam_forosh_4 , "adad")
                                                                 print("kam forosh tarin mahsoole ",sarfas_5 ,kam_forosh_name_5 , "...." , kam_forosh_5 , "adad")
                                                             case "4" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
                                                                 print("\ntedade factor haye sader shode :", tedad_factor ,"\ntedade mahsoolate sefaresh dade shode :" , total_num , "\nmajmooe kole daramd :" , int(total_forosh) , "\ntedade biron bar :", num_peyk , "\ntedade salon :" , num_salon)
                                                         
                                                             case _ :
@@ -1224,24 +1395,38 @@ while True :
 
 
                                                 case "8" :
+                                                    if admin_user == 2 :
+                                                        print("EROR :: user cant")
+                                                        break
+
                                                     if j < 3 :
                                                         for i in range(3):
                                                             change_password = input("please enter backup password :\n")
                                                             if change_password == backup_password :
                                                                 j = 0
-                                                                change = input ("1.change username \n2.change password\n3.change username and password\n4.change backup password \n")
+                                                                change = input ("1.change admin username \n2.change admin password\n3.change admin username and password\n4.change user username\n5.change user password \n6.change user username and password \n7.change backup password \n")
                                                                 match change :
                                                                     case "1" :
-                                                                        main_username = input("please enter new username :\n")
-                                                                        print("new username is :" , main_username)
+                                                                        main_username_admin = input("please enter new username :\n")
+                                                                        print("new username is :" , main_username_admin)
                                                                     case "2" :
-                                                                        main_password = input("please enter new password :\n")
-                                                                        print("new password is :" , main_password)
+                                                                        main_password_admin = input("please enter new password :\n")
+                                                                        print("new password is :" , main_password_admin)
                                                                     case "3" :
-                                                                        main_username = input("please enter new username :\n")
-                                                                        main_password = input("please enter new password :\n")
-                                                                        print("new username is :" , main_username, "and" ,"new password is :" , main_password )
+                                                                        main_username_admin = input("please enter new username :\n")
+                                                                        main_password_admin = input("please enter new password :\n")
+                                                                        print("new username is :" , main_username_admin, "and" ,"new password is :" , main_password_admin )
                                                                     case "4" :
+                                                                        main_username_user = input("please enter new username :\n")
+                                                                        print("new username is :" , main_username_user)
+                                                                    case "5" :
+                                                                        main_password_user = input("please enter new password :\n")
+                                                                        print("new password is :" , main_password_user)
+                                                                    case "6" :
+                                                                        main_username_user = input("please enter new username :\n")
+                                                                        main_password_user = input("please enter new password :\n")
+                                                                        print("new username is :" , main_username_user, "and" ,"new password is :" , main_password_user )
+                                                                    case "7" :
                                                                         backup_password = input("please enter new backup password")
                                                                     case _ :
                                                                         break
@@ -1256,6 +1441,9 @@ while True :
                                                         break
                                                         
                                                 case "9" :
+                                                    if admin_user == 2 :
+                                                        print("EROR :: user cant")
+                                                        break
                                                     busines_name = input("please enter new business name")
 
                                 else :

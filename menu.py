@@ -224,6 +224,7 @@ administrator_exit = 0
 program_exit = 0
 no_order = 0
 admin_user = 0
+price = 0
 
 while True :
 
@@ -314,190 +315,75 @@ while True :
                                     
                                                         match choice :
                                                             case "1" :
-
-                                                                sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-
-                                                                        name_1_1 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_1_1)
-                                                                    case "2" :
-                                                                        new_p_1_1 = input("please enter new price :\n")
-                                                                        if new_p_1_1.isdigit():
-                                                                            p_1_1 = int(new_p_1_1)
-                                                                            print("new price is :" , p_1_1)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        
-                                                                        name_1_1 = input("please enter new name :\n")
-                                                                        new_p_1_1 = input("please enter new price :\n")
-
-                                                                        if new_p_1_1.isdigit():
-                                                                            p_1_1 = int(new_p_1_1)
-                                                                            print("new name is :" , name_1_1, "and" ,"new price is :" , p_1_1 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-
-                                                                        
-                                                                            
-                                                                    case _ :
-                                                                        break
-                                                                
-                                                                
+                                                                name = name_1_1
+                                                                price = p_1_1
                                                             case "2" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_1_2 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_1_2)
-                                                                    case "2" :
-                                                                        
-                                                                        new_p_1_2 = input("please enter new price :\n")
-                                                                        if new_p_1_2.isdigit():
-                                                                            p_1_2 = int(new_p_1_2)
-                                                                            print("new price is :" , p_1_2)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                            
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_1_2 = input("please enter new name :\n")
-
-                                                                        new_p_1_2 = input("please enter new price :\n")
-                                                                        if new_p_1_2.isdigit():
-                                                                            p_1_2 = int(new_p_1_2)
-                                                                            print("new name is :" , name_1_2, "and" ,"new price is :" , p_1_2 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_1_2
+                                                                price = p_1_2
                                                             case "3" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_1_3 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_1_3)
-                                                                    case "2" :
-                                                                        
-                                                                        new_p_1_3 = input("please enter new price :\n")
-                                                                        if new_p_1_3.isdigit():
-                                                                            p_1_3 = int(new_p_1_3)
-                                                                            print("new price is :" , p_1_3)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                            
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_1_3 = input("please enter new name :\n")
-                                                                        
-                                                                        new_p_1_3 = input("please enter new price :\n")
-                                                                        if new_p_1_3.isdigit():
-                                                                            p_1_3 = int(new_p_1_3)
-                                                                            print("new name is :" , name_1_3, "and" ,"new price is :" , p_1_3 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                            
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_1_3
+                                                                price = p_1_3
                                                             case "4" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_1_4 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_1_4)
-                                                                    case "2" :
-                                                                        
-                                                                        new_p_1_4 = input("please enter new price :\n")
-                                                                        if new_p_1_4.isdigit():
-                                                                            p_1_4 = int(new_p_1_4)
-                                                                            print("new price is :" , p_1_4)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                            
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_1_4 = input("please enter new name :\n")
-                                                                        
-                                                                        new_p_1_4 = input("please enter new price :\n")
-                                                                        if new_p_1_4.isdigit():
-                                                                            p_1_4 = int(new_p_1_4)
-                                                                            print("new name is :" , name_1_4, "and" ,"new price is :" , p_1_4 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                            
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_1_4
+                                                                price = p_1_4
                                                             case "5" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_1_5 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_1_5)
-                                                                    case "2" :
-                                                                        
-                                                                        new_p_1_5 = input("please enter new price :\n")
-                                                                        if new_p_1_5.isdigit():
-                                                                            p_1_5 = int(new_p_1_5)
-                                                                            print("new price is :" , p_1_5)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                              
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_1_5 = input("please enter new name :\n")
-                                                                        
-                                                                        new_p_1_5 = input("please enter new price :\n")
-                                                                        if new_p_1_5.isdigit():
-                                                                            p_1_5 = int(new_p_1_5)
-                                                                            print("new name is :" , name_1_5, "and" ,"new price is :" , p_1_5 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                            
-                                                                        
-
-                                                                    case _ :
-                                                                        break
+                                                                name = name_1_5
+                                                                price = p_1_5
                                                             case "6" :
-                                                                sarfas_1 = input("please enter new name for sarfasl_1 :\n")
-                                        
+                                                                name = sarfas_1
+                                                            case _ :
+                                                                break
+
+
+                                                        sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                        match sub_choice :
+                                                            case "1" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+
+                                                                name = input("please enter new name :\n")
+                                                                print("new name is :" , name)
+                                                            case "2" :
+                                                                new_price = input("please enter new price :\n")
+                                                                if new_price.isdigit():
+                                                                    price = int(new_price)
+                                                                    print("new price is :" , price)
+                                                                else:
+                                                                    print("vorodi eshtebah ast")
+                                                                
+                                                            case "3" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+                                                                
+                                                                name = input("please enter new name :\n")
+                                                                new_price = input("please enter new price :\n")
+
+                                                                if new_price.isdigit():
+                                                                    price = int(new_price)
+                                                                    print("new name is :" , name, "and" ,"new price is :" , price )
+                                                                else:
+                                                                    print("vorodie price eshtebah ast")
+
+                                                        match choice :
+                                                            case "1" :
+                                                                name_1_1 = name
+                                                                p_1_1 = price
+                                                            case "2" :
+                                                                name_1_2 = name
+                                                                p_1_2 = price
+                                                            case "3" :
+                                                                name_1_3 = name
+                                                                p_1_3 = price
+                                                            case "4" :
+                                                                name_1_4 = name
+                                                                p_1_4 = price
+                                                            case "5" :
+                                                                name_1_5 = name
+                                                                p_1_5 = price
+                                                            case "6" :
+                                                                sarfas_1 = name
                                                             case _ :
                                                                 break
                                                     else :
@@ -513,191 +399,77 @@ while True :
                                     
                                                         match choice :
                                                             case "1" :
-
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_2_1 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_2_1)
-                                                                    case "2" :
-                                                                        
-                                                                        new_p_2_1 = input("please enter new price :\n")
-                                                                        if new_p_2_1.isdigit():
-                                                                            p_2_1 = int(new_p_2_1)
-                                                                            print("new price is :" , p_2_1)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                            
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_2_1 = input("please enter new name :\n")
-
-                                                                        new_p_2_1 = input("please enter new price :\n")
-                                                                        if new_p_2_1.isdigit():
-                                                                            p_2_1 = int(new_p_2_1)
-                                                                            print("new name is :" , name_2_1, "and" ,"new price is :" , p_2_1 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                                                
-                                                                
+                                                                name = name_2_1
+                                                                price = p_2_1
                                                             case "2" :
-                                                                sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_2_2 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_2_2)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_2_2 = input("please enter new price :\n")
-                                                                        if new_p_2_2.isdigit():
-                                                                            p_2_2 = int(new_p_2_2)
-                                                                            print("new price is :" , p_2_2)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                         
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_2_2 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_2_2 = input("please enter new price :\n")
-                                                                        if new_p_2_2.isdigit():
-                                                                            p_2_2 = int(new_p_2_2)
-                                                                            print("new name is :" , name_2_2, "and" ,"new price is :" , p_2_2 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                         
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_2_2
+                                                                price = p_2_2
                                                             case "3" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_2_3 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_2_3)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_2_3 = input("please enter new price :\n")
-                                                                        if new_p_2_3.isdigit():
-                                                                            p_2_3 = int(new_p_2_3)
-                                                                            print("new price is :" , p_2_3)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                         
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_2_3 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_2_3 = input("please enter new price :\n")
-                                                                        if new_p_2_3.isdigit():
-                                                                            p_2_3 = int(new_p_2_3)
-                                                                            print("new name is :" , name_2_3, "and" ,"new price is :" , p_2_3 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                         
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_2_3
+                                                                price = p_2_3
                                                             case "4" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_2_4 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_2_4)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_2_4 = input("please enter new price :\n")
-                                                                        if new_p_2_4.isdigit():
-                                                                            p_2_4 = int(new_p_2_4)
-                                                                            print("new price is :" , p_2_4)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                         
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_2_4 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_2_4 = input("please enter new price :\n")
-                                                                        if new_p_2_4.isdigit():
-                                                                            p_2_4 = int(new_p_2_4)
-                                                                            print("new name is :" , name_2_4, "and" ,"new price is :" , p_2_4 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                         
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_2_4
+                                                                price = p_2_4
                                                             case "5" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_2_5 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_2_5)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_2_5 = input("please enter new price :\n")
-                                                                        if new_p_2_5.isdigit():
-                                                                            p_2_5 = int(new_p_2_5)
-                                                                            print("new price is :" , p_2_5)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                         
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_2_5 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_2_5 = input("please enter new price :\n")
-                                                                        if new_p_2_5.isdigit():
-                                                                            p_2_5 = int(new_p_2_5)
-                                                                            print("new name is :" , name_2_5, "and" ,"new price is :" , p_2_5 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                         
-                                                                        
-                                                                    case _ :
-                                                                        break
+                                                                name = name_2_5
+                                                                price = p_2_5
                                                             case "6" :
-                                                                sarfas_2 = input("please enter new name for sarfasl_2 :\n")
-                                        
+                                                                name = sarfas_2
                                                             case _ :
-                                                                break     
+                                                                break
+
+
+                                                        sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                        match sub_choice :
+                                                            case "1" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+
+                                                                name = input("please enter new name :\n")
+                                                                print("new name is :" , name)
+                                                            case "2" :
+                                                                new_price = input("please enter new price :\n")
+                                                                if new_price.isdigit():
+                                                                    price = int(new_price)
+                                                                    print("new price is :" , price)
+                                                                else:
+                                                                    print("vorodi eshtebah ast")
+                                                                
+                                                            case "3" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+                                                                
+                                                                name = input("please enter new name :\n")
+                                                                new_price = input("please enter new price :\n")
+
+                                                                if new_price.isdigit():
+                                                                    price = int(new_price)
+                                                                    print("new name is :" , name, "and" ,"new price is :" , price )
+                                                                else:
+                                                                    print("vorodie price eshtebah ast")
+
+                                                        match choice :
+                                                            case "1" :
+                                                                name_2_1 = name
+                                                                p_2_1 = price
+                                                            case "2" :
+                                                                name_2_2 = name
+                                                                p_2_2 = price
+                                                            case "3" :
+                                                                name_2_3 = name
+                                                                p_2_3 = price
+                                                            case "4" :
+                                                                name_2_4 = name
+                                                                p_2_4 = price
+                                                            case "5" :
+                                                                name_2_5 = name
+                                                                p_2_5 = price
+                                                            case "6" :
+                                                                sarfas_2 = name
+                                                            case _ :
+                                                                break
                                                     else :
                                                         print("you are block")
                                                         break
@@ -710,189 +482,75 @@ while True :
                                     
                                                         match choice :
                                                             case "1" :
-
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_3_1 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_3_1)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_3_1 = input("please enter new price :\n")
-                                                                        if new_p_3_1.isdigit():
-                                                                            p_3_1 = int(new_p_3_1)
-                                                                            print("new price is :" , p_3_1)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                         
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_3_1 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_3_1 = input("please enter new price :\n")
-                                                                        if new_p_3_1.isdigit():
-                                                                            p_3_1 = int(new_p_3_1)
-                                                                            print("new name is :" , name_3_1, "and" ,"new price is :" , p_3_1 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                                                
-                                                                
+                                                                name = name_3_1
+                                                                price = p_3_1
                                                             case "2" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_3_2 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_3_2)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_3_2 = input("please enter new price :\n")
-                                                                        if new_p_3_2.isdigit():
-                                                                            p_3_2 = int(new_p_3_2)
-                                                                            print("new price is :" , p_3_2)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_3_2 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_3_2 = input("please enter new price :\n")
-                                                                        if new_p_3_2.isdigit():
-                                                                            p_3_2 = int(new_p_3_2)
-                                                                            print("new name is :" , name_3_2, "and" ,"new price is :" , p_3_2 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_3_2
+                                                                price = p_3_2
                                                             case "3" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_3_3 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_3_3)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_3_3 = input("please enter new price :\n")
-                                                                        if new_p_3_3.isdigit():
-                                                                            p_3_3 = int(new_p_3_3)
-                                                                            print("new price is :" , p_3_3)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_3_3 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_3_3 = input("please enter new price :\n")
-                                                                        if new_p_3_3.isdigit():
-                                                                            p_3_3 = int(new_p_3_3)
-                                                                            print("new name is :" , name_3_3, "and" ,"new price is :" , p_3_3 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_3_3
+                                                                price = p_3_3
                                                             case "4" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_3_4 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_3_4)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_3_4 = input("please enter new price :\n")
-                                                                        if new_p_3_4.isdigit():
-                                                                            p_3_4 = int(new_p_3_4)
-                                                                            print("new price is :" , p_3_4)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                            
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_3_4 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_3_4 = input("please enter new price :\n")
-                                                                        if new_p_3_4.isdigit():
-                                                                            p_3_4 = int(new_p_3_4)
-                                                                            print("new name is :" , name_3_4, "and" ,"new price is :" , p_3_4 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_3_4
+                                                                price = p_3_4
                                                             case "5" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_3_5 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_3_5)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_3_5 = input("please enter new price :\n")
-                                                                        if new_p_3_5.isdigit():
-                                                                            p_3_5 = int(new_p_3_5)
-                                                                            print("new price is :" , p_3_5)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_3_5 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_3_5 = input("please enter new price :\n")
-                                                                        if new_p_3_5.isdigit():
-                                                                            p_3_5 = int(new_p_3_5)
-                                                                            print("new name is :" , name_3_5, "and" ,"new price is :" , p_3_5 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
+                                                                name = name_3_5
+                                                                price = p_3_5
                                                             case "6" :
-                                                                sarfas_3 = input("please enter new name for sarfasl_3 :\n")
-                                        
+                                                                name = sarfas_3
+                                                            case _ :
+                                                                break
+
+
+                                                        sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                        match sub_choice :
+                                                            case "1" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+
+                                                                name = input("please enter new name :\n")
+                                                                print("new name is :" , name)
+                                                            case "2" :
+                                                                new_price = input("please enter new price :\n")
+                                                                if new_price.isdigit():
+                                                                    price = int(new_price)
+                                                                    print("new price is :" , price)
+                                                                else:
+                                                                    print("vorodi eshtebah ast")
+                                                                
+                                                            case "3" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+                                                                
+                                                                name = input("please enter new name :\n")
+                                                                new_price = input("please enter new price :\n")
+
+                                                                if new_price.isdigit():
+                                                                    price = int(new_price)
+                                                                    print("new name is :" , name, "and" ,"new price is :" , price )
+                                                                else:
+                                                                    print("vorodie price eshtebah ast")
+
+                                                        match choice :
+                                                            case "1" :
+                                                                name_3_1 = name
+                                                                p_3_1 = price
+                                                            case "2" :
+                                                                name_3_2 = name
+                                                                p_3_2 = price
+                                                            case "3" :
+                                                                name_3_3 = name
+                                                                p_3_3 = price
+                                                            case "4" :
+                                                                name_3_4 = name
+                                                                p_3_4 = price
+                                                            case "5" :
+                                                                name_3_5 = name
+                                                                p_3_5 = price
+                                                            case "6" :
+                                                                sarfas_3 = name
                                                             case _ :
                                                                 break
                                                     else :
@@ -906,190 +564,75 @@ while True :
                                     
                                                         match choice :
                                                             case "1" :
-
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_4_1 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_4_1)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_4_1 = input("please enter new price :\n")
-                                                                        if new_p_4_1.isdigit():
-                                                                            p_4_1 = int(new_p_4_1)
-                                                                            print("new price is :" , p_4_1)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_4_1 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_4_1 = input("please enter new price :\n")
-                                                                        if new_p_4_1.isdigit():
-                                                                            p_4_1 = int(new_p_4_1)
-                                                                            print("new name is :" , name_4_1, "and" ,"new price is :" , p_4_1 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                                                
-                                                                
+                                                                name = name_4_1
+                                                                price = p_4_1
                                                             case "2" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_4_2 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_4_2)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_4_2 = input("please enter new price :\n")
-                                                                        if new_p_4_2.isdigit():
-                                                                            p_4_2 = int(new_p_4_2)
-                                                                            print("new price is :" , p_4_2)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_4_2 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_4_2 = input("please enter new price :\n")
-                                                                        if new_p_4_2.isdigit():
-                                                                            p_4_2 = int(new_p_4_2)
-                                                                            print("new name is :" , name_4_2, "and" ,"new price is :" , p_4_2 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_4_2
+                                                                price = p_4_2
                                                             case "3" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_4_3 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_4_3)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_4_3 = input("please enter new price :\n")
-                                                                        if new_p_4_3.isdigit():
-                                                                            p_4_3 = int(new_p_4_3)
-                                                                            print("new price is :" , p_4_3)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_4_3 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_4_3 = input("please enter new price :\n")
-                                                                        if new_p_4_3.isdigit():
-                                                                            p_4_3 = int(new_p_4_3)
-                                                                            print("new name is :" , name_4_3, "and" ,"new price is :" , p_4_3 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_4_3
+                                                                price = p_4_3
                                                             case "4" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_4_4 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_4_4)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_4_4 = input("please enter new price :\n")
-                                                                        if new_p_4_4.isdigit():
-                                                                            p_4_4 = int(new_p_4_4)
-                                                                            print("new price is :" , p_4_4)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_4_4 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_4_4 = input("please enter new price :\n")
-                                                                        if new_p_4_4.isdigit():
-                                                                            p_4_4 = int(new_p_4_4)
-                                                                            print("new name is :" , name_4_4, "and" ,"new price is :" , p_4_4 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_4_4
+                                                                price = p_4_4
                                                             case "5" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_4_5 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_4_5)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_4_5 = input("please enter new price :\n")
-                                                                        if new_p_4_5.isdigit():
-                                                                            p_4_5 = int(new_p_4_5)
-                                                                            print("new price is :" , p_4_5)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_4_5 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_4_5 = input("please enter new price :\n")
-                                                                        if new_p_4_5.isdigit():
-                                                                            p_4_5 = int(new_p_4_5)
-                                                                            print("new name is :" , name_4_5, "and" ,"new price is :" , p_4_5 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    
-                                                                    case _ :
-                                                                        break
+                                                                name = name_4_5
+                                                                price = p_4_5
                                                             case "6" :
-                                                                sarfas_4 = input("please enter new name for sarfasl_4 :\n")
-                                        
+                                                                name = sarfas_4
+                                                            case _ :
+                                                                break
+
+
+                                                        sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                        match sub_choice :
+                                                            case "1" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+
+                                                                name = input("please enter new name :\n")
+                                                                print("new name is :" , name)
+                                                            case "2" :
+                                                                new_price = input("please enter new price :\n")
+                                                                if new_price.isdigit():
+                                                                    price = int(new_price)
+                                                                    print("new price is :" , price)
+                                                                else:
+                                                                    print("vorodi eshtebah ast")
+                                                                
+                                                            case "3" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+                                                                
+                                                                name = input("please enter new name :\n")
+                                                                new_price = input("please enter new price :\n")
+
+                                                                if new_price.isdigit():
+                                                                    price = int(new_price)
+                                                                    print("new name is :" , name, "and" ,"new price is :" , price )
+                                                                else:
+                                                                    print("vorodie price eshtebah ast")
+
+                                                        match choice :
+                                                            case "1" :
+                                                                name_4_1 = name
+                                                                p_4_1 = price
+                                                            case "2" :
+                                                                name_4_2 = name
+                                                                p_4_2 = price
+                                                            case "3" :
+                                                                name_4_3 = name
+                                                                p_4_3 = price
+                                                            case "4" :
+                                                                name_4_4 = name
+                                                                p_4_4 = price
+                                                            case "5" :
+                                                                name_4_5 = name
+                                                                p_4_5 = price
+                                                            case "6" :
+                                                                sarfas_4 = name
                                                             case _ :
                                                                 break
                                                     else :
@@ -1104,189 +647,75 @@ while True :
                                     
                                                         match choice :
                                                             case "1" :
-
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_5_1 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_5_1)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_5_1 = input("please enter new price :\n")
-                                                                        if new_p_5_1.isdigit():
-                                                                            p_5_1 = int(new_p_5_1)
-                                                                            print("new price is :" , p_5_1)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_5_1 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_5_1 = input("please enter new price :\n")
-                                                                        if new_p_5_1.isdigit():
-                                                                            p_5_1 = int(new_p_5_1)
-                                                                            print("new name is :" , name_5_1, "and" ,"new price is :" , p_5_1 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                                                
-                                                                
+                                                                name = name_5_1
+                                                                price = p_5_1
                                                             case "2" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_5_2 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_5_2)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_5_2 = input("please enter new price :\n")
-                                                                        if new_p_5_2.isdigit():
-                                                                            p_5_2 = int(new_p_5_2)
-                                                                            print("new price is :" , p_5_2)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_5_2 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_5_2 = input("please enter new price :\n")
-                                                                        if new_p_5_2.isdigit():
-                                                                            p_5_2 = int(new_p_5_2)
-                                                                            print("new name is :" , name_5_2, "and" ,"new price is :" , p_5_2 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_5_2
+                                                                price = p_5_2
                                                             case "3" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_5_3 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_5_3)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_5_3 = input("please enter new price :\n")
-                                                                        if new_p_5_3.isdigit():
-                                                                            p_5_3 = int(new_p_5_3)
-                                                                            print("new price is :" , p_5_3)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_5_3 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_5_3 = input("please enter new price :\n")
-                                                                        if new_p_5_3.isdigit():
-                                                                            p_5_3 = int(new_p_5_3)
-                                                                            print("new name is :" , name_5_3, "and" ,"new price is :" , p_5_3 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_5_3
+                                                                price = p_5_3
                                                             case "4" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_5_4 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_5_4)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_5_4 = input("please enter new price :\n")
-                                                                        if new_p_5_4.isdigit():
-                                                                            p_5_4 = int(new_p_5_4)
-                                                                            print("new price is :" , p_5_4)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_5_4 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_5_4 = input("please enter new price :\n")
-                                                                        if new_p_5_4.isdigit():
-                                                                            p_5_4 = int(new_p_5_4)
-                                                                            print("new name is :" , name_5_4, "and" ,"new price is :" , p_5_4 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
-                                    
+                                                                name = name_5_4
+                                                                price = p_5_4
                                                             case "5" :
-                                                                sub_choice = input ("1.edit name \n2.edit price\n3.edit name and price\n")
-                                                                match sub_choice :
-                                                                    case "1" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_5_5 = input("please enter new name :\n")
-                                                                        print("new name is :" , name_5_5)
-                                                                    case "2" :
-                                                                                                                                                
-                                                                        new_p_5_5 = input("please enter new price :\n")
-                                                                        if new_p_5_5.isdigit():
-                                                                            p_5_5 = int(new_p_5_5)
-                                                                            print("new price is :" , p_5_5)
-                                                                        else:
-                                                                            print("vorodi eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case "3" :
-                                                                        if admin_user == 2 :
-                                                                            print("EROR :: user cant")
-                                                                            break
-                                                                        name_5_5 = input("please enter new name :\n")
-                                                                                                                                                
-                                                                        new_p_5_5 = input("please enter new price :\n")
-                                                                        if new_p_5_5.isdigit():
-                                                                            p_5_5 = int(new_p_5_5)
-                                                                            print("new name is :" , name_5_5, "and" ,"new price is :" , p_5_5 )
-                                                                        else:
-                                                                            print("vorodie price eshtebah ast")
-                                                                        
-                                                                        
-                                                                    case _ :
-                                                                        break
+                                                                name = name_5_5
+                                                                price = p_5_5
                                                             case "6" :
-                                                                sarfas_5 = input("please enter new name for sarfasl_5 :\n")
-                                        
+                                                                name = sarfas_5
+                                                            case _ :
+                                                                break
+
+
+                                                        sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                        match sub_choice :
+                                                            case "1" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+
+                                                                name = input("please enter new name :\n")
+                                                                print("new name is :" , name)
+                                                            case "2" :
+                                                                new_price = input("please enter new price :\n")
+                                                                if new_price.isdigit():
+                                                                    price = int(new_price)
+                                                                    print("new price is :" , price)
+                                                                else:
+                                                                    print("vorodi eshtebah ast")
+                                                                
+                                                            case "3" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+                                                                
+                                                                name = input("please enter new name :\n")
+                                                                new_price = input("please enter new price :\n")
+
+                                                                if new_price.isdigit():
+                                                                    price = int(new_price)
+                                                                    print("new name is :" , name, "and" ,"new price is :" , price )
+                                                                else:
+                                                                    print("vorodie price eshtebah ast")
+
+                                                        match choice :
+                                                            case "1" :
+                                                                name_5_1 = name
+                                                                p_5_1 = price
+                                                            case "2" :
+                                                                name_5_2 = name
+                                                                p_5_2 = price
+                                                            case "3" :
+                                                                name_5_3 = name
+                                                                p_5_3 = price
+                                                            case "4" :
+                                                                name_5_4 = name
+                                                                p_5_4 = price
+                                                            case "5" :
+                                                                name_5_5 = name
+                                                                p_5_5 = price
+                                                            case "6" :
+                                                                sarfas_5 = name
                                                             case _ :
                                                                 break
                                                     else :
@@ -1800,6 +1229,7 @@ while True :
    
         order_exit = 0
         no_order = 0
+        edite_exit = 0
 
         while True :
 
@@ -1841,8 +1271,6 @@ while True :
 
             while True :
 
-
-
                 match menu :
 
                     case "1" :
@@ -1851,96 +1279,25 @@ while True :
                         
                         match choice :
                             case "1" :
-                                while True :
-                                    n_1_1 = input("num of order : ")
-                                    if n_1_1.isdigit()==True :
-                                        n_1_1 = int(n_1_1)
-                                        if n_1_1 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                    
-                                
-                                num_1_1 = num_1_1 + n_1_1
-
-                                total_price = total_price + n_1_1 * p_1_1
-
-                                total_num = total_num + n_1_1
-                                
+                                order_num = num_1_1
+                                order_n = n_1_1
+                                price = p_1_1
                             case "2" :
-                                while True :
-                                    n_1_2 = input("num of order : ")
-                                    if n_1_2.isdigit()==True :
-                                        n_1_2 = int(n_1_2)
-                                        if n_1_2 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            
-                                num_1_2 = num_1_2 + n_1_2
-
-                                total_price = total_price + n_1_2 * p_1_2
-
-                                total_num = total_num + n_1_2
-
+                                order_num = num_1_2
+                                order_n = n_1_2
+                                price = p_1_2
                             case "3" :
-                                while True :
-                                    n_1_3 = input("num of order : ")
-                                    if n_1_3.isdigit()==True :
-                                        n_1_3 = int(n_1_3)
-                                        if n_1_3 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                            
-                                num_1_3 = num_1_3 + n_1_3
-
-                                total_price = total_price + n_1_3 * p_1_3
-
-                                total_num = total_num + n_1_3
-
+                                order_num = num_1_3
+                                order_n = n_1_3
+                                price = p_1_3
                             case "4" :
-                                while True :
-                                    n_1_4 = input("num of order : ")
-                                    if n_1_4.isdigit()==True :
-                                        n_1_4 = int(n_1_4)
-                                        if n_1_4 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_1_4 = num_1_4 + n_1_4
-
-                                total_price = total_price + n_1_4 * p_1_4
-
-                                total_num = total_num + n_1_4
-
+                                order_num = num_1_4
+                                order_n = n_1_4
+                                price = p_1_4
                             case "5" :
-                                while True :
-                                    n_1_5 = input("num of order : ")
-                                    if n_1_5.isdigit()==True :
-                                        n_1_5 = int(n_1_5)
-                                        if n_1_5 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_1_5 = num_1_5 + n_1_5
-
-                                total_price = total_price + n_1_5 * p_1_5
-
-                                total_num = total_num + n_1_5
-
+                                order_num = num_1_5
+                                order_n = n_1_5
+                                price = p_1_5
                             case "6" :
                                 while True :
                                     print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
@@ -1959,130 +1316,63 @@ while True :
                                     edit_m = input()
 
                                     if edit_m == "0" :
+                                        edite_exit = 1
                                         break
 
                                     print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
 
-                                    
+                                    match edit_m :
+
+                                        case "1" :
+                                            number = n_1_1
+                                            price = p_1_1
+                                        case "2" :
+                                            number = n_1_2
+                                            price = p_1_2
+                                        case "3" :
+                                            number = n_1_3
+                                            price = p_1_3
+                                        case "4" :
+                                            number = n_1_4
+                                            price = p_1_4
+                                        case "5" :
+                                            number = n_1_5
+                                            price = p_1_5
+                                        case _ :
+                                            break
+
+                                    if number == 0 :
+                                        break
+
+                                    while True :
+                                        low_num = input()
+                                        if low_num == "0" :
+                                            break
+                                        if low_num.isdigit() :
+                                            low_num = int(e1)
+                                            if low_num > 0 and low_num <= number :
+                                                number -= low_num
+                                                total_num -= low_num
+                                                total_price -= (low_num * price)
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
 
                                     match edit_m :
 
                                         case "1" :
-
-                                            if n_1_1 == 0 :
-                                                break
-                    
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_1_1 :
-                                                
-                                                        num_1_1 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_1_1)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            n_1_1 = number
                                         case "2" :
-
-                                            if n_1_2 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_1_2:
-                                                
-                                                        num_1_2 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_1_2)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            n_1_2 = number
                                         case "3" :
-
-                                            if n_1_3 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_1_3:
-                                                
-                                                        num_1_3 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_1_3)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            n_1_3 = number
                                         case "4" :
-
-                                            if n_1_4 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_1_4:
-                                                
-                                                        num_1_4 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_1_4)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            n_1_4 = number
                                         case "5" :
-
-                                            if n_1_5 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_1_5:
-                                                
-                                                        num_1_5 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_1_5)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
-
+                                            n_1_5 = number
+                                            
                                     print("   sefareshe eslah shode shoma\n")
 
                                     if num_1_1 > 0 :
@@ -2102,10 +1392,48 @@ while True :
                                             continue
                                         case _ :
                                             break
-                                
-
                             case _ :
                                 break
+                            
+                        while True :
+
+                            if edite_exit == 1 :
+                                break
+
+                            new_order = input("num of order : ")
+                            if new_order.isdigit() :
+                                order_n = int(new_order)
+                                order_num = order_num + order_n
+                                total_price = total_price + order_n * price
+                                total_num = total_num + order_n
+                                break
+                            else :
+                                print("vorodi bayad adad bashad")
+                        
+                        
+
+                        match choice :
+
+                            case "1" :
+                                num_1_1 = order_num
+                                n_1_1 = order_n
+                                  
+                            case "2" :
+                                num_1_2 = order_num
+                                n_1_2 = order_n
+
+                            case "3" :
+                                num_1_3 = order_num
+                                n_1_2 = order_n
+
+                            case "4" :
+                                num_1_4 = order_num
+                                n_1_2 = order_n                         
+
+                            case "5" :
+                                num_1_5 = order_num
+                                n_1_2 = order_n
+                        
 
 
                     case "2" :
@@ -2114,98 +1442,27 @@ while True :
                             
                         match choice :
                             case "1" :
-                                while True :
-                                    n_2_1 = input("num of order : ")
-                                    if n_2_1.isdigit()==True :
-                                        n_2_1 = int(n_2_1)
-                                        if n_2_1 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                
-                                num_2_1 = num_2_1 + n_2_1
-
-                                total_price = total_price + n_2_1 * p_2_1
-
-                                total_num = total_num + n_2_1
-                                
+                                order_num = num_2_1
+                                order_n = n_2_1
+                                price = p_2_1
                             case "2" :
-                                while True :
-                                    n_2_2 = input("num of order : ")
-                                    if n_2_2.isdigit()==True :
-                                        n_2_2 = int(n_2_2)
-                                        if n_2_2 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_2_2 = num_2_2 + n_2_2
-
-                                total_price = total_price + n_2_2 * p_2_2
-
-                                total_num = total_num + n_2_2
-
+                                order_num = num_2_2
+                                order_n = n_2_2
+                                price = p_2_2
                             case "3" :
-                                while True :
-                                    n_2_3 = input("num of order : ")
-                                    if n_2_3.isdigit()==True :
-                                        n_2_3 = int(n_2_3)
-                                        if n_2_3 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_2_3 = num_2_3 + n_2_3
-
-                                total_price = total_price + n_2_3 * p_2_3
-
-                                total_num = total_num + n_2_3
-
+                                order_num = num_2_3
+                                order_n = n_2_3
+                                price = p_2_3
                             case "4" :
-                                while True :
-                                    n_2_4 = input("num of order : ")
-                                    if n_2_4.isdigit()==True :
-                                        n_2_4 = int(n_2_4)
-                                        if n_2_4 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_2_4 = num_2_4 + n_2_4
-
-                                total_price = total_price + n_2_4 * p_2_4
-
-                                total_num = total_num + n_2_4
-
+                                order_num = num_2_4
+                                order_n = n_2_4
+                                price = p_2_4
                             case "5" :
-                                while True :
-                                    n_2_5 = input("num of order : ")
-                                    if n_2_5.isdigit()==True :
-                                        n_2_5 = int(n_2_5)
-                                        if n_2_5 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_2_5 = num_2_5 + n_2_5
-
-                                total_price = total_price + n_2_5 * p_2_5
-
-                                total_num = total_num + n_2_5
-
+                                order_num = num_2_5
+                                order_n = n_2_5
+                                price = p_2_5
                             case "6" :
                                 while True :
-
                                     print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
 
                                     if num_2_1 > 0 :
@@ -2218,146 +1475,79 @@ while True :
                                         print(name_2_4, "...." ,num_2_4, " enter 4 ")
                                     if num_2_5 > 0 :
                                         print(name_2_5, "...." ,num_2_5, " enter 5 ")
-
+                                    
                                     edit_m = input()
 
                                     if edit_m == "0" :
+                                        edite_exit = 1
                                         break
 
                                     print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
-                                    
-                                    
 
                                     match edit_m :
+
                                         case "1" :
-
-                                            if n_2_1 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_2_1:
-                                                
-                                                        num_2_1 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_2_1)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_2_1
+                                            price = p_2_1
                                         case "2" :
-
-                                            if n_2_2 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_2_2:
-                                                
-                                                        num_2_2 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_2_2)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_2_2
+                                            price = p_2_2
                                         case "3" :
-
-                                            if n_2_3 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_2_3:
-                                                
-                                                        num_2_3 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_2_3)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_2_3
+                                            price = p_2_3
                                         case "4" :
-
-                                            if n_2_4 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_2_4:
-                                                
-                                                        num_2_4 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_2_4)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_2_4
+                                            price = p_2_4
                                         case "5" :
+                                            number = n_2_5
+                                            price = p_2_5
+                                        case _ :
+                                            break
 
-                                            if n_2_5 == 0 :
+                                    if number == 0 :
+                                        break
+
+                                    while True :
+                                        low_num = input()
+                                        if low_num == "0" :
+                                            break
+                                        if low_num.isdigit() :
+                                            low_num = int(e1)
+                                            if low_num > 0 and low_num <= number :
+                                                number -= low_num
+                                                total_num -= low_num
+                                                total_price -= (low_num * price)
                                                 break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
 
-                                            while True :
+                                    match edit_m :
 
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_2_5:
-                                                
-                                                        num_2_5 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_2_5)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
-
+                                        case "1" :
+                                            n_2_1 = number
+                                        case "2" :
+                                            n_2_2 = number
+                                        case "3" :
+                                            n_2_3 = number
+                                        case "4" :
+                                            n_2_4 = number
+                                        case "5" :
+                                            n_2_5 = number
+                                            
                                     print("   sefareshe eslah shode shoma\n")
 
                                     if num_2_1 > 0 :
-                                        print(name_2_1, "...." ,num_2_1, " adad " )
+                                        print(name_1_1, "...." ,num_2_1, " adad " )
                                     if num_2_2 > 0 :
-                                        print(name_2_2, "...." ,num_2_2, " adad ")
+                                        print(name_1_2, "...." ,num_2_2, " adad ")
                                     if num_2_3 > 0 :
-                                        print(name_2_3, "...." ,num_2_3, " adad ")
+                                        print(name_1_3, "...." ,num_2_3, " adad ")
                                     if num_2_4 > 0 :
-                                        print(name_2_4, "...." ,num_2_4, " adad ")
+                                        print(name_1_4, "...." ,num_2_4, " adad ")
                                     if num_2_5 > 0 :
-                                        print(name_2_5, "...." ,num_2_5, " adad ")
-
+                                        print(name_1_5, "...." ,num_2_5, " adad ")
                                     print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
                                     pasokh = input()
                                     match pasokh :
@@ -2365,11 +1555,45 @@ while True :
                                             continue
                                         case _ :
                                             break
-
-                                    
-                                
                             case _ :
                                 break
+
+                        while True :
+
+                            if edite_exit == 1 :
+                                break
+
+                            new_order = input("num of order : ")
+                            if new_order.isdigit() :
+                                order_n = int(new_order)
+                                order_num = order_num + order_n
+                                total_price = total_price + order_n * price
+                                total_num = total_num + order_n
+                                break
+                            else :
+                                print("vorodi bayad adad bashad")
+
+                        match choice :
+
+                            case "1" :
+                                num_2_1 = order_num
+                                n_2_1 = order_n
+                                  
+                            case "2" :
+                                num_2_2 = order_num
+                                n_2_2 = order_n
+
+                            case "3" :
+                                num_2_3 = order_num
+                                n_2_3 = order_n
+
+                            case "4" :
+                                num_2_4 = order_num 
+                                n_2_4 = order_n                        
+
+                            case "5" :
+                                num_2_5 = order_num
+                                n_2_5 = order_n
 
 
                     case "3" :
@@ -2378,98 +1602,27 @@ while True :
 
                         match choice :
                             case "1" :
-                                while True :
-                                    n_3_1 = input("num of order : ")
-                                    if n_3_1.isdigit()==True :
-                                        n_3_1 = int(n_3_1)
-                                        if n_3_1 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                
-                                num_3_1 = num_3_1 + n_3_1
-
-                                total_price = total_price + n_3_1 * p_3_1
-
-                                total_num = total_num + n_3_1
-                                
+                                order_num = num_3_1
+                                order_n = n_3_1
+                                price = p_3_1
                             case "2" :
-                                while True :
-                                    n_3_2 = input("num of order : ")
-                                    if n_3_2.isdigit()==True :
-                                        n_3_2 = int(n_3_2)
-                                        if n_3_2 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_3_2 = num_3_2 + n_3_2
-
-                                total_price = total_price + n_3_2 * p_3_2
-
-                                total_num = total_num + n_3_2
-
+                                order_num = num_3_2
+                                order_n = n_3_2
+                                price = p_3_2
                             case "3" :
-                                while True :
-                                    n_3_3 = input("num of order : ")
-                                    if n_3_3.isdigit()==True :
-                                        n_3_3 = int(n_3_3)
-                                        if n_3_3 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_3_3 = num_3_3 + n_3_3
-
-                                total_price = total_price + n_3_3 * p_3_3
-
-                                total_num = total_num + n_3_3
-
+                                order_num = num_3_3
+                                order_n = n_3_3
+                                price = p_3_3
                             case "4" :
-                                while True :
-                                    n_3_4 = input("num of order : ")
-                                    if n_3_4.isdigit()==True :
-                                        n_3_4 = int(n_3_4)
-                                        if n_3_4 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_3_4 = num_3_4 + n_3_4
-
-                                total_price = total_price + n_3_4 * p_3_4
-
-                                total_num = total_num + n_3_4
-
+                                order_num = num_3_4
+                                order_n = n_3_4
+                                price = p_3_4
                             case "5" :
-                                while True :
-                                    n_3_5 = input("num of order : ")
-                                    if n_3_5.isdigit()==True :
-                                        n_3_5 = int(n_3_5)
-                                        if n_3_5 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_3_5 = num_3_5 + n_3_5
-
-                                total_price = total_price + n_3_5 * p_3_5
-
-                                total_num = total_num + n_3_5
-
+                                order_num = num_3_5
+                                order_n = n_3_5
+                                price = p_3_5
                             case "6" :
                                 while True :
-
                                     print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
 
                                     if num_3_1 > 0 :
@@ -2482,133 +1635,67 @@ while True :
                                         print(name_3_4, "...." ,num_3_4, " enter 4 ")
                                     if num_3_5 > 0 :
                                         print(name_3_5, "...." ,num_3_5, " enter 5 ")
-
+                                    
                                     edit_m = input()
 
                                     if edit_m == "0" :
+                                        edite_exit = 1
                                         break
 
                                     print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
-                                    
-                                    
 
                                     match edit_m :
+
                                         case "1" :
-
-                                            if n_3_1 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_3_1:
-                                                
-                                                        num_3_1 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_3_1)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_3_1
+                                            price = p_3_1
                                         case "2" :
-
-                                            if n_3_2 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_3_2:
-                                                
-                                                        num_3_2 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_3_2)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_3_2
+                                            price = p_3_2
                                         case "3" :
-
-                                            if n_3_3 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_3_3:
-                                                
-                                                        num_3_3 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_3_3)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_3_3
+                                            price = p_3_3
                                         case "4" :
-
-                                            if n_3_4 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_3_4:
-                                                
-                                                        num_3_4 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_3_4)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_3_4
+                                            price = p_3_4
                                         case "5" :
+                                            number = n_3_5
+                                            price = p_3_5
+                                        case _ :
+                                            break
 
-                                            if n_3_5 == 0 :
+                                    if number == 0 :
+                                        break
+
+                                    while True :
+                                        low_num = input()
+                                        if low_num == "0" :
+                                            break
+                                        if low_num.isdigit() :
+                                            low_num = int(e1)
+                                            if low_num > 0 and low_num <= number :
+                                                number -= low_num
+                                                total_num -= low_num
+                                                total_price -= (low_num * price)
                                                 break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
 
-                                            while True :
+                                    match edit_m :
 
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_3_5:
-                                                
-                                                        num_3_5 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_3_5)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
-
+                                        case "1" :
+                                            n_3_1 = number
+                                        case "2" :
+                                            n_3_2 = number
+                                        case "3" :
+                                            n_3_3 = number
+                                        case "4" :
+                                            n_3_4 = number
+                                        case "5" :
+                                            n_3_5 = number
+                                            
                                     print("   sefareshe eslah shode shoma\n")
 
                                     if num_3_1 > 0 :
@@ -2621,7 +1708,6 @@ while True :
                                         print(name_3_4, "...." ,num_3_4, " adad ")
                                     if num_3_5 > 0 :
                                         print(name_3_5, "...." ,num_3_5, " adad ")
-
                                     print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
                                     pasokh = input()
                                     match pasokh :
@@ -2629,10 +1715,44 @@ while True :
                                             continue
                                         case _ :
                                             break
-
                             case _ :
                                 break
 
+                        while True :
+
+                            if edite_exit == 1 :
+                                break
+                            new_order = input("num of order : ")
+                            if new_order.isdigit() :
+                                order_n = int(new_order)
+                                order_num = order_num + order_n
+                                total_price = total_price + order_n * price
+                                total_num = total_num + order_n
+                                break
+                            else :
+                                print("vorodi bayad adad bashad")
+
+                        match choice :
+
+                            case "1" :
+                                num_3_1 = order_num
+                                n_3_1 = order_n
+                                  
+                            case "2" :
+                                num_3_2 = order_num
+                                n_3_2 = order_n
+
+                            case "3" :
+                                num_3_3 = order_num
+                                n_3_3 = order_n
+
+                            case "4" :
+                                num_3_4 = order_num   
+                                n_3_4 = order_n                      
+
+                            case "5" :
+                                num_3_5 = order_num
+                                n_3_5 = order_n
 
                     case "4" :
                         print("\n\n" , "1.",name_4_1 ,"..." ,p_4_1, "\n", "2.", name_4_2 ,"..." ,p_4_2, "\n", "3.", name_4_3 ,"..." ,p_4_3, "\n", "4.", name_4_4 ,"..." ,p_4_4, "\n", "5.", name_4_5 ,"..." ,p_4_5, "\n", "\n6.EDIT \n0.back to main menu\n")
@@ -2640,98 +1760,27 @@ while True :
 
                         match choice :
                             case "1" :
-                                while True :
-                                    n_4_1 = input("num of order : ")
-                                    if n_4_1.isdigit()==True :
-                                        n_4_1 = int(n_4_1)
-                                        if n_4_1 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                
-                                num_4_1 = num_4_1 + n_4_1
-
-                                total_price = total_price + n_4_1 * p_4_1
-
-                                total_num = total_num + n_4_1
-                                
+                                order_num = num_4_1
+                                order_n = n_4_1
+                                price = p_4_1
                             case "2" :
-                                while True :
-                                    n_4_2 = input("num of order : ")
-                                    if n_4_2.isdigit()==True :
-                                        n_4_2 = int(n_4_2)
-                                        if n_4_2 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_4_2 = num_4_2 + n_4_2
-
-                                total_price = total_price + n_4_2 * p_4_2
-
-                                total_num = total_num + n_4_2
-
+                                order_num = num_4_2
+                                order_n = n_4_2
+                                price = p_4_2
                             case "3" :
-                                while True :
-                                    n_4_3 = input("num of order : ")
-                                    if n_4_3.isdigit()==True :
-                                        n_4_3 = int(n_4_3)
-                                        if n_4_3 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_4_3 = num_4_3 + n_4_3
-
-                                total_price = total_price + n_4_3 * p_4_3
-
-                                total_num = total_num + n_4_3
-
+                                order_num = num_4_3
+                                order_n = n_4_3
+                                price = p_4_3
                             case "4" :
-                                while True :
-                                    n_4_4 = input("num of order : ")
-                                    if n_4_4.isdigit()==True :
-                                        n_4_4 = int(n_4_4)
-                                        if n_4_4 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_4_4 = num_4_4 + n_4_4
-
-                                total_price = total_price + n_4_4 * p_4_4
-
-                                total_num = total_num + n_4_4
-
+                                order_num = num_4_4
+                                order_n = n_4_4
+                                price = p_4_4
                             case "5" :
-                                while True :
-                                    n_4_5 = input("num of order : ")
-                                    if n_4_5.isdigit()==True :
-                                        n_4_5 = int(n_4_5)
-                                        if n_4_5 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_4_5 = num_4_5 + n_4_5
-
-                                total_price = total_price + n_4_5 * p_4_5
-
-                                total_num = total_num + n_4_5
-
+                                order_num = num_4_5
+                                order_n = n_4_5
+                                price = p_4_5
                             case "6" :
                                 while True :
-
                                     print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
 
                                     if num_4_1 > 0 :
@@ -2744,134 +1793,67 @@ while True :
                                         print(name_4_4, "...." ,num_4_4, " enter 4 ")
                                     if num_4_5 > 0 :
                                         print(name_4_5, "...." ,num_4_5, " enter 5 ")
-
+                                    
                                     edit_m = input()
 
                                     if edit_m == "0" :
+                                        edite_exit = 1
                                         break
 
                                     print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
-                                    
-
-                                    
 
                                     match edit_m :
+
                                         case "1" :
-
-                                            if n_4_1 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_4_1:
-                                                
-                                                        num_4_1 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_4_1)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_4_1
+                                            price = p_4_1
                                         case "2" :
-
-                                            if n_4_2 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_4_2:
-                                                
-                                                        num_4_2 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_4_2)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_4_2
+                                            price = p_4_2
                                         case "3" :
-
-                                            if n_4_3 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_4_3:
-                                                
-                                                        num_4_3 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_4_3)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_4_3
+                                            price = p_4_3
                                         case "4" :
-
-                                            if n_4_4 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_4_4:
-                                                
-                                                        num_4_4 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_4_4)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            number = n_4_4
+                                            price = p_4_4
                                         case "5" :
+                                            number = n_4_5
+                                            price = p_4_5
+                                        case _ :
+                                            break
 
-                                            if n_4_5 == 0 :
+                                    if number == 0 :
+                                        break
+
+                                    while True :
+                                        low_num = input()
+                                        if low_num == "0" :
+                                            break
+                                        if low_num.isdigit() :
+                                            low_num = int(e1)
+                                            if low_num > 0 and low_num <= number :
+                                                number -= low_num
+                                                total_num -= low_num
+                                                total_price -= (low_num * price)
                                                 break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
 
-                                            while True :
+                                    match edit_m :
 
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_4_5:
-                                                
-                                                        num_4_5 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_4_5)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
-
+                                        case "1" :
+                                            n_4_1 = number
+                                        case "2" :
+                                            n_4_2 = number
+                                        case "3" :
+                                            n_4_3 = number
+                                        case "4" :
+                                            n_4_4 = number
+                                        case "5" :
+                                            n_4_5 = number
+                                            
                                     print("   sefareshe eslah shode shoma\n")
 
                                     if num_4_1 > 0 :
@@ -2884,7 +1866,6 @@ while True :
                                         print(name_4_4, "...." ,num_4_4, " adad ")
                                     if num_4_5 > 0 :
                                         print(name_4_5, "...." ,num_4_5, " adad ")
-
                                     print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
                                     pasokh = input()
                                     match pasokh :
@@ -2892,9 +1873,45 @@ while True :
                                             continue
                                         case _ :
                                             break
-                                
                             case _ :
                                 break
+
+                        while True :
+
+                            if edite_exit == 1 :
+                                break
+
+                            new_order = input("num of order : ")
+                            if new_order.isdigit() :
+                                order_n = int(new_order)
+                                order_num = order_num + order_n
+                                total_price = total_price + order_n * price
+                                total_num = total_num + order_n
+                                break
+                            else :
+                                print("vorodi bayad adad bashad")
+
+                        match choice :
+
+                            case "1" :
+                                num_4_1 = order_num
+                                n_4_1 = order_n
+                                  
+                            case "2" :
+                                num_4_2 = order_num
+                                n_4_2 = order_n
+
+                            case "3" :
+                                num_4_3 = order_num
+                                n_4_3 = order_n
+
+                            case "4" :
+                                num_4_4 = order_num  
+                                n_4_4 = order_n                       
+
+                            case "5" :
+                                num_4_5 = order_num
+                                n_4_5 = order_n
 
 
                     case "5" :
@@ -2903,98 +1920,27 @@ while True :
 
                         match choice :
                             case "1" :
-                                while True :
-                                    n_5_1 = input("num of order : ")
-                                    if n_5_1.isdigit()==True :
-                                        n_5_1 = int(n_5_1)
-                                        if n_5_1 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                
-                                num_5_1 = num_5_1 + n_5_1
-
-                                total_price = total_price + n_5_1 * p_5_1
-
-                                total_num = total_num + n_5_1
-                                
+                                order_num = num_5_1
+                                order_n = n_5_1
+                                price = p_5_1
                             case "2" :
-                                while True :
-                                    n_5_2 = input("num of order : ")
-                                    if n_5_2.isdigit()==True :
-                                        n_5_2 = int(n_5_2)
-                                        if n_5_2 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_5_2 = num_5_2 + n_5_2
-
-                                total_price = total_price + n_5_2 * p_5_2
-
-                                total_num = total_num + n_5_2
-
+                                order_num = num_5_2
+                                order_n = n_5_2
+                                price = p_5_2
                             case "3" :
-                                while True :
-                                    n_5_3 = input("num of order : ")
-                                    if n_5_3.isdigit()==True :
-                                        n_5_3 = int(n_5_3)
-                                        if n_5_3 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_5_3 = num_5_3 + n_5_3
-
-                                total_price = total_price + n_5_3 * p_5_3
-
-                                total_num = total_num + n_5_3
-
+                                order_num = num_5_3
+                                order_n = n_5_3
+                                price = p_5_3
                             case "4" :
-                                while True :
-                                    n_5_4 = input("num of order : ")
-                                    if n_5_4.isdigit()==True :
-                                        n_5_4 = int(n_5_4)
-                                        if n_5_4 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_5_4 = num_5_4 + n_5_4
-
-                                total_price = total_price + n_5_4 * p_5_4
-
-                                total_num = total_num + n_5_4
-
+                                order_num = num_5_4
+                                order_n = n_5_4
+                                price = p_5_4
                             case "5" :
-                                while True :
-                                    n_5_5 = input("num of order : ")
-                                    if n_5_5.isdigit()==True :
-                                        n_5_5 = int(n_5_5)
-                                        if n_5_5 > 0 :
-                                            break
-                                        else :
-                                            print("voroodi sahih nist")
-                                    else :
-                                        print("vorodi bayad adad bashad")
-                                                            
-                                num_5_5 = num_5_5 + n_5_5
-
-                                total_price = total_price + n_5_5 * p_5_5
-
-                                total_num = total_num + n_5_5
-
+                                order_num = num_5_5
+                                order_n = n_5_5
+                                price = p_5_5
                             case "6" :
                                 while True :
-
                                     print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
 
                                     if num_5_1 > 0 :
@@ -3007,134 +1953,67 @@ while True :
                                         print(name_5_4, "...." ,num_5_4, " enter 4 ")
                                     if num_5_5 > 0 :
                                         print(name_5_5, "...." ,num_5_5, " enter 5 ")
-
+                                    
                                     edit_m = input()
 
                                     if edit_m == "0" :
+                                        edite_exit = 1
                                         break
 
                                     print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
 
-                                    
-                                    
+                                    match edit_m :
+
+                                        case "1" :
+                                            number = n_5_1
+                                            price = p_5_1
+                                        case "2" :
+                                            number = n_5_2
+                                            price = p_5_2
+                                        case "3" :
+                                            number = n_5_3
+                                            price = p_5_3
+                                        case "4" :
+                                            number = n_5_4
+                                            price = p_5_4
+                                        case "5" :
+                                            number = n_5_5
+                                            price = p_5_5
+                                        case _ :
+                                            break
+
+                                    if number == 0 :
+                                        break
+
+                                    while True :
+                                        low_num = input()
+                                        if low_num == "0" :
+                                            break
+                                        if low_num.isdigit() :
+                                            low_num = int(e1)
+                                            if low_num > 0 and low_num <= number :
+                                                number -= low_num
+                                                total_num -= low_num
+                                                total_price -= (low_num * price)
+                                                break
+                                            else :
+                                                print("vorodi sahih nist")
+                                        else :
+                                            print("vorodi bayad adad bashad")
 
                                     match edit_m :
+
                                         case "1" :
-
-                                            if n_5_1 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_5_1:
-                                                
-                                                        num_5_1 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_5_1)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            n_5_1 = number
                                         case "2" :
-
-                                            if n_5_2 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_5_2:
-                                                
-                                                        num_5_2 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_5_2)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            n_5_2 = number
                                         case "3" :
-
-                                            if n_5_3 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_5_3:
-                                                
-                                                        num_5_3 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_5_3)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            n_5_3 = number
                                         case "4" :
-
-                                            if n_2_4 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_5_4:
-                                                
-                                                        num_5_4 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_5_4)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
+                                            n_5_4 = number
                                         case "5" :
-
-                                            if n_5_5 == 0 :
-                                                break
-
-                                            while True :
-
-                                                e1 = input()
-                                                if e1 == "0" :
-                                                    break
-                                                if e1.isdigit()==True :
-                                                    e1 = int(e1)
-                                                    if e1 > 0 and e1 <= num_5_5:
-                                                
-                                                        num_5_5 -= e1
-                                                        total_num -= e1
-                                                        total_price -= (e1*p_5_5)
-
-                                                        break
-                                                    else :
-                                                        print("vorodi sahih nist")
-                                                else :
-                                                    print("vorodi bayad adad bashad")
-
+                                            n_5_5 = number
+                                            
                                     print("   sefareshe eslah shode shoma\n")
 
                                     if num_5_1 > 0 :
@@ -3147,7 +2026,6 @@ while True :
                                         print(name_5_4, "...." ,num_5_4, " adad ")
                                     if num_5_5 > 0 :
                                         print(name_5_5, "...." ,num_5_5, " adad ")
-
                                     print("eslahe jadidi darid : 1.yes 2.no va edame sefaresh")
                                     pasokh = input()
                                     match pasokh :
@@ -3155,72 +2033,135 @@ while True :
                                             continue
                                         case _ :
                                             break
-                                
                             case _ :
                                 break
+
+                        while True :
+
+                            if edite_exit == 1 :
+                                break
+                            
+                            new_order = input("num of order : ")
+                            if new_order.isdigit() :
+                                order_n = int(new_order)
+                                order_num = order_num + order_n
+                                total_price = total_price + order_n * price
+                                total_num = total_num + order_n
+                                break
+                            else :
+                                print("vorodi bayad adad bashad")
+
+                        match choice :
+
+                            case "1" :
+                                num_5_1 = order_num
+                                n_5_1 = order_n
+                                  
+                            case "2" :
+                                num_5_2 = order_num
+                                n_5_2 = order_n
+
+
+                            case "3" :
+                                num_5_3 = order_num
+                                n_5_3 = order_n
+
+                            case "4" :
+                                num_5_4 = order_num  
+                                n_5_4 = order_n                       
+
+                            case "5" :
+                                num_5_5 = order_num
+                                n_5_5 = order_n
 
                     case "6" :
 
                         while True :
+
+                            sh = 0
                     
-  
                             print("0.enseraf az eslah\nkodam sefaresh ra mikhahid eslah konid :")
                             if num_1_1 > 0 :
-                                print(name_1_1, "...." ,num_1_1, " enter 1 " )
+                                sh += 1
+                                print(sh, "." ,name_1_1, "...." ,num_1_1, " enter 1 " )
                             if num_1_2 > 0 :
-                                print(name_1_2, "...." ,num_1_2, " enter 2 ")
+                                sh += 1
+                                print(sh, "." ,name_1_2, "...." ,num_1_2, " enter 2 " )                               
                             if num_1_3 > 0 :
-                                print(name_1_3, "...." ,num_1_3, " enter 3 ")
+                                sh += 1
+                                print(sh, "." ,name_1_3, "...." ,num_1_3, " enter 3 " )                               
                             if num_1_4 > 0 :
-                                print(name_1_4, "...." ,num_1_4, " enter 4 ")
+                                sh += 1
+                                print(sh, "." ,name_1_4, "...." ,num_1_4, " enter 4 " )
                             if num_1_5 > 0 :
-                                print(name_1_5, "...." ,num_1_5, " enter 5 ")
-
+                                sh += 1
+                                print(sh, "." ,name_1_5, "...." ,num_1_5, " enter 5 " )
+                                
 
                             if num_2_1 > 0 :
-                                print(name_2_1, "...." ,num_2_1, " enter 6 " )
+                                sh += 1
+                                print(sh, "." ,name_2_1, "...." ,num_2_1, " enter 6 " )
                             if num_2_2 > 0 :
-                                print(name_2_2, "...." ,num_2_2, " enter 7 ")
+                                sh += 1
+                                print(sh, "." ,name_2_2, "...." ,num_2_2, " enter 7 ")
                             if num_2_3 > 0 :
-                                print(name_2_3, "...." ,num_2_3, " enter 8 ")
+                                sh += 1
+                                print(sh, "." ,name_2_3, "...." ,num_2_3, " enter 8 ")
                             if num_2_4 > 0 :
-                                print(name_2_4, "...." ,num_2_4, " enter 9 ")
+                                sh += 1
+                                print(sh, "." ,name_2_4, "...." ,num_2_4, " enter 9 ")
                             if num_2_5 > 0 :
-                                print(name_2_5, "...." ,num_2_5, " enter 10 ")
+                                sh += 1
+                                print(sh, "." ,name_2_5, "...." ,num_2_5, " enter 10 ")
 
 
                             if num_3_1 > 0 :
-                                print(name_3_1, "...." ,num_3_1, " enter 11 " )
+                                sh += 1
+                                print(sh, "." ,name_3_1, "...." ,num_3_1, " enter 11 " )
                             if num_3_2 > 0 :
-                                print(name_3_2, "...." ,num_3_2, " enter 12 ")
+                                sh += 1
+                                print(sh, "." ,name_3_2, "...." ,num_3_2, " enter 12 ")
                             if num_3_3 > 0 :
-                                print(name_3_3, "...." ,num_3_3, " enter 13 ")
+                                sh += 1
+                                print(sh, "." ,name_3_3, "...." ,num_3_3, " enter 13 ")
                             if num_3_4 > 0 :
-                                print(name_3_4, "...." ,num_3_4, " enter 14 ")
+                                sh += 1
+                                print(sh, "." ,name_3_4, "...." ,num_3_4, " enter 14 ")
                             if num_3_5 > 0 :
-                                print(name_3_5, "...." ,num_3_5, " enter 15 ")
+                                sh += 1
+                                print(sh, "." ,name_3_5, "...." ,num_3_5, " enter 15 ")
 
                             if num_4_1 > 0 :
-                                print(name_4_1, "...." ,num_4_1, " enter 16 " )
+                                sh += 1
+                                print(sh, "." ,name_4_1, "...." ,num_4_1, " enter 16 " )
                             if num_4_2 > 0 :
-                                print(name_4_2, "...." ,num_4_2, " enter 17 ")
+                                sh += 1
+                                print(sh, "." ,name_4_2, "...." ,num_4_2, " enter 17 ")
                             if num_4_3 > 0 :
-                                print(name_4_3, "...." ,num_4_3, " enter 18 ")
+                                sh += 1
+                                print(sh, "." ,name_4_3, "...." ,num_4_3, " enter 18 ")
                             if num_4_4 > 0 :
-                                print(name_4_4, "...." ,num_4_4, " enter 19 ")
+                                sh += 1
+                                print(sh, "." ,name_4_4, "...." ,num_4_4, " enter 19 ")
                             if num_4_5 > 0 :
-                                print(name_4_5, "...." ,num_4_5, " enter 20 ")
+                                sh += 1
+                                print(sh, "." ,name_4_5, "...." ,num_4_5, " enter 20 ")
 
                             if num_5_1 > 0 :
-                                print(name_5_1, "...." ,num_5_1, " enter 21 " )
+                                sh += 1
+                                print(sh, "." ,name_5_1, "...." ,num_5_1, " enter 21 " )
                             if num_5_2 > 0 :
-                                print(name_5_2, "...." ,num_5_2, " enter 22 ")
+                                sh += 1
+                                print(sh, "." ,name_5_2, "...." ,num_5_2, " enter 22 ")
                             if num_5_3 > 0 :
-                                print(name_5_3, "...." ,num_5_3, " enter 23 ")
+                                sh += 1
+                                print(sh, "." ,name_5_3, "...." ,num_5_3, " enter 23 ")
                             if num_5_4 > 0 :
-                                print(name_5_4, "...." ,num_5_4, " enter 24 ")
+                                sh += 1
+                                print(sh, "." ,name_5_4, "...." ,num_5_4, " enter 24 ")
                             if num_5_5 > 0 :
-                                print(name_5_5, "...." ,num_5_5, " enter 25 ")
+                                sh += 1
+                                print(sh, "." ,name_5_5, "...." ,num_5_5, " enter 25 ")
                             
                             edit_m = input()
 
@@ -3230,582 +2171,155 @@ while True :
                             print("0.enseraf az eslah\n che tedad az sefareshe khod ra mikhahid kam konid :\n")
 
                             match edit_m :
-                               
+
                                 case "1" :
-
-                                    if n_1_1 == 0 :
-                                        break
-            
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_1_1 :
-                                        
-                                                num_1_1 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_1_1)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_1_1
+                                    price = p_1_1
                                 case "2" :
-
-                                    if n_1_2 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_1_2:
-                                        
-                                                num_1_2 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_1_2)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_1_2
+                                    price = p_1_2
                                 case "3" :
-
-                                    if n_1_3 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_1_3:
-                                        
-                                                num_1_3 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_1_3)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_1_3
+                                    price = p_1_3
                                 case "4" :
-
-                                    if n_1_4 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_1_4:
-                                        
-                                                num_1_4 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_1_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_1_4
+                                    price = p_1_4
                                 case "5" :
-
-                                    if n_1_5 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_1_5:
-                                        
-                                                num_1_5 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_1_5)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_1_5
+                                    price = p_1_5
                                 case "6" :
-
-                                    if n_2_1 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_2_1:
-                                        
-                                                num_2_1 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_2_1)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_2_1
+                                    price = p_2_1
                                 case "7" :
-
-                                    if n_2_2 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_2_2:
-                                        
-                                                num_2_2 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_2_2)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_2_2
+                                    price = p_2_2
                                 case "8" :
-
-                                    if n_2_3 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_2_3:
-                                        
-                                                num_2_3 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_2_3)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_2_3
+                                    price = p_2_3
                                 case "9" :
-
-                                    if n_2_4 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_2_4:
-                                        
-                                                num_2_4 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_2_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_2_4
+                                    price = p_2_4
                                 case "10" :
-
-                                    if n_2_5 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_2_5:
-                                        
-                                                num_2_5 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_2_5)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_2_5
+                                    price = p_2_5
                                 case "11" :
-
-                                    if n_3_1 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_3_1:
-                                        
-                                                num_3_1 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_3_1)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_3_1
+                                    price = p_3_1
                                 case "12" :
-
-                                    if n_3_2 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_3_2:
-                                        
-                                                num_3_2 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_3_2)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_3_2
+                                    price = p_3_2
                                 case "13" :
-
-                                    if n_3_3 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_3_3:
-                                        
-                                                num_3_3 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_3_3)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_3_3
+                                    price = p_3_3
                                 case "14" :
-
-                                    if n_3_4 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_3_4:
-                                        
-                                                num_3_4 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_3_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_3_4
+                                    price = p_3_4
                                 case "15" :
-
-                                    if n_3_5 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_3_5:
-                                        
-                                                num_3_5 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_3_5)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_3_5
+                                    price = p_3_5
                                 case "16" :
-
-                                    if n_4_1 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_4_1:
-                                        
-                                                num_4_1 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_4_1)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_4_1
+                                    price = p_4_1
                                 case "17" :
-
-                                    if n_4_2 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_4_2:
-                                        
-                                                num_4_2 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_4_2)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_4_2
+                                    price = p_4_2
                                 case "18" :
-
-                                    if n_4_3 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_4_3:
-                                        
-                                                num_4_3 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_4_3)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_4_3
+                                    price = p_4_3
                                 case "19" :
-
-                                    if n_4_4 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_4_4:
-                                        
-                                                num_4_4 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_4_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_4_4
+                                    price = p_4_4
                                 case "20" :
-
-                                    if n_4_5 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_4_5:
-                                        
-                                                num_4_5 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_4_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_4_5
+                                    price = p_4_5
                                 case "21" :
-
-                                    if n_5_1 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_5_1:
-                                        
-                                                num_5_1 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_5_1)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_5_1
+                                    price = p_5_1
                                 case "22" :
-
-                                    if n_5_2 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_5_2:
-                                        
-                                                num_5_2 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_5_2)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_5_2
+                                    price = p_5_2
                                 case "23" :
-
-                                    if n_5_3 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_5_3:
-                                        
-                                                num_5_3 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_5_3)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_5_3
+                                    price = p_5_3
                                 case "24" :
-
-                                    if n_5_4 == 0 :
-                                        break
-
-                                    while True :
-
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_5_4:
-                                        
-                                                num_5_4 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_5_4)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                    number = n_5_4
+                                    price = p_5_4
                                 case "25" :
+                                    number = n_5_5
+                                    price = p_5_5
 
-                                    if n_5_5 == 0 :
+
+                            if number == 0 :
+                                break
+
+                            while True :
+                                low_num = input()
+                                if low_num == "0" :
+                                    break
+                                if low_num.isdigit() :
+                                    low_num = int(e1)
+                                    if low_num > 0 and low_num <= number :
+                                        number -= low_num
+                                        total_num -= low_num
+                                        total_price -= (low_num * price)
                                         break
+                                    else :
+                                        print("vorodi sahih nist")
+                                else :
+                                    print("vorodi bayad adad bashad")
 
-                                    while True :
+                            match edit_m :
 
-                                        e1 = input()
-                                        if e1 == "0" :
-                                            break
-                                        if e1.isdigit()==True :
-                                            e1 = int(e1)
-                                            if e1 > 0 and e1 <= num_5_5:
-                                        
-                                                num_5_5 -= e1
-                                                total_num -= e1
-                                                total_price -= (e1*p_5_5)
-
-                                                break
-                                            else :
-                                                print("vorodi sahih nist")
-                                        else :
-                                            print("vorodi bayad adad bashad")
+                                case "1" :
+                                    n_1_1 = number
+                                case "2" :
+                                    n_1_2 = number
+                                case "3" :
+                                    n_1_3 = number
+                                case "4" :
+                                    n_1_4 = number
+                                case "5" :
+                                    n_1_5 = number
+                                case "6" :
+                                    n_2_1 = number
+                                case "7" :
+                                    n_2_2 = number
+                                case "8" :
+                                    n_2_3 = number
+                                case "9" :
+                                    n_2_4 = number
+                                case "10" :
+                                    n_2_5 = number
+                                case "11" :
+                                    n_3_1 = number
+                                case "12" :
+                                    n_3_2 = number
+                                case "13" :
+                                    n_3_3 = number
+                                case "14" :
+                                    n_3_4 = number
+                                case "15" :
+                                    n_3_5 = number
+                                case "16" :
+                                    n_4_1 = number
+                                case "17" :
+                                    n_4_2 = number
+                                case "18" :
+                                    n_4_3 = number
+                                case "19" :
+                                    n_4_4 = number
+                                case "20" :
+                                    n_4_5 = number
+                                case "21" :
+                                    n_5_1 = number
+                                case "22" :
+                                    n_5_2 = number
+                                case "23" :
+                                    n_5_3 = number
+                                case "24" :
+                                    n_5_4 = number
+                                case "25" :
+                                    n_5_5 = number
 
                             print("   sefareshe eslah shode shoma\n")
 
@@ -3873,11 +2387,11 @@ while True :
                                     continue
                                 case _ :
                                     break
-                        break
+                            break
 
                     case _ :
                         break
-                    
+                        
 
                 print("   sefareshe shoma ta konon\n")
 

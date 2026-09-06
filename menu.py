@@ -3,7 +3,8 @@
 
 print("wellcome to my program")
 
-
+#کاربر admin به همه امکانات دسترسی دارد
+#کاربر user دسترسی محدود به امکانات دارد
 main_username_admin = "admin"
 main_password_admin = "admin"
 

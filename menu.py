@@ -225,10 +225,238 @@ program_exit = 0
 no_order = 0
 admin_user = 0
 price = 0
+exit_sarfasl = 0
+                                                                
 
 while True :
 
     while True :
+
+        while True :
+            a = 0
+            for i in name_1_1 :
+                a+=1
+            if a < 30 :
+                name_1_1 = name_1_1 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_1_2 :
+                a+=1
+            if a < 30 :
+                name_1_2 = name_1_2 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_1_3 :
+                a+=1
+            if a < 30 :
+                name_1_3 = name_1_3 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_1_4 :
+                a+=1
+            if a < 30 :
+                name_1_4 = name_1_4 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_1_5 :
+                a+=1
+            if a < 30 :
+                name_1_5 = name_1_5 +"."
+            else :
+                break
+        
+        while True :
+            a = 0
+            for i in name_2_1 :
+                a+=1
+            if a < 30 :
+                name_2_1 = name_2_1 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_2_2 :
+                a+=1
+            if a < 30 :
+                name_2_2 = name_2_2 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_2_3 :
+                a+=1
+            if a < 30 :
+                name_2_3 = name_2_3 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_2_4 :
+                a+=1
+            if a < 30 :
+                name_2_4 = name_2_4 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_2_5 :
+                a+=1
+            if a < 30 :
+                name_2_5 = name_2_5 +"."
+            else :
+                break
+        
+        while True :
+            a = 0
+            for i in name_3_1 :
+                a+=1
+            if a < 30 :
+                name_3_1 = name_3_1 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_3_2 :
+                a+=1
+            if a < 30 :
+                name_3_2 = name_3_2 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_3_3 :
+                a+=1
+            if a < 30 :
+                name_3_3 = name_3_3 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_3_4 :
+                a+=1
+            if a < 30 :
+                name_3_4 = name_3_4 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_3_5 :
+                a+=1
+            if a < 30 :
+                name_3_5 = name_3_5 +"."
+            else :
+                break
+        
+        while True :
+            a = 0
+            for i in name_4_1 :
+                a+=1
+            if a < 30 :
+                name_4_1 = name_4_1 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_4_2 :
+                a+=1
+            if a < 30 :
+                name_4_2 = name_4_2 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_4_3 :
+                a+=1
+            if a < 30 :
+                name_4_3 = name_4_3 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_4_4 :
+                a+=1
+            if a < 30 :
+                name_4_4 = name_4_4 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_4_5 :
+                a+=1
+            if a < 30 :
+                name_4_5 = name_4_5 +"."
+            else :
+                break
+  
+        while True :
+            a = 0
+            for i in name_5_1 :
+                a+=1
+            if a < 30 :
+                name_5_1 = name_5_1 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_5_2 :
+                a+=1
+            if a < 30 :
+                name_5_2 = name_5_2 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_5_3 :
+                a+=1
+            if a < 30 :
+                name_5_3 = name_5_3 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_5_4 :
+                a+=1
+            if a < 30 :
+                name_5_4 = name_5_4 +"."
+            else :
+                break
+
+        while True :
+            a = 0
+            for i in name_5_5 :
+                a+=1
+            if a < 30 :
+                name_5_5 = name_5_5 +"."
+            else :
+                break
+
 
         if program_exit == 1 :
             break
@@ -307,6 +535,8 @@ while True :
 
                                         while True :
 
+                                            exit_sarfasl = 0
+
                                             match menu :
                                                 case "1" :
                                                     if j < 3 :
@@ -330,41 +560,49 @@ while True :
                                                                 name = name_1_5
                                                                 price = p_1_5
                                                             case "6" :
-                                                                name = sarfas_1
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+                                                                sarfas_1 = input("please enter new sarfasl name :\n")
+                                                                exit_sarfasl = 1
                                                             case _ :
                                                                 break
+                                                            
+                                                        while True :
+                                                            if exit_sarfasl == 1 :
+                                                                break
+                                                            sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                            match sub_choice :
+                                                                case "1" :
+                                                                    if admin_user == 2 :
+                                                                        print("EROR :: user cant")
+                                                                        break
 
-
-                                                        sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
-                                                        match sub_choice :
-                                                            case "1" :
-                                                                if admin_user == 2 :
-                                                                    print("EROR :: user cant")
+                                                                    name = input("please enter new name :\n")
+                                                                    print("new name is :" , name)
                                                                     break
-
-                                                                name = input("please enter new name :\n")
-                                                                print("new name is :" , name)
-                                                            case "2" :
-                                                                new_price = input("please enter new price :\n")
-                                                                if new_price.isdigit():
-                                                                    price = int(new_price)
-                                                                    print("new price is :" , price)
-                                                                else:
-                                                                    print("vorodi eshtebah ast")
-                                                                
-                                                            case "3" :
-                                                                if admin_user == 2 :
-                                                                    print("EROR :: user cant")
+                                                                case "2" :
+                                                                    new_price = input("please enter new price :\n")
+                                                                    if new_price.isdigit():
+                                                                        price = int(new_price)
+                                                                        print("new price is :" , price)
+                                                                    else:
+                                                                        print("vorodi eshtebah ast")
                                                                     break
-                                                                
-                                                                name = input("please enter new name :\n")
-                                                                new_price = input("please enter new price :\n")
+                                                                case "3" :
+                                                                    if admin_user == 2 :
+                                                                        print("EROR :: user cant")
+                                                                        break
+                                                                    
+                                                                    name = input("please enter new name :\n")
+                                                                    new_price = input("please enter new price :\n")
 
-                                                                if new_price.isdigit():
-                                                                    price = int(new_price)
-                                                                    print("new name is :" , name, "and" ,"new price is :" , price )
-                                                                else:
-                                                                    print("vorodie price eshtebah ast")
+                                                                    if new_price.isdigit():
+                                                                        price = int(new_price)
+                                                                        print("new name is :" , name, "and" ,"new price is :" , price )
+                                                                    else:
+                                                                        print("vorodie price eshtebah ast")
+                                                                    break
 
                                                         match choice :
                                                             case "1" :
@@ -382,8 +620,6 @@ while True :
                                                             case "5" :
                                                                 name_1_5 = name
                                                                 p_1_5 = price
-                                                            case "6" :
-                                                                sarfas_1 = name
                                                             case _ :
                                                                 break
                                                     else :
@@ -414,41 +650,50 @@ while True :
                                                                 name = name_2_5
                                                                 price = p_2_5
                                                             case "6" :
-                                                                name = sarfas_2
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+                                                                sarfas_2 = input("please enter new sarfasl name :\n")
+                                                                exit_sarfasl = 1
                                                             case _ :
                                                                 break
 
+                                                        while True :
+                                                            if exit_sarfasl == 1 :
+                                                                break
+                                                            sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                            match sub_choice :
+                                                                case "1" :
+                                                                    if admin_user == 2 :
+                                                                        print("EROR :: user cant")
+                                                                        break
 
-                                                        sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
-                                                        match sub_choice :
-                                                            case "1" :
-                                                                if admin_user == 2 :
-                                                                    print("EROR :: user cant")
+                                                                    name = input("please enter new name :\n")
+                                                                    print("new name is :" , name)
                                                                     break
-
-                                                                name = input("please enter new name :\n")
-                                                                print("new name is :" , name)
-                                                            case "2" :
-                                                                new_price = input("please enter new price :\n")
-                                                                if new_price.isdigit():
-                                                                    price = int(new_price)
-                                                                    print("new price is :" , price)
-                                                                else:
-                                                                    print("vorodi eshtebah ast")
-                                                                
-                                                            case "3" :
-                                                                if admin_user == 2 :
-                                                                    print("EROR :: user cant")
+                                                                case "2" :
+                                                                    new_price = input("please enter new price :\n")
+                                                                    if new_price.isdigit():
+                                                                        price = int(new_price)
+                                                                        print("new price is :" , price)
+                                                                    else:
+                                                                        print("vorodi eshtebah ast")
                                                                     break
-                                                                
-                                                                name = input("please enter new name :\n")
-                                                                new_price = input("please enter new price :\n")
+                                                                    
+                                                                case "3" :
+                                                                    if admin_user == 2 :
+                                                                        print("EROR :: user cant")
+                                                                        break
+                                                                    
+                                                                    name = input("please enter new name :\n")
+                                                                    new_price = input("please enter new price :\n")
 
-                                                                if new_price.isdigit():
-                                                                    price = int(new_price)
-                                                                    print("new name is :" , name, "and" ,"new price is :" , price )
-                                                                else:
-                                                                    print("vorodie price eshtebah ast")
+                                                                    if new_price.isdigit():
+                                                                        price = int(new_price)
+                                                                        print("new name is :" , name, "and" ,"new price is :" , price )
+                                                                    else:
+                                                                        print("vorodie price eshtebah ast")
+                                                                    break
 
                                                         match choice :
                                                             case "1" :
@@ -466,8 +711,6 @@ while True :
                                                             case "5" :
                                                                 name_2_5 = name
                                                                 p_2_5 = price
-                                                            case "6" :
-                                                                sarfas_2 = name
                                                             case _ :
                                                                 break
                                                     else :
@@ -497,41 +740,49 @@ while True :
                                                                 name = name_3_5
                                                                 price = p_3_5
                                                             case "6" :
-                                                                name = sarfas_3
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+                                                                sarfas_3 = input("please enter new sarfasl name :\n")
+                                                                exit_sarfasl = 1
                                                             case _ :
                                                                 break
 
+                                                        while True :
+                                                            if exit_sarfasl == 1 :
+                                                                break
+                                                            sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                            match sub_choice :
+                                                                case "1" :
+                                                                    if admin_user == 2 :
+                                                                        print("EROR :: user cant")
+                                                                        break
 
-                                                        sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
-                                                        match sub_choice :
-                                                            case "1" :
-                                                                if admin_user == 2 :
-                                                                    print("EROR :: user cant")
+                                                                    name = input("please enter new name :\n")
+                                                                    print("new name is :" , name)
                                                                     break
-
-                                                                name = input("please enter new name :\n")
-                                                                print("new name is :" , name)
-                                                            case "2" :
-                                                                new_price = input("please enter new price :\n")
-                                                                if new_price.isdigit():
-                                                                    price = int(new_price)
-                                                                    print("new price is :" , price)
-                                                                else:
-                                                                    print("vorodi eshtebah ast")
-                                                                
-                                                            case "3" :
-                                                                if admin_user == 2 :
-                                                                    print("EROR :: user cant")
+                                                                case "2" :
+                                                                    new_price = input("please enter new price :\n")
+                                                                    if new_price.isdigit():
+                                                                        price = int(new_price)
+                                                                        print("new price is :" , price)
+                                                                    else:
+                                                                        print("vorodi eshtebah ast")
                                                                     break
-                                                                
-                                                                name = input("please enter new name :\n")
-                                                                new_price = input("please enter new price :\n")
+                                                                case "3" :
+                                                                    if admin_user == 2 :
+                                                                        print("EROR :: user cant")
+                                                                        break
+                                                                    
+                                                                    name = input("please enter new name :\n")
+                                                                    new_price = input("please enter new price :\n")
 
-                                                                if new_price.isdigit():
-                                                                    price = int(new_price)
-                                                                    print("new name is :" , name, "and" ,"new price is :" , price )
-                                                                else:
-                                                                    print("vorodie price eshtebah ast")
+                                                                    if new_price.isdigit():
+                                                                        price = int(new_price)
+                                                                        print("new name is :" , name, "and" ,"new price is :" , price )
+                                                                    else:
+                                                                        print("vorodie price eshtebah ast")
+                                                                    break
 
                                                         match choice :
                                                             case "1" :
@@ -549,8 +800,6 @@ while True :
                                                             case "5" :
                                                                 name_3_5 = name
                                                                 p_3_5 = price
-                                                            case "6" :
-                                                                sarfas_3 = name
                                                             case _ :
                                                                 break
                                                     else :
@@ -579,41 +828,50 @@ while True :
                                                                 name = name_4_5
                                                                 price = p_4_5
                                                             case "6" :
-                                                                name = sarfas_4
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+                                                                sarfas_4 = input("please enter new sarfasl name :\n")
+                                                                exit_sarfasl = 1
                                                             case _ :
                                                                 break
 
+                                                        while True :
+                                                            if exit_sarfasl == 1 :
+                                                                break
+                                                            sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                            match sub_choice :
+                                                                case "1" :
+                                                                    if admin_user == 2 :
+                                                                        print("EROR :: user cant")
+                                                                        break
 
-                                                        sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
-                                                        match sub_choice :
-                                                            case "1" :
-                                                                if admin_user == 2 :
-                                                                    print("EROR :: user cant")
+                                                                    name = input("please enter new name :\n")
+                                                                    print("new name is :" , name)
                                                                     break
-
-                                                                name = input("please enter new name :\n")
-                                                                print("new name is :" , name)
-                                                            case "2" :
-                                                                new_price = input("please enter new price :\n")
-                                                                if new_price.isdigit():
-                                                                    price = int(new_price)
-                                                                    print("new price is :" , price)
-                                                                else:
-                                                                    print("vorodi eshtebah ast")
-                                                                
-                                                            case "3" :
-                                                                if admin_user == 2 :
-                                                                    print("EROR :: user cant")
+                                                                case "2" :
+                                                                    new_price = input("please enter new price :\n")
+                                                                    if new_price.isdigit():
+                                                                        price = int(new_price)
+                                                                        print("new price is :" , price)
+                                                                    else:
+                                                                        print("vorodi eshtebah ast")
                                                                     break
-                                                                
-                                                                name = input("please enter new name :\n")
-                                                                new_price = input("please enter new price :\n")
+                                                                    
+                                                                case "3" :
+                                                                    if admin_user == 2 :
+                                                                        print("EROR :: user cant")
+                                                                        break
+                                                                    
+                                                                    name = input("please enter new name :\n")
+                                                                    new_price = input("please enter new price :\n")
 
-                                                                if new_price.isdigit():
-                                                                    price = int(new_price)
-                                                                    print("new name is :" , name, "and" ,"new price is :" , price )
-                                                                else:
-                                                                    print("vorodie price eshtebah ast")
+                                                                    if new_price.isdigit():
+                                                                        price = int(new_price)
+                                                                        print("new name is :" , name, "and" ,"new price is :" , price )
+                                                                    else:
+                                                                        print("vorodie price eshtebah ast")
+                                                                    break
 
                                                         match choice :
                                                             case "1" :
@@ -631,8 +889,6 @@ while True :
                                                             case "5" :
                                                                 name_4_5 = name
                                                                 p_4_5 = price
-                                                            case "6" :
-                                                                sarfas_4 = name
                                                             case _ :
                                                                 break
                                                     else :
@@ -662,41 +918,49 @@ while True :
                                                                 name = name_5_5
                                                                 price = p_5_5
                                                             case "6" :
-                                                                name = sarfas_5
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
+                                                                sarfas_5 = input("please enter new sarfasl name :\n")
+                                                                exit_sarfasl = 1
                                                             case _ :
                                                                 break
 
+                                                        while True :
+                                                            if exit_sarfasl == 1 :
+                                                                break
+                                                            sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
+                                                            match sub_choice :
+                                                                case "1" :
+                                                                    if admin_user == 2 :
+                                                                        print("EROR :: user cant")
+                                                                        break
 
-                                                        sub_choice = input ("1.edit name \n2.edit price \n3.edit name and price\n")
-                                                        match sub_choice :
-                                                            case "1" :
-                                                                if admin_user == 2 :
-                                                                    print("EROR :: user cant")
+                                                                    name = input("please enter new name :\n")
+                                                                    print("new name is :" , name)
                                                                     break
-
-                                                                name = input("please enter new name :\n")
-                                                                print("new name is :" , name)
-                                                            case "2" :
-                                                                new_price = input("please enter new price :\n")
-                                                                if new_price.isdigit():
-                                                                    price = int(new_price)
-                                                                    print("new price is :" , price)
-                                                                else:
-                                                                    print("vorodi eshtebah ast")
-                                                                
-                                                            case "3" :
-                                                                if admin_user == 2 :
-                                                                    print("EROR :: user cant")
+                                                                case "2" :
+                                                                    new_price = input("please enter new price :\n")
+                                                                    if new_price.isdigit():
+                                                                        price = int(new_price)
+                                                                        print("new price is :" , price)
+                                                                    else:
+                                                                        print("vorodi eshtebah ast")
                                                                     break
-                                                                
-                                                                name = input("please enter new name :\n")
-                                                                new_price = input("please enter new price :\n")
+                                                                case "3" :
+                                                                    if admin_user == 2 :
+                                                                        print("EROR :: user cant")
+                                                                        break
+                                                                    
+                                                                    name = input("please enter new name :\n")
+                                                                    new_price = input("please enter new price :\n")
 
-                                                                if new_price.isdigit():
-                                                                    price = int(new_price)
-                                                                    print("new name is :" , name, "and" ,"new price is :" , price )
-                                                                else:
-                                                                    print("vorodie price eshtebah ast")
+                                                                    if new_price.isdigit():
+                                                                        price = int(new_price)
+                                                                        print("new name is :" , name, "and" ,"new price is :" , price )
+                                                                    else:
+                                                                        print("vorodie price eshtebah ast")
+                                                                    break
 
                                                         match choice :
                                                             case "1" :
@@ -714,8 +978,6 @@ while True :
                                                             case "5" :
                                                                 name_5_5 = name
                                                                 p_5_5 = price
-                                                            case "6" :
-                                                                sarfas_5 = name
                                                             case _ :
                                                                 break
                                                     else :
@@ -756,6 +1018,9 @@ while True :
                                                         gozaresh = input("\n1.amare foroshe mahsoolat \n2.por forosh tarin mahsoolat \n3.kam forosh tarin mahsoolat \n4.amare kole forosh \n5.back to main menu \n")
                                                         match gozaresh :
                                                             case "1" :
+                                                                if admin_user == 2 :
+                                                                    print("EROR :: user cant")
+                                                                    break
 
                                                                 print("\n", sarfas_1 , "...." , total_num_1_1+total_num_1_2+total_num_1_3+total_num_1_4+total_num_1_5 , "adad" , "..." , total_sell_1_1+total_sell_1_2+total_sell_1_3+total_sell_1_4+total_sell_1_5)
                                                                 print("\n", sarfas_2 , "...." , total_num_2_1+total_num_2_2+total_num_2_3+total_num_2_4+total_num_2_5 , "adad" , "..." , total_sell_2_1+total_sell_2_2+total_sell_2_3+total_sell_2_4+total_sell_2_5)
@@ -993,238 +1258,6 @@ while True :
         total_num = 0
 
         #ziba sazie menu
-
-        
-
-        while True :
-            a = 0
-            for i in name_1_1 :
-                a+=1
-            if a < 30 :
-                name_1_1 = name_1_1 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_1_2 :
-                a+=1
-            if a < 30 :
-                name_1_2 = name_1_2 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_1_3 :
-                a+=1
-            if a < 30 :
-                name_1_3 = name_1_3 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_1_4 :
-                a+=1
-            if a < 30 :
-                name_1_4 = name_1_4 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_1_5 :
-                a+=1
-            if a < 30 :
-                name_1_5 = name_1_5 +"."
-            else :
-                break
-        
-        
-
-        while True :
-            a = 0
-            for i in name_2_1 :
-                a+=1
-            if a < 30 :
-                name_2_1 = name_2_1 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_2_2 :
-                a+=1
-            if a < 30 :
-                name_2_2 = name_2_2 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_2_3 :
-                a+=1
-            if a < 30 :
-                name_2_3 = name_2_3 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_2_4 :
-                a+=1
-            if a < 30 :
-                name_2_4 = name_2_4 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_2_5 :
-                a+=1
-            if a < 30 :
-                name_2_5 = name_2_5 +"."
-            else :
-                break
-        
-
-        while True :
-            a = 0
-            for i in name_3_1 :
-                a+=1
-            if a < 30 :
-                name_3_1 = name_3_1 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_3_2 :
-                a+=1
-            if a < 30 :
-                name_3_2 = name_3_2 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_3_3 :
-                a+=1
-            if a < 30 :
-                name_3_3 = name_3_3 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_3_4 :
-                a+=1
-            if a < 30 :
-                name_3_4 = name_3_4 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_3_5 :
-                a+=1
-            if a < 30 :
-                name_3_5 = name_3_5 +"."
-            else :
-                break
-        
-
-        while True :
-            a = 0
-            for i in name_4_1 :
-                a+=1
-            if a < 30 :
-                name_4_1 = name_4_1 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_4_2 :
-                a+=1
-            if a < 30 :
-                name_4_2 = name_4_2 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_4_3 :
-                a+=1
-            if a < 30 :
-                name_4_3 = name_4_3 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_4_4 :
-                a+=1
-            if a < 30 :
-                name_4_4 = name_4_4 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_4_5 :
-                a+=1
-            if a < 30 :
-                name_4_5 = name_4_5 +"."
-            else :
-                break
-
-        
-        while True :
-            a = 0
-            for i in name_5_1 :
-                a+=1
-            if a < 30 :
-                name_5_1 = name_5_1 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_5_2 :
-                a+=1
-            if a < 30 :
-                name_5_2 = name_5_2 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_5_3 :
-                a+=1
-            if a < 30 :
-                name_5_3 = name_5_3 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_5_4 :
-                a+=1
-            if a < 30 :
-                name_5_4 = name_5_4 +"."
-            else :
-                break
-
-        while True :
-            a = 0
-            for i in name_5_5 :
-                a+=1
-            if a < 30 :
-                name_5_5 = name_5_5 +"."
-            else :
-                break
 
    
         order_exit = 0

@@ -1141,7 +1141,7 @@ while True :
                                                     if admin_user == 2 :
                                                         print("EROR :: user cant")
                                                         break
-                                                    busines_name = input("please enter new business name")
+                                                    business_name = input("please enter new business name")
 
                                 else :
                                     print("username or password wrong")

@@ -2782,118 +2782,118 @@ while True :
         #kam tarafdar tarin mahsool
 
 
-        kam_forosh_1 = total_num_1_1
-        kam_forosh_name_1 = name_1_1
-        total_kam_forosh = total_num_1_1
+    kam_forosh_1 = total_num_1_1
+    kam_forosh_name_1 = name_1_1
+    total_kam_forosh = total_num_1_1
 
-        if total_num_1_2 < kam_forosh_1 :
-            kam_forosh_1 = total_num_1_2
-            kam_forosh_name_1 = name_1_2
+    if total_num_1_2 < kam_forosh_1 :
+        kam_forosh_1 = total_num_1_2
+        kam_forosh_name_1 = name_1_2
 
-        if total_num_1_3 < kam_forosh_1 :
-            kam_forosh_1 = total_num_1_3
-            kam_forosh_name_1 = name_1_3
+    if total_num_1_3 < kam_forosh_1 :
+        kam_forosh_1 = total_num_1_3
+        kam_forosh_name_1 = name_1_3
 
-        if total_num_1_4 < kam_forosh_1 :
-            kam_forosh_1 = total_num_1_4
-            kam_forosh_name_1 = name_1_4
+    if total_num_1_4 < kam_forosh_1 :
+        kam_forosh_1 = total_num_1_4
+        kam_forosh_name_1 = name_1_4
 
-        if total_num_1_5 < kam_forosh_1 :
-            kam_forosh_1 = total_num_1_5
-            kam_forosh_name_1 = name_1_5
+    if total_num_1_5 < kam_forosh_1 :
+        kam_forosh_1 = total_num_1_5
+        kam_forosh_name_1 = name_1_5
 
-        kam_forosh_2 = total_num_2_1
-        kam_forosh_name_2 = name_2_1
+    kam_forosh_2 = total_num_2_1
+    kam_forosh_name_2 = name_2_1
 
-        if total_num_2_2 < kam_forosh_2 :
-            kam_forosh_2 = total_num_2_2
-            kam_forosh_name_2 = name_2_2
+    if total_num_2_2 < kam_forosh_2 :
+        kam_forosh_2 = total_num_2_2
+        kam_forosh_name_2 = name_2_2
 
-        if total_num_2_3 < kam_forosh_2 :
-            kam_forosh_2 = total_num_2_3
-            kam_forosh_name_2 = name_2_3
+    if total_num_2_3 < kam_forosh_2 :
+        kam_forosh_2 = total_num_2_3
+        kam_forosh_name_2 = name_2_3
 
-        if total_num_2_4 < kam_forosh_2 :
-            kam_forosh_2 = total_num_2_4
-            kam_forosh_name_2 = name_2_4
+    if total_num_2_4 < kam_forosh_2 :
+        kam_forosh_2 = total_num_2_4
+        kam_forosh_name_2 = name_2_4
 
-        if total_num_2_5 < kam_forosh_2 :
-            kam_forosh_2 = total_num_2_5
-            kam_forosh_name_2 = name_2_5
+    if total_num_2_5 < kam_forosh_2 :
+        kam_forosh_2 = total_num_2_5
+        kam_forosh_name_2 = name_2_5
 
-        kam_forosh_3 = total_num_3_1
-        kam_forosh_name_3 = name_3_1
-        
-        if total_num_3_2 < kam_forosh_3 :
-            kam_forosh_3 = total_num_3_2
-            kam_forosh_name_3 = name_3_2
+    kam_forosh_3 = total_num_3_1
+    kam_forosh_name_3 = name_3_1
+    
+    if total_num_3_2 < kam_forosh_3 :
+        kam_forosh_3 = total_num_3_2
+        kam_forosh_name_3 = name_3_2
 
-        if total_num_3_3 < kam_forosh_3 :
-            kam_forosh_3 = total_num_3_3
-            kam_forosh_name_3 = name_3_3
+    if total_num_3_3 < kam_forosh_3 :
+        kam_forosh_3 = total_num_3_3
+        kam_forosh_name_3 = name_3_3
 
-        if total_num_3_4 < kam_forosh_3 :
-            kam_forosh_3 = total_num_3_4
-            kam_forosh_name_3 = name_3_4
+    if total_num_3_4 < kam_forosh_3 :
+        kam_forosh_3 = total_num_3_4
+        kam_forosh_name_3 = name_3_4
 
-        if total_num_3_5 < kam_forosh_3 :
-            kam_forosh_3 = total_num_3_5
-            kam_forosh_name_3 = name_3_5
+    if total_num_3_5 < kam_forosh_3 :
+        kam_forosh_3 = total_num_3_5
+        kam_forosh_name_3 = name_3_5
 
-        kam_forosh_4 = total_num_4_1
-        kam_forosh_name_4 = name_4_1
-        
-        if total_num_4_2 < kam_forosh_4 :
-            kam_forosh_4 = total_num_4_2
-            kam_forosh_name_4 = name_4_2
+    kam_forosh_4 = total_num_4_1
+    kam_forosh_name_4 = name_4_1
+    
+    if total_num_4_2 < kam_forosh_4 :
+        kam_forosh_4 = total_num_4_2
+        kam_forosh_name_4 = name_4_2
 
-        if total_num_4_3 < kam_forosh_4 :
-            kam_forosh_4 = total_num_4_3
-            kam_forosh_name_4 = name_4_3
+    if total_num_4_3 < kam_forosh_4 :
+        kam_forosh_4 = total_num_4_3
+        kam_forosh_name_4 = name_4_3
 
-        if total_num_4_4 < kam_forosh_4 :
-            kam_forosh_4 = total_num_4_4
-            kam_forosh_name_4 = name_4_4
+    if total_num_4_4 < kam_forosh_4 :
+        kam_forosh_4 = total_num_4_4
+        kam_forosh_name_4 = name_4_4
 
-        if total_num_4_5 < kam_forosh_4 :
-            kam_forosh_4 = total_num_4_5
-            kam_forosh_name_4 = name_4_5
+    if total_num_4_5 < kam_forosh_4 :
+        kam_forosh_4 = total_num_4_5
+        kam_forosh_name_4 = name_4_5
 
-        kam_forosh_5 = total_num_5_1
-        kam_forosh_name_5 = name_5_1
-        
-        if total_num_5_2 < kam_forosh_5 :
-            kam_forosh_5 = total_num_5_2
-            kam_forosh_name_5 = name_5_2
+    kam_forosh_5 = total_num_5_1
+    kam_forosh_name_5 = name_5_1
+    
+    if total_num_5_2 < kam_forosh_5 :
+        kam_forosh_5 = total_num_5_2
+        kam_forosh_name_5 = name_5_2
 
-        if total_num_5_3 < kam_forosh_5 :
-            kam_forosh_5 = total_num_5_3
-            kam_forosh_name_5 = name_5_3
+    if total_num_5_3 < kam_forosh_5 :
+        kam_forosh_5 = total_num_5_3
+        kam_forosh_name_5 = name_5_3
 
-        if total_num_5_4 < kam_forosh_5 :
-            kam_forosh_5 = total_num_5_4
-            kam_forosh_name_5 = name_5_4
+    if total_num_5_4 < kam_forosh_5 :
+        kam_forosh_5 = total_num_5_4
+        kam_forosh_name_5 = name_5_4
 
-        if total_num_5_5 < kam_forosh_5 :
-            kam_forosh_5 = total_num_5_5
-            kam_forosh_name_5 = name_5_5
+    if total_num_5_5 < kam_forosh_5 :
+        kam_forosh_5 = total_num_5_5
+        kam_forosh_name_5 = name_5_5
 
 
-        total_kam_forosh = kam_forosh_1
-        total_kam_forosh_name = kam_forosh_name_1
+    total_kam_forosh = kam_forosh_1
+    total_kam_forosh_name = kam_forosh_name_1
 
-        if kam_forosh_2 < total_kam_forosh :
-            total_kam_forosh = kam_forosh_2
-            total_kam_forosh_name = kam_forosh_name_2
-        if kam_forosh_3 < total_kam_forosh :
-            total_kam_forosh = kam_forosh_3
-            total_kam_forosh_name = kam_forosh_name_3
-        if kam_forosh_4 < total_kam_forosh :
-            total_kam_forosh = kam_forosh_4
-            total_kam_forosh_name = kam_forosh_name_4
-        if kam_forosh_5 < total_kam_forosh :
-            total_kam_forosh = kam_forosh_5
-            total_kam_forosh_name = kam_forosh_name_5
+    if kam_forosh_2 < total_kam_forosh :
+        total_kam_forosh = kam_forosh_2
+        total_kam_forosh_name = kam_forosh_name_2
+    if kam_forosh_3 < total_kam_forosh :
+        total_kam_forosh = kam_forosh_3
+        total_kam_forosh_name = kam_forosh_name_3
+    if kam_forosh_4 < total_kam_forosh :
+        total_kam_forosh = kam_forosh_4
+        total_kam_forosh_name = kam_forosh_name_4
+    if kam_forosh_5 < total_kam_forosh :
+        total_kam_forosh = kam_forosh_5
+        total_kam_forosh_name = kam_forosh_name_5
 
          
 

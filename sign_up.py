@@ -95,7 +95,7 @@ while True:
                                                     new_saved_phone = input("Enter Mobile: ").strip()
                                                     if new_saved_phone.isdigit()== False :
 
-                                                        print(" Mobile must contain digits only!").title()
+                                                        print(" Mobile must contain digits only!")
                                                     else : 
                                                         if len(new_saved_phone) != 11 :
                                                             print("The mobile number must consist of 11 digits ")    
@@ -181,7 +181,7 @@ while True:
                     saved_phone = input("Enter Mobile: ").strip()
                     if saved_phone.isdigit()== False :
 
-                        print(" Mobile must contain digits only!").title()
+                        print(" Mobile must contain digits only!")
                     else : 
                         if len(saved_phone) != 11 :
                             print("The mobile number must consist of 11 digits ")
